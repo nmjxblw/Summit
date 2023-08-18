@@ -735,6 +735,42 @@
         "name": "sword-pixel7.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "skelly_idle4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "skelly_idle4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "skelly_idle3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "skelly_idle3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "skelly_idle2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "skelly_idle2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "skelly_idle1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "skelly_idle1.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -763,7 +799,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.5117784035210191,
+        "zoomFactor": 0.7876290101673784,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -1104,6 +1140,22 @@
           "x": 1101,
           "y": 44,
           "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 106,
+          "layer": "",
+          "name": "skelly",
+          "persistentUuid": "befd64ea-5395-48a8-a4b7-4fc7661b3cfc",
+          "width": 116,
+          "x": 390,
+          "y": 456,
+          "zOrder": 26,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2312,12 +2364,12 @@
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
+                  "looping": true,
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "skelly_idle.png",
+                      "image": "skelly_idle4.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2333,19 +2385,127 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 21,
-                            "y": 0
+                            "x": 23,
+                            "y": 1
                           },
                           {
-                            "x": 48,
-                            "y": 0
+                            "x": 47,
+                            "y": 1
                           },
                           {
-                            "x": 48,
+                            "x": 47,
                             "y": 64
                           },
                           {
-                            "x": 21,
+                            "x": 23,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "skelly_idle3.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 23,
+                            "y": 1
+                          },
+                          {
+                            "x": 47,
+                            "y": 1
+                          },
+                          {
+                            "x": 47,
+                            "y": 64
+                          },
+                          {
+                            "x": 23,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "skelly_idle2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 23,
+                            "y": 1
+                          },
+                          {
+                            "x": 47,
+                            "y": 1
+                          },
+                          {
+                            "x": 47,
+                            "y": 64
+                          },
+                          {
+                            "x": 23,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    },
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "skelly_idle1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 23,
+                            "y": 1
+                          },
+                          {
+                            "x": 47,
+                            "y": 1
+                          },
+                          {
+                            "x": 47,
+                            "y": 64
+                          },
+                          {
+                            "x": 23,
                             "y": 64
                           }
                         ]
@@ -2384,7 +2544,7 @@
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": false,
+                  "looping": true,
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
