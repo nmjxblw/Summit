@@ -777,6 +777,15 @@
         "name": "skelly_idle1.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New image.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "New image",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -788,8 +797,8 @@
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
-      "mangledName": "Untitled_32scene",
-      "name": "Untitled scene",
+      "mangledName": "RPG_32scene",
+      "name": "RPG scene",
       "r": 209,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
@@ -805,7 +814,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.7876290101673784,
+        "zoomFactor": 0.6455105703311504,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -1196,7 +1205,37 @@
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "hp",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "folded": true,
+              "name": "atk",
+              "type": "string",
+              "value": "5"
+            },
+            {
+              "folded": true,
+              "name": "def",
+              "type": "string",
+              "value": "3"
+            },
+            {
+              "folded": true,
+              "name": "take_damge",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "invinciable",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
           "behaviors": [
             {
@@ -2386,10 +2425,10 @@
           "effects": [],
           "behaviors": [
             {
+              "allowDiagonals": true,
               "name": "Pathfinding",
               "type": "PathfindingBehavior::PathfindingBehavior",
               "acceleration": 400,
-              "allowDiagonals": true,
               "angleOffset": 0,
               "angularMaxSpeed": 180,
               "cellHeight": 20,
@@ -2414,9 +2453,11 @@
               "PlatformerBehavior": "PlatformerObject"
             },
             {
+              "canGoDownFromJumpthru": false,
+              "canGrabPlatforms": false,
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 1500,
-              "canGoDownFromJumpthru": true,
-              "canGrabPlatforms": true,
               "canGrabWithoutMoving": true,
               "deceleration": 1500,
               "gravity": 1000,
@@ -2426,9 +2467,7 @@
               "ladderClimbingSpeed": 150,
               "maxFallingSpeed": 700,
               "maxSpeed": 250,
-              "name": "PlatformerObject",
               "slopeMaxAngle": 60,
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "useLegacyTrajectory": false,
               "xGrabTolerance": 10,
               "yGrabOffset": 0
@@ -2776,7 +2815,7 @@
         {
           "assetStoreId": "",
           "bold": false,
-          "italic": false,
+          "italic": true,
           "name": "timerText",
           "smoothed": true,
           "tags": "",
@@ -2790,9 +2829,9 @@
           "textAlignment": "left",
           "characterSize": 25,
           "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
+            "b": 194,
+            "g": 227,
+            "r": 80
           }
         }
       ],
@@ -2831,6 +2870,41 @@
                 "=",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"timer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "DoesSceneExist"
+              },
+              "parameters": [
+                " ",
+                "CurrentSceneName()"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "RemoveTimer"
+              },
+              "parameters": [
+                "",
+                "\"timer\""
+              ]
             }
           ]
         },
@@ -2866,8 +2940,8 @@
               },
               "parameters": [
                 "timer",
-                "+",
-                "1"
+                "=",
+                "round(TimerElapsedTime(\"timer\"))"
               ]
             },
             {
@@ -3435,12 +3509,32 @@
           "conditions": [
             {
               "type": {
-                "inverted": true,
-                "value": "PathfindingBehavior::DestinationReached"
+                "value": "BuiltinCommonInstructions::And"
               },
-              "parameters": [
-                "skelly",
-                "Pathfinding"
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "SceneInstancesCount"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Player",
+                    ">=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Player",
+                    "skelly",
+                    "250",
+                    ""
+                  ]
+                }
               ]
             }
           ],
@@ -3455,6 +3549,146 @@
                 "",
                 "Player.X()",
                 "Player.Y()"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Player",
+                    "take_damge",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Player",
+                    "invinciable",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Opacity"
+              },
+              "parameters": [
+                "Player",
+                "=",
+                "125"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Player",
+                "invinciable",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Player",
+                "take_damge",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Opacity"
+              },
+              "parameters": [
+                "Player",
+                "=",
+                "255"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Player",
+                "invinciable",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Player",
+                    "skelly",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Player",
+                    "invinciable",
+                    "False"
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "Player",
+                "take_damge",
+                "True"
               ]
             }
           ]
@@ -3527,6 +3761,65 @@
           "type": "SmoothCamera::SmoothCamera"
         }
       ]
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "story_32scene",
+      "name": "story scene",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.546875,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [],
+      "objects": [],
+      "events": [],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": []
     }
   ],
   "externalEvents": [],
