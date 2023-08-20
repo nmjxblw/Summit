@@ -2425,9 +2425,9 @@
           "effects": [],
           "behaviors": [
             {
-              "allowDiagonals": true,
               "name": "Pathfinding",
               "type": "PathfindingBehavior::PathfindingBehavior",
+              "allowDiagonals": true,
               "acceleration": 400,
               "angleOffset": 0,
               "angularMaxSpeed": 180,
@@ -2453,10 +2453,10 @@
               "PlatformerBehavior": "PlatformerObject"
             },
             {
-              "canGoDownFromJumpthru": false,
-              "canGrabPlatforms": false,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "canGoDownFromJumpthru": false,
+              "canGrabPlatforms": false,
               "acceleration": 1500,
               "canGrabWithoutMoving": true,
               "deceleration": 1500,
