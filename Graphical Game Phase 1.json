@@ -907,7 +907,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6912155060872603,
+        "zoomFactor": 0.24723997270211193,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2088,6 +2088,38 @@
           "variables": [],
           "effects": [],
           "behaviors": [
+            {
+              "name": "PlatformerCharacterAnimator",
+              "type": "PlatformerCharacterAnimator::PlatformerCharacterAnimator",
+              "EnableAnimationChanges": true,
+              "EnableHorizontalFlipping": true,
+              "IdleAnimationName": "Idle",
+              "RunAnimationName": "Run",
+              "JumpAnimationName": "Jump",
+              "FallAnimationName": "Fall",
+              "ClimbAnimationName": "Climb",
+              "PlatformerBehavior": "PlatformerObject"
+            },
+            {
+              "acceleration": 1500,
+              "canGoDownFromJumpthru": false,
+              "canGrabPlatforms": false,
+              "canGrabWithoutMoving": false,
+              "deceleration": 1500,
+              "gravity": 1000,
+              "ignoreDefaultControls": true,
+              "jumpSpeed": 600,
+              "jumpSustainTime": 0.2,
+              "ladderClimbingSpeed": 150,
+              "maxFallingSpeed": 700,
+              "maxSpeed": 250,
+              "name": "PlatformerObject",
+              "slopeMaxAngle": 60,
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "useLegacyTrajectory": false,
+              "xGrabTolerance": 10,
+              "yGrabOffset": 0
+            },
             {
               "name": "Tween",
               "type": "Tween::TweenBehavior"
