@@ -907,7 +907,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.24723997270211193,
+        "zoomFactor": 0.6912155060872609,
         "windowMask": false
       },
       "objectsGroups": [
@@ -1399,6 +1399,38 @@
           "x": 1097,
           "y": 577,
           "zOrder": 32,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 103,
+          "layer": "Background",
+          "name": "debug_text_box",
+          "persistentUuid": "3ca0feac-7725-4fad-bf2d-25fefeb4c351",
+          "width": 303,
+          "x": 406,
+          "y": 96,
+          "zOrder": 33,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 85,
+          "layer": "",
+          "name": "route",
+          "persistentUuid": "067063bf-90be-4999-89aa-ec56f4a8bebf",
+          "width": 613,
+          "x": 535,
+          "y": 563,
+          "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2085,7 +2117,14 @@
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "can_dash",
+              "type": "number",
+              "value": 0
+            }
+          ],
           "effects": [],
           "behaviors": [
             {
@@ -2101,6 +2140,8 @@
               "PlatformerBehavior": "PlatformerObject"
             },
             {
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 1500,
               "canGoDownFromJumpthru": false,
               "canGrabPlatforms": false,
@@ -2113,9 +2154,7 @@
               "ladderClimbingSpeed": 150,
               "maxFallingSpeed": 700,
               "maxSpeed": 250,
-              "name": "PlatformerObject",
               "slopeMaxAngle": 60,
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "useLegacyTrajectory": false,
               "xGrabTolerance": 10,
               "yGrabOffset": 0
@@ -3512,6 +3551,40 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "debug_text_box",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "debug_text_box",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 40,
+          "color": {
+            "b": 27,
+            "g": 2,
+            "r": 208
+          }
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "route",
+          "tags": "",
+          "texture": "",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "events": [
@@ -3570,10 +3643,27 @@
                 },
                 {
                   "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "charger_hitbox",
+                    "\"dash_timer\""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Cache"
                   },
                   "parameters": [
                     "charger_hitbox"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "route"
                   ]
                 }
               ]
@@ -4385,11 +4475,11 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "CompareTimer"
+                    "value": "CompareObjectTimer"
                   },
                   "parameters": [
-                    "",
-                    "\"DashDelay\"",
+                    "charger_hitbox",
+                    "\"dash_timer\"",
                     ">",
                     "1"
                   ]
@@ -4437,17 +4527,6 @@
                     },
                     {
                       "type": {
-                        "value": "Distance"
-                      },
-                      "parameters": [
-                        "Player",
-                        "Charger",
-                        "300",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "VarObjet"
                       },
                       "parameters": [
@@ -4455,6 +4534,18 @@
                         "can_dash",
                         "=",
                         "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Player",
+                        "route",
+                        "",
+                        "",
+                        ""
                       ]
                     }
                   ]
@@ -4491,11 +4582,21 @@
                 },
                 {
                   "type": {
-                    "value": "ResetTimer"
+                    "value": "ResetObjectTimer"
                   },
                   "parameters": [
-                    "",
-                    "\"DashDelay\""
+                    "charger_hitbox",
+                    "\"dash_timer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "debug_text_box",
+                    "=",
+                    "ToString(charger_hitbox.ObjectTimerElapsedTime(\"dash_timer\"))"
                   ]
                 }
               ],
@@ -4589,7 +4690,7 @@
                     "25",
                     "0",
                     "",
-                    "",
+                    "13",
                     "yes",
                     "yes",
                     "yes",
@@ -4654,6 +4755,16 @@
                     "Tween",
                     "\"Dash\"",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "debug_text_box",
+                    "=",
+                    "\"now stop the dash\""
                   ]
                 }
               ]
