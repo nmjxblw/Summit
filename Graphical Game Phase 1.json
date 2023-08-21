@@ -867,6 +867,177 @@
         "name": "down_arrow.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/charger_idle_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\charger_idle_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/charger_idle_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\charger_idle_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/right_arrow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\right_arrow.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/charger_idle_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\charger_idle_4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/skelly_idle_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\skelly_idle_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/skelly_idle_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\skelly_idle_2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/skelly_idle_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\skelly_idle_3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/skelly_idle_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\skelly_idle_4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/left_arrow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\left_arrow.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/up_arrow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\up_arrow.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/down_arrow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\down_arrow.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/treasure box1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\treasure box1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/treasure box2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\treasure box2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/treasure box3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\treasure box3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/treasure box4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\treasure box4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/treasure box5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\treasure box5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/treasure box6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\treasure box6.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/treasure box7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\treasure box7.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/treasure box8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\treasure box8.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -890,12 +1061,12 @@
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
-      "mangledName": "RPG_32scene",
-      "name": "RPG scene",
+      "mangledName": "warning_32scene",
+      "name": "warning scene",
       "r": 209,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
-      "title": "Benis churger",
+      "title": "",
       "v": 209,
       "uiSettings": {
         "grid": false,
@@ -907,7 +1078,313 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6912155060872609,
+        "zoomFactor": 0.546875,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "warning_text",
+          "persistentUuid": "b5fbf1d7-1d8d-4553-b5d9-92320cef70ae",
+          "width": 0,
+          "x": 67,
+          "y": 206,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "warning_text",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Warning\nThis game contains elements of fantasy, \nviolence, and more.\nIf you feel uncomfortable with the game content, \nplease exit the game.",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 50,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        }
+      ],
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "warning events",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"goto game scene timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneBackground"
+              },
+              "parameters": [
+                "",
+                "\"0;0;0\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "DoesSceneExist"
+              },
+              "parameters": [
+                "",
+                "CurrentSceneName()"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "RemoveTimer"
+              },
+              "parameters": [
+                "",
+                "\"goto game scene timer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"goto game scene timer\"",
+                    ">=",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnyKeyPressed"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Right"
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SceneBackground"
+              },
+              "parameters": [
+                "",
+                "\"255;255;255\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "PushScene"
+              },
+              "parameters": [
+                "",
+                "\"RPG scene\""
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": []
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "story_32scene",
+      "name": "story scene",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.546875,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [],
+      "objects": [],
+      "events": [],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": []
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
+      "mangledName": "RPG_32scene",
+      "name": "RPG scene",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "Benis churger",
+      "v": 209,
+      "uiSettings": {
+        "grid": true,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": true,
+        "zoomFactor": 0.5664937550501138,
         "windowMask": false
       },
       "objectsGroups": [
@@ -1284,8 +1761,8 @@
           "layer": "",
           "name": "skelly",
           "persistentUuid": "befd64ea-5395-48a8-a4b7-4fc7661b3cfc",
-          "width": 116,
-          "x": 390,
+          "width": 122,
+          "x": 384,
           "y": 456,
           "zOrder": 26,
           "numberProperties": [],
@@ -1380,7 +1857,7 @@
           "name": "debug_text_box",
           "persistentUuid": "3ca0feac-7725-4fad-bf2d-25fefeb4c351",
           "width": 303,
-          "x": 406,
+          "x": 17,
           "y": 96,
           "zOrder": 33,
           "numberProperties": [],
@@ -1491,6 +1968,28 @@
             "b": 0,
             "g": 0,
             "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "debug_text_box",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "debug_text_box",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 40,
+          "color": {
+            "b": 27,
+            "g": 2,
+            "r": 208
           }
         },
         {
@@ -2038,7 +2537,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "charger_idle_1.png",
+                      "image": "assets\\charger_idle_1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2144,7 +2643,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "charger_idle_3.png",
+                      "image": "assets\\charger_idle_3.png",
                       "points": [
                         {
                           "name": "DashRight",
@@ -2217,7 +2716,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "charger_idle_4.png",
+                      "image": "assets\\charger_idle_4.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2275,11 +2774,11 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "Pathfinding",
+              "type": "PathfindingBehavior::PathfindingBehavior",
               "allowDiagonals": true,
               "extraBorder": -10,
               "maxSpeed": 200,
-              "name": "Pathfinding",
-              "type": "PathfindingBehavior::PathfindingBehavior",
               "acceleration": 400,
               "angleOffset": 0,
               "angularMaxSpeed": 180,
@@ -2334,7 +2833,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "skelly_idle4.png",
+                      "image": "assets\\skelly_idle_1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2350,27 +2849,27 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 23,
-                            "y": 1
+                            "x": 210,
+                            "y": 0
                           },
                           {
-                            "x": 47,
-                            "y": 1
+                            "x": 480,
+                            "y": 0
                           },
                           {
-                            "x": 47,
-                            "y": 64
+                            "x": 480,
+                            "y": 640
                           },
                           {
-                            "x": 23,
-                            "y": 64
+                            "x": 210,
+                            "y": 640
                           }
                         ]
                       ]
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "skelly_idle3.png",
+                      "image": "assets\\skelly_idle_2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2386,27 +2885,27 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 23,
-                            "y": 1
+                            "x": 210,
+                            "y": 0
                           },
                           {
-                            "x": 47,
-                            "y": 1
+                            "x": 480,
+                            "y": 0
                           },
                           {
-                            "x": 47,
-                            "y": 64
+                            "x": 480,
+                            "y": 640
                           },
                           {
-                            "x": 23,
-                            "y": 64
+                            "x": 210,
+                            "y": 640
                           }
                         ]
                       ]
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "skelly_idle2.png",
+                      "image": "assets\\skelly_idle_3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2422,27 +2921,27 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 23,
-                            "y": 1
+                            "x": 210,
+                            "y": 0
                           },
                           {
-                            "x": 47,
-                            "y": 1
+                            "x": 480,
+                            "y": 0
                           },
                           {
-                            "x": 47,
-                            "y": 64
+                            "x": 480,
+                            "y": 640
                           },
                           {
-                            "x": 23,
-                            "y": 64
+                            "x": 210,
+                            "y": 640
                           }
                         ]
                       ]
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "skelly_idle1.png",
+                      "image": "assets\\skelly_idle_4.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2458,20 +2957,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 23,
-                            "y": 1
+                            "x": 210,
+                            "y": 0
                           },
                           {
-                            "x": 47,
-                            "y": 1
+                            "x": 480,
+                            "y": 0
                           },
                           {
-                            "x": 47,
-                            "y": 64
+                            "x": 480,
+                            "y": 640
                           },
                           {
-                            "x": 23,
-                            "y": 64
+                            "x": 210,
+                            "y": 640
                           }
                         ]
                       ]
@@ -2800,12 +3299,12 @@
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": true,
+                  "looping": false,
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "treasure box1.png",
+                      "image": "assets\\treasure box1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2841,7 +3340,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "treasure box2.png",
+                      "image": "assets\\treasure box2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2877,7 +3376,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "treasure box3.png",
+                      "image": "assets\\treasure box3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2913,7 +3412,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "treasure box4.png",
+                      "image": "assets\\treasure box4.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2949,7 +3448,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "treasure box5.png",
+                      "image": "assets\\treasure box5.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2985,7 +3484,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "treasure box6.png",
+                      "image": "assets\\treasure box6.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -3021,7 +3520,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "treasure box7.png",
+                      "image": "assets\\treasure box7.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -3057,7 +3556,7 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "treasure box8.png",
+                      "image": "assets\\treasure box8.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -3304,7 +3803,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "right_arrow.png",
+                      "image": "assets\\right_arrow.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -3365,7 +3864,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "left_arrow.png",
+                      "image": "assets\\left_arrow.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -3426,7 +3925,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "up_arrow.png",
+                      "image": "assets\\up_arrow.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -3487,7 +3986,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "down_arrow.png",
+                      "image": "assets\\down_arrow.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -3526,28 +4025,6 @@
               ]
             }
           ]
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "debug_text_box",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "debug_text_box",
-          "font": "",
-          "textAlignment": "left",
-          "characterSize": 40,
-          "color": {
-            "b": 27,
-            "g": 2,
-            "r": 208
-          }
         },
         {
           "assetStoreId": "",
@@ -3648,6 +4125,14 @@
                   },
                   "parameters": [
                     "route"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "debug_text_box"
                   ]
                 }
               ]
@@ -4278,6 +4763,15 @@
                   "parameters": [
                     "Chest",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PushScene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"game over scene\""
                   ]
                 }
               ]
@@ -5083,8 +5577,8 @@
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
-      "mangledName": "story_32scene",
-      "name": "story scene",
+      "mangledName": "game_32over_32scene",
+      "name": "game over scene",
       "r": 209,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
@@ -5105,9 +5599,203 @@
       },
       "objectsGroups": [],
       "variables": [],
-      "instances": [],
-      "objects": [],
-      "events": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "thanks_text",
+          "persistentUuid": "455ff736-36e9-4099-ac44-957b1765620a",
+          "width": 0,
+          "x": 200,
+          "y": 284,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": true,
+          "name": "thanks_text",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Thanks for playing ",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 100,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        }
+      ],
+      "events": [
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "game over events",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "AnyKeyPressed"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"goto warning scene\"",
+                    ">=",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Right"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SceneBackground"
+              },
+              "parameters": [
+                "",
+                "\"255;255;255\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "PushScene"
+              },
+              "parameters": [
+                "",
+                "\"warning scene\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"goto warning scene\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneBackground"
+              },
+              "parameters": [
+                "",
+                "\"0;0;0\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "DoesSceneExist"
+              },
+              "parameters": [
+                "",
+                "\"game over scene\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "RemoveTimer"
+              },
+              "parameters": [
+                "",
+                "\"goto warning scene\""
+              ]
+            }
+          ]
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 200,
