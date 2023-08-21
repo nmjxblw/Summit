@@ -2264,14 +2264,22 @@
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "find_player",
+              "type": "boolean",
+              "value": false
+            }
+          ],
           "effects": [],
           "behaviors": [
             {
+              "allowDiagonals": true,
+              "extraBorder": -10,
+              "maxSpeed": 200,
               "name": "Pathfinding",
               "type": "PathfindingBehavior::PathfindingBehavior",
-              "allowDiagonals": false,
-              "extraBorder": 10,
               "acceleration": 400,
               "angleOffset": 0,
               "angularMaxSpeed": 180,
@@ -2279,7 +2287,6 @@
               "cellWidth": 20,
               "gridOffsetX": 0,
               "gridOffsetY": 0,
-              "maxSpeed": 200,
               "rotateObject": false,
               "smoothingMaxCellGap": 1
             },
@@ -3620,6 +3627,15 @@
                 },
                 {
                   "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "skelly",
+                    "\"idle\""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Cache"
                   },
                   "parameters": [
@@ -3756,6 +3772,16 @@
                     "player_hp_text",
                     "=",
                     "\"Hp:\"+ToString(Player.Variable(hp))"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "debug_text_box",
+                    "=",
+                    "\"Find player:\" + skelly.VariableString(find_player) + \" idle:\" + ToString(round(skelly.ObjectTimerElapsedTime(\"idle\")))"
                   ]
                 }
               ]
@@ -4399,15 +4425,60 @@
                     },
                     {
                       "type": {
-                        "value": "Distance"
+                        "value": "PosX"
                       },
                       "parameters": [
                         "Player",
-                        "skelly",
-                        "250",
-                        ""
+                        ">",
+                        "skelly.X() - 150"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "Player",
+                        "<=",
+                        "skelly.X() + 150"
                       ]
                     }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "skelly",
+                    "find_player",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "skelly",
+                    "\"idle\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "ObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "skelly",
+                    "find_player",
+                    "True"
                   ]
                 }
               ],
@@ -4422,6 +4493,90 @@
                     "",
                     "Player.X()",
                     "Player.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "skelly",
+                    "find_player",
+                    "False"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "skelly",
+                    "\"idle\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "skelly",
+                        "find_player",
+                        "False"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CompareObjectTimer"
+                      },
+                      "parameters": [
+                        "skelly",
+                        "\"idle\"",
+                        ">=",
+                        "2"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::SetDestination"
+                  },
+                  "parameters": [
+                    "skelly",
+                    "Pathfinding",
+                    "",
+                    "skelly.X() + RandomInRange(-50, 50)",
+                    "skelly.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "skelly",
+                    "\"idle\""
                   ]
                 }
               ]
@@ -4546,16 +4701,6 @@
                   "parameters": [
                     "charger_hitbox",
                     "\"dash_timer\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "debug_text_box",
-                    "=",
-                    "ToString(charger_hitbox.ObjectTimerElapsedTime(\"dash_timer\"))"
                   ]
                 }
               ],
@@ -4709,16 +4854,6 @@
                     "Tween",
                     "\"Dash\"",
                     ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "debug_text_box",
-                    "=",
-                    "\"now stop the dash\""
                   ]
                 }
               ]
