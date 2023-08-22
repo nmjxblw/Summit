@@ -1694,12 +1694,12 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5664937550501138,
+        "zoomFactor": 0.6468556218410275,
         "windowMask": false
       },
       "objectsGroups": [
         {
-          "name": "Directional_Arrows",
+          "name": "Helper_Objects",
           "objects": [
             {
               "name": "right_arrow"
@@ -1712,6 +1712,18 @@
             },
             {
               "name": "down_arrow"
+            },
+            {
+              "name": "route"
+            },
+            {
+              "name": "bottom_boundary"
+            },
+            {
+              "name": "right_boundary"
+            },
+            {
+              "name": "left_boundary"
             }
           ]
         }
@@ -2195,6 +2207,7 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
+<<<<<<< HEAD
           "height": 70,
           "layer": "",
           "name": "Player",
@@ -2202,10 +2215,54 @@
           "width": 48,
           "x": 136,
           "y": 625,
+=======
+          "height": 128,
+          "layer": "",
+          "name": "bottom_boundary",
+          "persistentUuid": "1b96deca-41eb-4567-abae-8a3d3a291f6a",
+          "width": 2063,
+          "x": -495,
+          "y": 719,
+>>>>>>> 364e862f4350d22c6e103c55116b12c6abcd163e
           "zOrder": 34,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+<<<<<<< HEAD
+=======
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 576,
+          "layer": "",
+          "name": "right_boundary",
+          "persistentUuid": "34ab52b4-b250-4a98-b3a8-c7cac9131690",
+          "width": 128,
+          "x": 1551,
+          "y": 256,
+          "zOrder": 35,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 544,
+          "layer": "",
+          "name": "left_boundary",
+          "persistentUuid": "c69ec2b4-0fa2-456f-a6ad-041d18cbb78a",
+          "width": 96,
+          "x": -592,
+          "y": 288,
+          "zOrder": 36,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+>>>>>>> 364e862f4350d22c6e103c55116b12c6abcd163e
         }
       ],
       "objects": [
@@ -2440,8 +2497,8 @@
             {
               "name": "SmoothCamera",
               "type": "SmoothCamera::SmoothCamera",
-              "LeftwardSpeed": 0.9,
-              "RightwardSpeed": 0.9,
+              "LeftwardSpeed": 1,
+              "RightwardSpeed": 1,
               "UpwardSpeed": 0.9,
               "DownwardSpeed": 0.9,
               "FollowOnX": true,
@@ -2978,10 +3035,10 @@
               "PlatformerBehavior": "PlatformerObject"
             },
             {
+              "canGoDownFromJumpthru": false,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 1500,
-              "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
               "canGrabWithoutMoving": false,
               "deceleration": 1500,
@@ -4540,6 +4597,7 @@
           "behaviors": []
         },
         {
+<<<<<<< HEAD
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "b4cc4d41d25313e99252012c5c387d41b13a7d3351ee553205d33b7b22d4b460",
           "name": "Sword",
@@ -4600,6 +4658,47 @@
               ]
             }
           ]
+=======
+          "assetStoreId": "",
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "name": "bottom_boundary",
+          "rightMargin": 0,
+          "tags": "",
+          "texture": "",
+          "tiled": true,
+          "topMargin": 0,
+          "type": "PanelSpriteObject::PanelSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "right_boundary",
+          "tags": "",
+          "texture": "",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "left_boundary",
+          "tags": "",
+          "texture": "",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+>>>>>>> 364e862f4350d22c6e103c55116b12c6abcd163e
         }
       ],
       "events": [
@@ -4792,6 +4891,20 @@
                     "charger_hitbox.BoundingBoxLeft()",
                     "=",
                     "charger_hitbox.BoundingBoxTop()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ClampCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "left_boundary.X() + left_boundary.Width()",
+                    "",
+                    "right_boundary.X()",
+                    "bottom_boundary.Y()",
+                    "",
+                    ""
                   ]
                 }
               ]
