@@ -1056,6 +1056,15 @@
         "name": "assets\\Sword3.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/player.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\player.jpg",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1460,25 +1469,27 @@
           "name": "timer",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "melee_attack",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "x",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "y",
+              "type": "number",
+              "value": 0
+            }
+          ]
         }
       ],
       "instances": [
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 94,
-          "layer": "",
-          "name": "Player",
-          "persistentUuid": "075f8caa-0874-4498-8c7c-859e3ab9b9de",
-          "width": 72,
-          "x": 159,
-          "y": 558,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
         {
           "angle": 0,
           "customSize": true,
@@ -1957,6 +1968,22 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 94,
+          "layer": "",
+          "name": "Player",
+          "persistentUuid": "cfa1a98a-93b1-4876-8048-d7b9c03f6f71",
+          "width": 96,
+          "x": 128,
+          "y": 544,
+          "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -2255,16 +2282,16 @@
           ],
           "animations": [
             {
-              "name": "Idle",
+              "name": "",
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": true,
+                  "looping": false,
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "ce68890327d11e873fb58f43a0e47d277d9669e8dd737984e157d6b06e998f60_Knight Male_Idle_1.png",
+                      "image": "assets\\player.jpg",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2281,333 +2308,19 @@
                         [
                           {
                             "x": 0,
-                            "y": 8
+                            "y": 0
                           },
                           {
-                            "x": 15,
-                            "y": 8
+                            "x": 1182,
+                            "y": 0
                           },
                           {
-                            "x": 15,
-                            "y": 28
-                          },
-                          {
-                            "x": 0,
-                            "y": 28
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "d9d17ab0cee477544c136a7b5c363b6cc3c7c3cc7ec2debcbe00ece92e13f920_Knight Male_Idle_2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 8
-                          },
-                          {
-                            "x": 15,
-                            "y": 8
-                          },
-                          {
-                            "x": 15,
-                            "y": 28
+                            "x": 1182,
+                            "y": 1182
                           },
                           {
                             "x": 0,
-                            "y": 28
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "b78922d5eb7e50ffee58ae1dd392a6f606000f5eb810d1a9ef26a8aa87a90a6b_Knight Male_Idle_3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 8
-                          },
-                          {
-                            "x": 15,
-                            "y": 8
-                          },
-                          {
-                            "x": 15,
-                            "y": 28
-                          },
-                          {
-                            "x": 0,
-                            "y": 28
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "d78ec54e7b9ff6d63f87e8e2d90460afa43f4b3f2523c9db5ff914a66e5ab8f8_Knight Male_Idle_4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 8
-                          },
-                          {
-                            "x": 15,
-                            "y": 8
-                          },
-                          {
-                            "x": 15,
-                            "y": 28
-                          },
-                          {
-                            "x": 0,
-                            "y": 28
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Running",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "da58eb62fb6e48651b5be0faa19bd73c70de750b56cd15bf25906963f78e268a_Knight Male_Run_1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 8
-                          },
-                          {
-                            "x": 15,
-                            "y": 8
-                          },
-                          {
-                            "x": 15,
-                            "y": 28
-                          },
-                          {
-                            "x": 0,
-                            "y": 28
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "665e8e1044b8b4345f2e09755c7d6986f652e27a489353109469a74b729a7410_Knight Male_Run_2.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 8
-                          },
-                          {
-                            "x": 15,
-                            "y": 8
-                          },
-                          {
-                            "x": 15,
-                            "y": 28
-                          },
-                          {
-                            "x": 0,
-                            "y": 28
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "850d450cd610c600994a6c6df6a580633bf47b4fb52bb79b2ea2f9cf051bc261_Knight Male_Run_3.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 8
-                          },
-                          {
-                            "x": 15,
-                            "y": 8
-                          },
-                          {
-                            "x": 15,
-                            "y": 28
-                          },
-                          {
-                            "x": 0,
-                            "y": 28
-                          }
-                        ]
-                      ]
-                    },
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "51e411da180791a5d24f1c4d84b7e85edd58c098ae7ab5cfc27f7fac6c04e98f_Knight Male_Run_4.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 8
-                          },
-                          {
-                            "x": 15,
-                            "y": 8
-                          },
-                          {
-                            "x": 15,
-                            "y": 28
-                          },
-                          {
-                            "x": 0,
-                            "y": 28
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Falling / Jumping",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Falling / Jumping",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 8
-                          },
-                          {
-                            "x": 15,
-                            "y": 8
-                          },
-                          {
-                            "x": 15,
-                            "y": 28
-                          },
-                          {
-                            "x": 0,
-                            "y": 28
+                            "y": 1182
                           }
                         ]
                       ]
@@ -4240,8 +3953,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 16,
+                        "y": 11.5
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -4587,6 +4300,26 @@
                       "actions": [
                         {
                           "type": {
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "melee_attack.x",
+                            "=",
+                            "Player.CenterX()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "melee_attack.y",
+                            "=",
+                            "Player.CenterY()"
+                          ]
+                        },
+                        {
+                          "type": {
                             "value": "FireBullet::FireBullet::Fire"
                           },
                           "parameters": [
@@ -4596,7 +4329,7 @@
                             "Player.CenterY()",
                             "sword",
                             "0",
-                            "150",
+                            "250",
                             ""
                           ]
                         },
@@ -4634,16 +4367,36 @@
                       "actions": [
                         {
                           "type": {
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "melee_attack.x",
+                            "=",
+                            "Player.CenterX()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "melee_attack.y",
+                            "=",
+                            "Player.CenterY()"
+                          ]
+                        },
+                        {
+                          "type": {
                             "value": "FireBullet::FireBullet::Fire"
                           },
                           "parameters": [
                             "Player",
                             "FireBullet",
-                            "Player.CenterX()-40",
+                            "Player.CenterX()-20",
                             "Player.CenterY()",
                             "sword",
                             "180",
-                            "150",
+                            "250",
                             ""
                           ]
                         },
@@ -4664,6 +4417,52 @@
                             ""
                           ]
                         }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "MettreX"
+                      },
+                      "parameters": [
+                        "sword",
+                        "+",
+                        "Player.CenterX() - Variable(melee_attack.x)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "MettreY"
+                      },
+                      "parameters": [
+                        "sword",
+                        "+",
+                        "Player.CenterY() - Variable(melee_attack.y)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "melee_attack.x",
+                        "=",
+                        "Player.CenterX()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "melee_attack.y",
+                        "=",
+                        "Player.CenterY()"
                       ]
                     }
                   ]
