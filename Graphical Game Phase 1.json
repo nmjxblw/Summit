@@ -1065,6 +1065,42 @@
         "name": "assets\\player.jpg",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/fire in ball1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fire in ball1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/fire in ball2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fire in ball2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/fire in ball3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fire in ball3.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/fire in ball4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\fire in ball4.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2879,17 +2915,17 @@
               "useMultipleDirections": false,
               "directions": [
                 {
-                  "looping": true,
+                  "looping": false,
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "fire in ball1.png",
+                      "image": "assets\\fire in ball1.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 32,
-                        "y": 32
+                        "x": 0,
+                        "y": 0
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -2920,12 +2956,12 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "fire in ball2.png",
+                      "image": "assets\\fire in ball2.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 32,
-                        "y": 32
+                        "x": 0,
+                        "y": 0
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -2956,12 +2992,12 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "fire in ball3.png",
+                      "image": "assets\\fire in ball3.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 32,
-                        "y": 32
+                        "x": 0,
+                        "y": 0
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -2992,12 +3028,12 @@
                     },
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "fire in ball4.png",
+                      "image": "assets\\fire in ball4.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 32,
-                        "y": 32
+                        "x": 0,
+                        "y": 0
                       },
                       "centerPoint": {
                         "automatic": true,
