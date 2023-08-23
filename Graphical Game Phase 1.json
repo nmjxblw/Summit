@@ -1101,6 +1101,42 @@
         "name": "assets\\fire in ball4.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/charger_idle_5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/charger_idle_5.png\"}",
+        "name": "charger_idle_1",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/charger_idle_6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "charger_idle_3",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/charger_idle_7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "charger_idle_4",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/charger_idle_8.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "charger_idle_5",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -1447,7 +1483,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.4753720343418418,
+        "zoomFactor": 0.5079719649991427,
         "windowMask": false
       },
       "objectsGroups": [
@@ -1535,8 +1571,8 @@
           "name": "FarBackground",
           "persistentUuid": "7f9724aa-f5e0-4c2c-8c06-878495690671",
           "width": 1286,
-          "x": -1,
-          "y": 2,
+          "x": 0,
+          "y": 0,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -1881,13 +1917,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 179,
+          "height": 120,
           "layer": "",
           "name": "Charger",
           "persistentUuid": "35903c6a-fdce-4732-8951-9776bb701ec1",
-          "width": 183,
-          "x": 25,
-          "y": 962,
+          "width": 160,
+          "x": 256,
+          "y": 1024,
           "zOrder": 29,
           "numberProperties": [],
           "stringProperties": [],
@@ -1897,13 +1933,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 179,
+          "height": 120,
           "layer": "",
           "name": "charger_hitbox",
           "persistentUuid": "43ff259e-8365-41b3-8e00-af5737bb0499",
-          "width": 183,
-          "x": 541,
-          "y": 469,
+          "width": 160,
+          "x": 672,
+          "y": 480,
           "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
@@ -1913,13 +1949,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 179,
+          "height": 120,
           "layer": "",
           "name": "charger_afterimage",
           "persistentUuid": "456ce77b-4540-4e2b-bfdd-c7201cd04e64",
-          "width": 183,
-          "x": 252,
-          "y": 973,
+          "width": 160,
+          "x": 576,
+          "y": 1024,
           "zOrder": 31,
           "numberProperties": [],
           "stringProperties": [],
@@ -1934,8 +1970,8 @@
           "name": "debug_text_box",
           "persistentUuid": "3ca0feac-7725-4fad-bf2d-25fefeb4c351",
           "width": 303,
-          "x": 17,
-          "y": 96,
+          "x": 32,
+          "y": 128,
           "zOrder": 33,
           "numberProperties": [],
           "stringProperties": [],
@@ -1965,7 +2001,7 @@
           "layer": "",
           "name": "bottom_boundary",
           "persistentUuid": "1b96deca-41eb-4567-abae-8a3d3a291f6a",
-          "width": 2031,
+          "width": 2063,
           "x": -495,
           "y": 719,
           "zOrder": 34,
@@ -1982,7 +2018,7 @@
           "name": "right_boundary",
           "persistentUuid": "34ab52b4-b250-4a98-b3a8-c7cac9131690",
           "width": 128,
-          "x": 1552,
+          "x": 1578,
           "y": 256,
           "zOrder": 35,
           "numberProperties": [],
@@ -1998,7 +2034,7 @@
           "name": "left_boundary",
           "persistentUuid": "c69ec2b4-0fa2-456f-a6ad-041d18cbb78a",
           "width": 96,
-          "x": -593,
+          "x": -608,
           "y": 288,
           "zOrder": 36,
           "numberProperties": [],
@@ -2017,6 +2053,21 @@
           "x": 128,
           "y": 544,
           "zOrder": 37,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Background",
+          "name": "Giud_text",
+          "persistentUuid": "0f0a5259-28de-4be5-ac32-e899bfe85182",
+          "width": 0,
+          "x": 480,
+          "y": 82,
+          "zOrder": 38,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2131,6 +2182,28 @@
             "b": 27,
             "g": 2,
             "r": 208
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "Giud_text",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Press Q to melee attack\nPress W to ranger attack",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
           }
         },
         {
@@ -2416,7 +2489,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\charger_idle_1.png",
+                      "image": "charger_idle_1",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2432,20 +2505,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 210
+                            "x": 18,
+                            "y": 44
                           },
                           {
-                            "x": 610,
-                            "y": 210
+                            "x": 613,
+                            "y": 44
                           },
                           {
-                            "x": 610,
-                            "y": 640
+                            "x": 613,
+                            "y": 474
                           },
                           {
-                            "x": 0,
-                            "y": 640
+                            "x": 18,
+                            "y": 474
                           }
                         ]
                       ]
@@ -2522,12 +2595,12 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\charger_idle_3.png",
+                      "image": "charger_idle_5",
                       "points": [
                         {
                           "name": "DashRight",
                           "x": 640,
-                          "y": 400
+                          "y": 240
                         }
                       ],
                       "originPoint": {
@@ -2544,20 +2617,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 210
+                            "x": 22,
+                            "y": 44
                           },
                           {
-                            "x": 610,
-                            "y": 210
+                            "x": 615,
+                            "y": 44
                           },
                           {
-                            "x": 610,
-                            "y": 640
+                            "x": 615,
+                            "y": 474
                           },
                           {
-                            "x": 0,
-                            "y": 640
+                            "x": 22,
+                            "y": 474
                           }
                         ]
                       ]
@@ -2595,7 +2668,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\charger_idle_4.png",
+                      "image": "charger_idle_4",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -2611,20 +2684,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 210
+                            "x": 3,
+                            "y": 45
                           },
                           {
-                            "x": 610,
-                            "y": 210
+                            "x": 612,
+                            "y": 45
                           },
                           {
-                            "x": 610,
-                            "y": 640
+                            "x": 612,
+                            "y": 475
                           },
                           {
-                            "x": 0,
-                            "y": 640
+                            "x": 3,
+                            "y": 475
                           }
                         ]
                       ]
@@ -2924,8 +2997,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 32,
+                        "y": 32
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -2960,8 +3033,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 32,
+                        "y": 32
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -2996,8 +3069,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 32,
+                        "y": 32
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -3032,8 +3105,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 32,
+                        "y": 32
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -5732,6 +5805,15 @@
                   "actions": [
                     {
                       "type": {
+                        "value": "FlipX"
+                      },
+                      "parameters": [
+                        "Charger",
+                        "no"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "Tween::AddObjectPositionXTween"
                       },
                       "parameters": [
@@ -5761,6 +5843,15 @@
                     }
                   ],
                   "actions": [
+                    {
+                      "type": {
+                        "value": "FlipX"
+                      },
+                      "parameters": [
+                        "Charger",
+                        "yes"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "Tween::AddObjectPositionXTween"
