@@ -953,7 +953,7 @@
         "alwaysLoaded": false,
         "file": "assets/up_arrow.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/up_arrow.png\",\"extension\":\".png\"}",
         "name": "assets\\up_arrow.png",
         "smoothed": true,
         "userAdded": true
@@ -1137,6 +1137,15 @@
         "name": "charger_idle_5",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Icon Background_Wood.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Icon Background_Wood.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1151,6 +1160,9 @@
         },
         {
           "name": "Ground"
+        },
+        {
+          "name": "moving_platfrom"
         }
       ]
     }
@@ -1474,7 +1486,7 @@
       "title": "Benis churger",
       "v": 209,
       "uiSettings": {
-        "grid": false,
+        "grid": true,
         "gridType": "rectangular",
         "gridWidth": 32,
         "gridHeight": 32,
@@ -1482,8 +1494,8 @@
         "gridOffsetY": 0,
         "gridColor": 10401023,
         "gridAlpha": 0.8,
-        "snap": false,
-        "zoomFactor": 0.36459370701734517,
+        "snap": true,
+        "zoomFactor": 0.2369023777723674,
         "windowMask": false
       },
       "objectsGroups": [
@@ -1505,6 +1517,20 @@
             {
               "name": "route"
             },
+            {
+              "name": "bottom_boundary"
+            },
+            {
+              "name": "right_boundary"
+            },
+            {
+              "name": "left_boundary"
+            }
+          ]
+        },
+        {
+          "name": "boundary",
+          "objects": [
             {
               "name": "bottom_boundary"
             },
@@ -1566,13 +1592,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 717,
+          "height": 832,
           "layer": "Background",
           "name": "FarBackground",
           "persistentUuid": "7f9724aa-f5e0-4c2c-8c06-878495690671",
-          "width": 1286,
+          "width": 1728,
           "x": 0,
-          "y": 0,
+          "y": -64,
           "zOrder": 6,
           "numberProperties": [],
           "stringProperties": [],
@@ -1587,8 +1613,8 @@
           "name": "Sun",
           "persistentUuid": "e8d9e427-28f1-45a0-a30b-cefc91bd6489",
           "width": 165,
-          "x": 725,
-          "y": -5,
+          "x": 768,
+          "y": 59,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -1598,13 +1624,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 68,
+          "height": 64,
           "layer": "",
           "name": "Ground",
           "persistentUuid": "1a22e3aa-d627-45d9-9b47-0551e264aafe",
-          "width": 2306,
-          "x": -440,
-          "y": 651,
+          "width": 2304,
+          "x": 0,
+          "y": 709,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -1614,13 +1640,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 50,
+          "height": 64,
           "layer": "Background",
           "name": "score_display",
           "persistentUuid": "122be600-1c62-4d75-99ef-9419e540c864",
-          "width": 410,
-          "x": 6,
-          "y": 6,
+          "width": 416,
+          "x": 32,
+          "y": 0,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -1630,142 +1656,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 869,
+          "height": 3557,
           "layer": "",
           "name": "Platform",
           "persistentUuid": "ef318c23-bc06-4a07-be62-11316d4962a5",
           "width": 70,
-          "x": -497,
-          "y": -150,
+          "x": -70,
+          "y": -2784,
           "zOrder": 14,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 39,
-          "layer": "",
-          "name": "key",
-          "persistentUuid": "c7fb4e17-3535-4bdc-ba52-031ff880f648",
-          "width": 26,
-          "x": -314,
-          "y": 599,
-          "zOrder": 15,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 92,
-          "layer": "",
-          "name": "Platform",
-          "persistentUuid": "cccbc70d-9a00-4ad4-a8d3-7d51a032fda7",
-          "width": 184,
-          "x": 351,
-          "y": 560,
-          "zOrder": 18,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 190,
-          "layer": "",
-          "name": "Platform",
-          "persistentUuid": "a8e9cdef-dcec-464d-aece-3be1bcf440ea",
-          "width": 155,
-          "x": -170,
-          "y": 465,
-          "zOrder": 19,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 32,
-          "layer": "",
-          "name": "Platform",
-          "persistentUuid": "9ba22ddb-eaf1-485d-ad31-736870299e2d",
-          "width": 212,
-          "x": 537,
-          "y": 437,
-          "zOrder": 20,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 44,
-          "layer": "",
-          "name": "scroll",
-          "persistentUuid": "b4914066-4a00-4818-9511-bd00883ed8de",
-          "width": 44,
-          "x": 605,
-          "y": 341,
-          "zOrder": 21,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 30,
-          "layer": "",
-          "name": "Platform",
-          "persistentUuid": "5c5da0b9-64dd-4b0e-903a-1ec98c931a44",
-          "width": 167,
-          "x": 884,
-          "y": 435,
-          "zOrder": 22,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 44,
-          "layer": "",
-          "name": "scroll",
-          "persistentUuid": "68d85a4e-bc75-447c-88f1-48acf5ee39a1",
-          "width": 44,
-          "x": 966,
-          "y": 367,
-          "zOrder": 21,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 44,
-          "layer": "",
-          "name": "scroll",
-          "persistentUuid": "9ea2c95e-621f-4d88-a571-d06fd9646117",
-          "width": 44,
-          "x": 834,
-          "y": 599,
-          "zOrder": 21,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1779,8 +1677,8 @@
           "name": "cloud1",
           "persistentUuid": "2d64fc2a-e3d3-4009-87ed-cd0bfa63bbe1",
           "width": 249,
-          "x": 321,
-          "y": 188,
+          "x": 295,
+          "y": 256,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -1795,8 +1693,8 @@
           "name": "cloud2",
           "persistentUuid": "dbbea091-bda0-47de-bfdb-eb4ebc28b006",
           "width": 336,
-          "x": 743,
-          "y": 76,
+          "x": 800,
+          "y": 128,
           "zOrder": 24,
           "numberProperties": [],
           "stringProperties": [],
@@ -1806,46 +1704,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 852,
+          "height": 3589,
           "layer": "",
           "name": "Platform",
           "persistentUuid": "ffef6596-6faf-4bd5-948e-48eee4701c01",
-          "width": 70,
-          "x": 1866,
-          "y": -133,
+          "width": 64,
+          "x": 2304,
+          "y": -2816,
           "zOrder": 14,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 99,
-          "layer": "",
-          "name": "Chest",
-          "persistentUuid": "8634f00c-a30e-429f-8aa2-a4b1dbbac129",
-          "width": 195,
-          "x": 1282,
-          "y": 557,
-          "zOrder": 25,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 127,
-          "layer": "",
-          "name": "Platform",
-          "persistentUuid": "e91bf4e2-11b9-407f-850d-fe22b39da467",
-          "width": 131,
-          "x": 1150,
-          "y": 526,
-          "zOrder": 19,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1859,25 +1725,9 @@
           "name": "key_display",
           "persistentUuid": "ce492809-630f-46f4-aeb3-c3d0360cf81e",
           "width": 117,
-          "x": 1101,
-          "y": 44,
+          "x": 960,
+          "y": 0,
           "zOrder": 13,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 106,
-          "layer": "",
-          "name": "skelly",
-          "persistentUuid": "befd64ea-5395-48a8-a4b7-4fc7661b3cfc",
-          "width": 122,
-          "x": 384,
-          "y": 456,
-          "zOrder": 26,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1890,8 +1740,8 @@
           "name": "timer_text",
           "persistentUuid": "04ed550b-fcbf-42d1-8191-b6e01b5ea4a1",
           "width": 0,
-          "x": 610,
-          "y": 8,
+          "x": 800,
+          "y": 0,
           "zOrder": 27,
           "numberProperties": [],
           "stringProperties": [],
@@ -1905,58 +1755,10 @@
           "layer": "Background",
           "name": "player_hp_text",
           "persistentUuid": "7f6e9c57-f799-4461-9978-2908bb4710b7",
-          "width": 81,
-          "x": 9,
-          "y": 65,
+          "width": 128,
+          "x": 32,
+          "y": 64,
           "zOrder": 28,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 120,
-          "layer": "",
-          "name": "Charger",
-          "persistentUuid": "35903c6a-fdce-4732-8951-9776bb701ec1",
-          "width": 160,
-          "x": 256,
-          "y": 1024,
-          "zOrder": 29,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 120,
-          "layer": "",
-          "name": "charger_hitbox",
-          "persistentUuid": "43ff259e-8365-41b3-8e00-af5737bb0499",
-          "width": 160,
-          "x": 736,
-          "y": 512,
-          "zOrder": 30,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 120,
-          "layer": "",
-          "name": "charger_afterimage",
-          "persistentUuid": "456ce77b-4540-4e2b-bfdd-c7201cd04e64",
-          "width": 160,
-          "x": 576,
-          "y": 1024,
-          "zOrder": 31,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1970,57 +1772,9 @@
           "name": "debug_text_box",
           "persistentUuid": "3ca0feac-7725-4fad-bf2d-25fefeb4c351",
           "width": 303,
-          "x": 32,
-          "y": 128,
+          "x": 17,
+          "y": 96,
           "zOrder": 33,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 85,
-          "layer": "",
-          "name": "route",
-          "persistentUuid": "067063bf-90be-4999-89aa-ec56f4a8bebf",
-          "width": 613,
-          "x": 535,
-          "y": 563,
-          "zOrder": 0,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 576,
-          "layer": "",
-          "name": "right_boundary",
-          "persistentUuid": "34ab52b4-b250-4a98-b3a8-c7cac9131690",
-          "width": 128,
-          "x": 1938,
-          "y": 142,
-          "zOrder": 35,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 544,
-          "layer": "",
-          "name": "left_boundary",
-          "persistentUuid": "c69ec2b4-0fa2-456f-a6ad-041d18cbb78a",
-          "width": 96,
-          "x": -594,
-          "y": 175,
-          "zOrder": 36,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2034,8 +1788,8 @@
           "name": "Player",
           "persistentUuid": "cfa1a98a-93b1-4876-8048-d7b9c03f6f71",
           "width": 96,
-          "x": 128,
-          "y": 544,
+          "x": 32,
+          "y": 613,
           "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
@@ -2049,8 +1803,8 @@
           "name": "Giud_text",
           "persistentUuid": "0f0a5259-28de-4be5-ac32-e899bfe85182",
           "width": 0,
-          "x": 480,
-          "y": 82,
+          "x": 544,
+          "y": 0,
           "zOrder": 38,
           "numberProperties": [],
           "stringProperties": [],
@@ -2064,10 +1818,106 @@
           "layer": "",
           "name": "Ground",
           "persistentUuid": "766f7737-0eb7-482e-9569-2afbc2668403",
-          "width": 1997,
-          "x": -429,
-          "y": -77,
+          "width": 2016,
+          "x": 0,
+          "y": -68,
           "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 160,
+          "layer": "",
+          "name": "up_arrow",
+          "persistentUuid": "c02c78d3-a566-4a6c-b752-a3c9cf50429b",
+          "width": 128,
+          "x": 2080,
+          "y": 704,
+          "zOrder": 40,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 128,
+          "layer": "",
+          "name": "down_arrow",
+          "persistentUuid": "f4ebf32b-03dc-4d5f-ab51-b58aa1a4d1a7",
+          "width": 96,
+          "x": 2080,
+          "y": -192,
+          "zOrder": 41,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 3584,
+          "layer": "",
+          "name": "right_boundary",
+          "persistentUuid": "c75d8c2f-b8a4-47b6-8834-9236332b9269",
+          "width": 96,
+          "x": 2368,
+          "y": -2816,
+          "zOrder": 42,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 3552,
+          "layer": "",
+          "name": "left_boundary",
+          "persistentUuid": "b671d3f9-ea4e-4126-b6f9-2fa1b30797fe",
+          "width": 96,
+          "x": -160,
+          "y": -2784,
+          "zOrder": 43,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "layer": "",
+          "name": "moving_up_down_platfrom",
+          "persistentUuid": "591577ca-c16b-4b4c-887f-4592516e6286",
+          "width": 288,
+          "x": 2016,
+          "y": 640,
+          "zOrder": 44,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
+          "layer": "",
+          "name": "bottom_boundary",
+          "persistentUuid": "80d36479-5690-46d8-893d-803cdd27a017",
+          "width": 2624,
+          "x": -160,
+          "y": 768,
+          "zOrder": 48,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3599,6 +3449,46 @@
         {
           "assetStoreId": "",
           "height": 32,
+          "name": "moving_up_down_platfrom",
+          "tags": "",
+          "texture": "assets\\Icon Background_Wood.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "canBeGrabbed": true,
+              "name": "Platform",
+              "platformType": "NormalPlatform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "yGrabOffset": 0
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "moving_right_left_platfrom",
+          "tags": "",
+          "texture": "assets\\Icon Background_Wood.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Platform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
+              "yGrabOffset": 0
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
           "name": "Ground",
           "tags": "",
           "texture": "f0fcdea023107dc7c4263d38d52d5f6f74a5b779887760a1580a613f7f4b2af0_tiled_Grass.png",
@@ -3896,11 +3786,12 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "assets\\up_arrow",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
@@ -3921,20 +3812,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 145,
-                            "y": 109
+                            "x": 192,
+                            "y": 179
                           },
                           {
-                            "x": 400,
-                            "y": 109
+                            "x": 447,
+                            "y": 179
                           },
                           {
-                            "x": 400,
-                            "y": 391
+                            "x": 447,
+                            "y": 461
                           },
                           {
-                            "x": 145,
-                            "y": 391
+                            "x": 192,
+                            "y": 461
                           }
                         ]
                       ]
@@ -4216,6 +4107,14 @@
                   "parameters": [
                     "debug_text_box"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "Helper_Objects"
+                  ]
                 }
               ]
             },
@@ -4320,7 +4219,7 @@
                   "parameters": [
                     "",
                     "left_boundary.X() + left_boundary.Width()",
-                    "",
+                    "right_boundary.Y()",
                     "right_boundary.X()",
                     "right_boundary.Y() + right_boundary.Height()",
                     "",
@@ -4379,6 +4278,90 @@
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "out boundary"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Player",
+                    "boundary",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    "Player.Health::Health()",
+                    "no",
+                    "no",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "palyer is dead"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Health"
+                  },
+                  "parameters": [
+                    "Player",
+                    "Health",
+                    "<=",
+                    "0",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PushScene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"RPG scene\""
+                  ]
+                }
+              ]
+            },
             {
               "colorB": 228,
               "colorG": 176,
@@ -4693,34 +4676,14 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "BuiltinCommonInstructions::Or"
+                        "value": "CollisionNP"
                       },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "CollisionNP"
-                          },
-                          "parameters": [
-                            "fireball",
-                            "Platform",
-                            "",
-                            "",
-                            ""
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "CollisionNP"
-                          },
-                          "parameters": [
-                            "fireball",
-                            "Ground",
-                            "",
-                            "",
-                            ""
-                          ]
-                        }
+                      "parameters": [
+                        "fireball",
+                        "Obstacles",
+                        "",
+                        "",
+                        ""
                       ]
                     }
                   ],
@@ -5281,6 +5244,218 @@
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "moving platfrom",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "moving_up_down_platfrom",
+                        "up_arrow",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Arreter"
+                      },
+                      "parameters": [
+                        "moving_up_down_platfrom"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "moving_up_down_platfrom",
+                        "0",
+                        "-150",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "moving_up_down_platfrom",
+                        "down_arrow",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Arreter"
+                      },
+                      "parameters": [
+                        "moving_up_down_platfrom"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "moving_up_down_platfrom",
+                        "0",
+                        "150",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "moving_right_left_platfrom",
+                        "left_arrow",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Arreter"
+                      },
+                      "parameters": [
+                        "moving_right_left_platfrom"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "moving_right_left_platfrom",
+                        "-150",
+                        "0",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "moving_right_left_platfrom",
+                        "right_arrow",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Arreter"
+                      },
+                      "parameters": [
+                        "moving_right_left_platfrom"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "moving_right_left_platfrom",
+                        "150",
+                        "0",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "moving_up_down_platfrom",
+                        "0",
+                        "50",
+                        "1"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "moving_right_left_platfrom",
+                        "50",
+                        "0",
+                        "1"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
             {
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
@@ -5961,11 +6136,6 @@
               ]
             },
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
-            },
-            {
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -6112,6 +6282,11 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": []
         }
       ],
       "layers": [
