@@ -1379,6 +1379,24 @@
         "name": "assets\\double-jump-icon.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/bow-icon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\bow-icon.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sword-icon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sword-icon.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1728,7 +1746,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.25314860289712493,
+        "zoomFactor": 0.6407094761773702,
         "windowMask": false
       },
       "objectsGroups": [
@@ -4680,7 +4698,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\inventory_sowrd.jpg",
+                      "image": "assets\\sword-icon.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -4696,20 +4714,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 155,
+                            "y": 145
                           },
                           {
-                            "x": 1182,
-                            "y": 0
+                            "x": 536,
+                            "y": 145
                           },
                           {
-                            "x": 1182,
-                            "y": 1182
+                            "x": 536,
+                            "y": 526
                           },
                           {
-                            "x": 0,
-                            "y": 1182
+                            "x": 155,
+                            "y": 526
                           }
                         ]
                       ]
@@ -4741,7 +4759,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\inventory_bow.jpg",
+                      "image": "assets\\bow-icon.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -4757,20 +4775,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 0,
-                            "y": 0
+                            "x": 108,
+                            "y": 98
                           },
                           {
-                            "x": 1182,
-                            "y": 0
+                            "x": 548,
+                            "y": 98
                           },
                           {
-                            "x": 1182,
-                            "y": 1182
+                            "x": 548,
+                            "y": 539
                           },
                           {
-                            "x": 0,
-                            "y": 1182
+                            "x": 108,
+                            "y": 539
                           }
                         ]
                       ]
