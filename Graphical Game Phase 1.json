@@ -1576,7 +1576,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5800320274815159,
+        "zoomFactor": 0.47537203434185515,
         "windowMask": false
       },
       "objectsGroups": [
@@ -1739,10 +1739,10 @@
           "layer": "",
           "name": "Platform",
           "persistentUuid": "ef318c23-bc06-4a07-be62-11316d4962a5",
-          "width": 70,
-          "x": -70,
+          "width": 32,
+          "x": -32,
           "y": -1600,
-          "zOrder": 14,
+          "zOrder": 71,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1771,7 +1771,7 @@
           "layer": "",
           "name": "Platform",
           "persistentUuid": "ffef6596-6faf-4bd5-948e-48eee4701c01",
-          "width": 64,
+          "width": 32,
           "x": 2304,
           "y": -1600,
           "zOrder": 14,
@@ -1814,13 +1814,13 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Background",
-          "name": "Giud_text",
+          "layer": "",
+          "name": "tutorial_attack",
           "persistentUuid": "0f0a5259-28de-4be5-ac32-e899bfe85182",
           "width": 0,
-          "x": 579,
-          "y": 18,
-          "zOrder": 38,
+          "x": 931,
+          "y": 544,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -1849,7 +1849,7 @@
           "layer": "",
           "name": "right_boundary",
           "persistentUuid": "c75d8c2f-b8a4-47b6-8834-9236332b9269",
-          "width": 64,
+          "width": 32,
           "x": 2336,
           "y": -1600,
           "zOrder": 42,
@@ -1865,8 +1865,8 @@
           "layer": "",
           "name": "left_boundary",
           "persistentUuid": "b671d3f9-ea4e-4126-b6f9-2fa1b30797fe",
-          "width": 64,
-          "x": -96,
+          "width": 32,
+          "x": -64,
           "y": -1600,
           "zOrder": 43,
           "numberProperties": [],
@@ -2121,7 +2121,7 @@
           "persistentUuid": "e7484976-3c4d-4ebf-b113-203c1b65b3d5",
           "width": 0,
           "x": 2016,
-          "y": 704,
+          "y": 672,
           "zOrder": 57,
           "numberProperties": [],
           "stringProperties": [],
@@ -2319,11 +2319,11 @@
           "customSize": false,
           "height": 0,
           "layer": "Background",
-          "name": "Task_text",
+          "name": "task_text",
           "persistentUuid": "df064cd9-24f2-4199-bc60-196b34e1d3b7",
           "width": 0,
-          "x": 0,
-          "y": 0,
+          "x": 50,
+          "y": 24,
           "zOrder": 70,
           "numberProperties": [],
           "stringProperties": [],
@@ -2337,9 +2337,69 @@
           "name": "task_find_scrolls",
           "persistentUuid": "fc61dc37-f0b4-4fb5-b9f3-eabbd0dc1ac6",
           "width": 0,
-          "x": 18,
+          "x": 96,
           "y": 64,
           "zOrder": 71,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "tutorial_jump",
+          "persistentUuid": "171d6a91-4779-4bc2-8864-69f6250cd584",
+          "width": 0,
+          "x": 357,
+          "y": 457,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "scroll",
+          "persistentUuid": "961754b0-8fcc-4c91-8ba8-48c20fb98afe",
+          "width": 0,
+          "x": 928,
+          "y": 672,
+          "zOrder": 69,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "scroll",
+          "persistentUuid": "f9528a14-6143-4dd7-89b9-babf62c21de1",
+          "width": 0,
+          "x": 1120,
+          "y": 672,
+          "zOrder": 69,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "scroll",
+          "persistentUuid": "7a185ea5-a2a7-4dbd-b282-37df005ea233",
+          "width": 0,
+          "x": 1312,
+          "y": 672,
+          "zOrder": 69,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2350,7 +2410,7 @@
           "assetStoreId": "",
           "bold": false,
           "italic": false,
-          "name": "score_display",
+          "name": "player_hp_text",
           "smoothed": true,
           "tags": "",
           "type": "TextObject::Text",
@@ -2358,10 +2418,10 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Find scrolls to learn <Double Jump>\nScrolls Found: 0/3",
+          "string": "Hp:",
           "font": "",
           "textAlignment": "left",
-          "characterSize": 25,
+          "characterSize": 20,
           "color": {
             "b": 0,
             "g": 0,
@@ -2416,28 +2476,6 @@
           "assetStoreId": "",
           "bold": false,
           "italic": false,
-          "name": "player_hp_text",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "Hp:",
-          "font": "",
-          "textAlignment": "left",
-          "characterSize": 20,
-          "color": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
           "name": "debug_text_box",
           "smoothed": true,
           "tags": "",
@@ -2460,7 +2498,7 @@
           "assetStoreId": "",
           "bold": false,
           "italic": false,
-          "name": "Giud_text",
+          "name": "tutorial_attack",
           "smoothed": true,
           "tags": "",
           "type": "TextObject::Text",
@@ -2468,7 +2506,29 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Press Q to melee attack\nPress W to ranger attack",
+          "string": "Press Q to perform a melee attack",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 20,
+          "color": {
+            "b": 0,
+            "g": 0,
+            "r": 0
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "tutorial_jump",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Press space to jump.",
           "font": "",
           "textAlignment": "left",
           "characterSize": 20,
@@ -2482,7 +2542,7 @@
           "assetStoreId": "",
           "bold": true,
           "italic": true,
-          "name": "Task_text",
+          "name": "task_text",
           "smoothed": true,
           "tags": "",
           "type": "TextObject::Text",
@@ -2493,7 +2553,7 @@
           "string": "Tasks:",
           "font": "",
           "textAlignment": "left",
-          "characterSize": 40,
+          "characterSize": 30,
           "color": {
             "b": 0,
             "g": 0,
@@ -2509,17 +2569,42 @@
           "tags": "",
           "type": "TextObject::Text",
           "underlined": false,
-          "variables": [],
+          "variables": [
+            {
+              "name": "goal",
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "lvl1",
+                  "type": "string",
+                  "value": "Melee Attack"
+                },
+                {
+                  "folded": true,
+                  "name": "lvl2",
+                  "type": "string",
+                  "value": "Ranged Attack"
+                },
+                {
+                  "folded": true,
+                  "name": "lvl3",
+                  "type": "string",
+                  "value": "Double Jump"
+                }
+              ]
+            }
+          ],
           "effects": [],
           "behaviors": [],
-          "string": "Find all scrolls to learn <Double Jump>  (0/3)",
+          "string": "Find all scrolls learn <>     (0/3)",
           "font": "",
           "textAlignment": "left",
-          "characterSize": 25,
+          "characterSize": 20,
           "color": {
-            "b": 194,
-            "g": 227,
-            "r": 80
+            "b": 151,
+            "g": 173,
+            "r": 72
           }
         },
         {
@@ -2549,13 +2634,25 @@
               "value": false
             },
             {
-              "name": "invinciable",
+              "name": "invincible",
               "type": "boolean",
               "value": false
             },
             {
               "folded": true,
-              "name": "has_bow",
+              "name": "can_shoot",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "can_hit",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "can_double_jump",
               "type": "boolean",
               "value": false
             }
@@ -3020,6 +3117,142 @@
                           {
                             "x": 3,
                             "y": 475
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "wild_boar",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [
+            {
+              "effectType": "Outline",
+              "name": "Effect",
+              "doubleParameters": {
+                "padding": 2,
+                "thickness": 2
+              },
+              "stringParameters": {
+                "color": "139;87;42"
+              },
+              "booleanParameters": {}
+            }
+          ],
+          "behaviors": [
+            {
+              "name": "Health",
+              "type": "Health::Health",
+              "Health": 5,
+              "CurrentHealth": 0,
+              "MaxHealth": 5,
+              "DamageCooldown": 0,
+              "IsHealthJustDamaged": false,
+              "HealthRegenRate": 0,
+              "HealthRegenDelay": 0,
+              "AllowOverHealing": false,
+              "HitAtLeastOnce": false,
+              "IsJustHealed": false,
+              "CurrentShieldPoints": 0,
+              "MaxShieldPoints": 0,
+              "ShieldDuration": 5,
+              "ShieldRegenRate": 0,
+              "BlockExcessDamage": false,
+              "ShieldRegenDelay": 0,
+              "IsShieldJustDamaged": false,
+              "ChanceToDodge": 0,
+              "DamageToBeApplied": 0,
+              "FlatDamageReduction": 0,
+              "PercentDamageReduction": 0,
+              "IsJustDodged": false,
+              "ShieldDamageTaken": 0,
+              "HealToBeApplied": 0
+            },
+            {
+              "name": "PlatformerCharacterAnimator",
+              "type": "PlatformerCharacterAnimator::PlatformerCharacterAnimator",
+              "EnableAnimationChanges": true,
+              "EnableHorizontalFlipping": true,
+              "IdleAnimationName": "Idle",
+              "RunAnimationName": "Run",
+              "JumpAnimationName": "Jump",
+              "FallAnimationName": "Fall",
+              "ClimbAnimationName": "Climb",
+              "PlatformerBehavior": "PlatformerObject"
+            },
+            {
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "acceleration": 1500,
+              "canGoDownFromJumpthru": false,
+              "canGrabPlatforms": false,
+              "canGrabWithoutMoving": false,
+              "deceleration": 1500,
+              "gravity": 1000,
+              "ignoreDefaultControls": true,
+              "jumpSpeed": 600,
+              "jumpSustainTime": 0.2,
+              "ladderClimbingSpeed": 150,
+              "maxFallingSpeed": 700,
+              "maxSpeed": 250,
+              "slopeMaxAngle": 60,
+              "useLegacyTrajectory": false,
+              "xGrabTolerance": 10,
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "idle",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\2023.08.20像素风格-7",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 64,
+                        "y": 64
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 128,
+                            "y": 0
+                          },
+                          {
+                            "x": 128,
+                            "y": 128
+                          },
+                          {
+                            "x": 0,
+                            "y": 128
                           }
                         ]
                       ]
@@ -4509,142 +4742,6 @@
           "variables": [],
           "effects": [],
           "behaviors": []
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "wild_boar",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [
-            {
-              "effectType": "Outline",
-              "name": "Effect",
-              "doubleParameters": {
-                "padding": 2,
-                "thickness": 2
-              },
-              "stringParameters": {
-                "color": "139;87;42"
-              },
-              "booleanParameters": {}
-            }
-          ],
-          "behaviors": [
-            {
-              "name": "Health",
-              "type": "Health::Health",
-              "Health": 5,
-              "CurrentHealth": 0,
-              "MaxHealth": 5,
-              "DamageCooldown": 0,
-              "IsHealthJustDamaged": false,
-              "HealthRegenRate": 0,
-              "HealthRegenDelay": 0,
-              "AllowOverHealing": false,
-              "HitAtLeastOnce": false,
-              "IsJustHealed": false,
-              "CurrentShieldPoints": 0,
-              "MaxShieldPoints": 0,
-              "ShieldDuration": 5,
-              "ShieldRegenRate": 0,
-              "BlockExcessDamage": false,
-              "ShieldRegenDelay": 0,
-              "IsShieldJustDamaged": false,
-              "ChanceToDodge": 0,
-              "DamageToBeApplied": 0,
-              "FlatDamageReduction": 0,
-              "PercentDamageReduction": 0,
-              "IsJustDodged": false,
-              "ShieldDamageTaken": 0,
-              "HealToBeApplied": 0
-            },
-            {
-              "name": "PlatformerCharacterAnimator",
-              "type": "PlatformerCharacterAnimator::PlatformerCharacterAnimator",
-              "EnableAnimationChanges": true,
-              "EnableHorizontalFlipping": true,
-              "IdleAnimationName": "Idle",
-              "RunAnimationName": "Run",
-              "JumpAnimationName": "Jump",
-              "FallAnimationName": "Fall",
-              "ClimbAnimationName": "Climb",
-              "PlatformerBehavior": "PlatformerObject"
-            },
-            {
-              "acceleration": 1500,
-              "canGoDownFromJumpthru": false,
-              "canGrabPlatforms": false,
-              "canGrabWithoutMoving": false,
-              "deceleration": 1500,
-              "gravity": 1000,
-              "ignoreDefaultControls": true,
-              "jumpSpeed": 600,
-              "jumpSustainTime": 0.2,
-              "ladderClimbingSpeed": 150,
-              "maxFallingSpeed": 700,
-              "maxSpeed": 250,
-              "name": "PlatformerObject",
-              "slopeMaxAngle": 60,
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
-              "useLegacyTrajectory": false,
-              "xGrabTolerance": 10,
-              "yGrabOffset": 0
-            }
-          ],
-          "animations": [
-            {
-              "name": "idle",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\2023.08.20像素风格-7",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 64,
-                        "y": 64
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 128,
-                            "y": 0
-                          },
-                          {
-                            "x": 128,
-                            "y": 128
-                          },
-                          {
-                            "x": 0,
-                            "y": 128
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
         }
       ],
       "events": [
@@ -4797,16 +4894,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "score_display",
-                    "=",
-                    "\"Find scrolls to learn <Double Jump>\nScrolls Found: \" + ToString(Variable(scrolls_found)) + \"/3\""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ModVarScene"
                   },
                   "parameters": [
@@ -4883,6 +4970,180 @@
                     "debug_text_box",
                     "=",
                     "\"Find player:\" + skelly.VariableString(find_player) + \" idle:\" + ToString(round(skelly.ObjectTimerElapsedTime(\"idle\")))"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "tasks update loop"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "scrolls_found",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "task_find_scrolls",
+                    "=",
+                    "\"Find all scrolls learn <\"+ task_find_scrolls.VariableString(goal.lvl1) +\">     (0/3)\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "scrolls_found",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "task_find_scrolls",
+                    "=",
+                    "\"Find all scrolls learn <\"+ task_find_scrolls.VariableString(goal.lvl2) +\">     (1/3)\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Player",
+                    "can_hit",
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "scrolls_found",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "task_find_scrolls",
+                    "=",
+                    "\"Find all scrolls learn <\"+ task_find_scrolls.VariableString(goal.lvl3) +\">     (2/3)\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Player",
+                    "can_shoot",
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "scrolls_found",
+                    "=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "task_find_scrolls",
+                    "=",
+                    "\"Find the key to the treasure box.\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetObjectVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "Player",
+                    "can_double_jump",
+                    "True"
                   ]
                 }
               ]
@@ -5199,6 +5460,16 @@
                         "",
                         "q"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "Player",
+                        "can_hit",
+                        "True"
+                      ]
                     }
                   ],
                   "actions": [],
@@ -5422,7 +5693,7 @@
                           },
                           "parameters": [
                             "Player",
-                            "has_bow",
+                            "can_shoot",
                             "True"
                           ]
                         }
@@ -5726,12 +5997,12 @@
                     },
                     {
                       "type": {
-                        "value": "VarScene"
+                        "value": "ObjectVariableAsBoolean"
                       },
                       "parameters": [
-                        "scrolls_found",
-                        ">=",
-                        "3"
+                        "Player",
+                        "can_double_jump",
+                        "True"
                       ]
                     },
                     {
