@@ -1728,7 +1728,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5251009473304384,
+        "zoomFactor": 0.25314860289712493,
         "windowMask": false
       },
       "objectsGroups": [
@@ -1885,12 +1885,12 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 720,
+          "height": 832,
           "layer": "Background",
           "name": "FarBackground",
           "persistentUuid": "7f9724aa-f5e0-4c2c-8c06-878495690671",
-          "width": 1280,
-          "x": 0,
+          "width": 1376,
+          "x": -32,
           "y": -64,
           "zOrder": 6,
           "numberProperties": [],
@@ -2717,36 +2717,6 @@
           "x": 2240,
           "y": -896,
           "zOrder": 79,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "scroll",
-          "persistentUuid": "8661a251-dbf5-49fb-b0de-99f2b477b92d",
-          "width": 0,
-          "x": 576,
-          "y": 672,
-          "zOrder": 69,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "scroll",
-          "persistentUuid": "4bc9f415-79e0-41e3-bc39-252320577ee0",
-          "width": 0,
-          "x": 704,
-          "y": 672,
-          "zOrder": 69,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8503,9 +8473,29 @@
                     ">=",
                     "2"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "slime",
+                    "Obstacles",
+                    "",
+                    "",
+                    ""
+                  ]
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "Arreter"
+                  },
+                  "parameters": [
+                    "slime"
+                  ]
+                },
                 {
                   "type": {
                     "value": "PlatformBehavior::SimulateJumpKey"
@@ -8534,8 +8524,18 @@
                         "value": "PosX"
                       },
                       "parameters": [
+                        "Player",
+                        "<=",
+                        "slime.X()+400"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
                         "slime",
-                        "<",
+                        "<=",
                         "Player.X()"
                       ]
                     }
@@ -8547,7 +8547,15 @@
                       },
                       "parameters": [
                         "slime",
-                        "no"
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.1"
                       ]
                     },
                     {
@@ -8558,7 +8566,7 @@
                         "slime",
                         "150",
                         "0",
-                        ""
+                        "1"
                       ]
                     }
                   ]
@@ -8566,6 +8574,16 @@
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "Player",
+                        ">=",
+                        "slime.X()-400"
+                      ]
+                    },
                     {
                       "type": {
                         "value": "PosX"
@@ -8584,7 +8602,15 @@
                       },
                       "parameters": [
                         "slime",
-                        "yes"
+                        "no"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Wait"
+                      },
+                      "parameters": [
+                        "0.1"
                       ]
                     },
                     {
@@ -8595,7 +8621,7 @@
                         "slime",
                         "-150",
                         "0",
-                        ""
+                        "1"
                       ]
                     }
                   ]
