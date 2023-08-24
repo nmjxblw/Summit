@@ -1271,6 +1271,87 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Western FPS 2D/Hud/Bar/e6e666707e06c429f6dd475d85d575a5b69a1dc27369a8f1d06a747afa2f1264_Health Bar Box.png",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sword-pixel1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sword-pixel1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sword-pixel2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sword-pixel2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sword-pixel3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sword-pixel3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sword-pixel4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sword-pixel4.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sword-pixel5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sword-pixel5.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sword-pixel6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sword-pixel6.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sword-pixel7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\sword-pixel7.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/inventory_bow.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\inventory_bow.jpg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/inventory_sowrd.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\inventory_sowrd.jpg",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -1620,7 +1701,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.835382951626324,
+        "zoomFactor": 0.2988070382347995,
         "windowMask": false
       },
       "objectsGroups": [
@@ -1694,6 +1775,23 @@
               "name": "health_bar_box"
             }
           ]
+        },
+        {
+          "name": "inventories",
+          "objects": [
+            {
+              "name": "inventory_sword"
+            },
+            {
+              "name": "inventory_bow"
+            },
+            {
+              "name": "inventory_key"
+            },
+            {
+              "name": "inventory_double_jump"
+            }
+          ]
         }
       ],
       "variables": [
@@ -1738,6 +1836,24 @@
               "value": 0
             }
           ]
+        },
+        {
+          "name": "wild_boar_dead_point",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "x",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "y",
+              "type": "number",
+              "value": 0
+            }
+          ]
         }
       ],
       "instances": [
@@ -1745,11 +1861,11 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 832,
+          "height": 720,
           "layer": "Background",
           "name": "FarBackground",
           "persistentUuid": "7f9724aa-f5e0-4c2c-8c06-878495690671",
-          "width": 1728,
+          "width": 1280,
           "x": 0,
           "y": -64,
           "zOrder": 6,
@@ -1846,7 +1962,7 @@
           "persistentUuid": "04ed550b-fcbf-42d1-8191-b6e01b5ea4a1",
           "width": 0,
           "x": 1017,
-          "y": 96,
+          "y": 4,
           "zOrder": 27,
           "numberProperties": [],
           "stringProperties": [],
@@ -2148,8 +2264,8 @@
           "name": "wild_boar",
           "persistentUuid": "78792d04-b849-4719-954c-d66b628a2966",
           "width": 96,
-          "x": 1552,
-          "y": -112,
+          "x": 1440,
+          "y": -192,
           "zOrder": 55,
           "numberProperties": [],
           "stringProperties": [],
@@ -2474,8 +2590,8 @@
           "name": "wild_boar",
           "persistentUuid": "7843fe02-27a5-435c-9816-524d095d5a7b",
           "width": 96,
-          "x": 816,
-          "y": -112,
+          "x": 736,
+          "y": -192,
           "zOrder": 55,
           "numberProperties": [],
           "stringProperties": [],
@@ -2490,8 +2606,8 @@
           "name": "wild_boar",
           "persistentUuid": "df2e32af-f7d2-4e9d-a29e-162ccd282673",
           "width": 96,
-          "x": 1136,
-          "y": -144,
+          "x": 1088,
+          "y": -192,
           "zOrder": 55,
           "numberProperties": [],
           "stringProperties": [],
@@ -2499,15 +2615,69 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "scroll",
-          "persistentUuid": "7f0baa3f-cfd9-4173-aa8f-0c330016c836",
-          "width": 0,
-          "x": 480,
-          "y": 576,
-          "zOrder": 69,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "layer": "Background",
+          "name": "inventory_sword",
+          "persistentUuid": "27318170-5eb8-49fc-8c1b-9ce40355f5f9",
+          "width": 64,
+          "x": 64,
+          "y": 96,
+          "zOrder": 74,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "layer": "Background",
+          "name": "inventory_bow",
+          "persistentUuid": "f481005f-10de-4438-8ab3-b1f0fd416742",
+          "width": 64,
+          "x": 128,
+          "y": 96,
+          "zOrder": 76,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "layer": "Background",
+          "name": "inventory_key",
+          "persistentUuid": "6ea05fc0-9eab-4e39-905f-a19adfc5478f",
+          "width": 64,
+          "x": 256,
+          "y": 96,
+          "zOrder": 77,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "layer": "Background",
+          "name": "inventory_double_jump",
+          "persistentUuid": "3285b30d-cc48-43c6-bcac-c80ad717d327",
+          "width": 64,
+          "x": 192,
+          "y": 96,
+          "zOrder": 78,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -2518,11 +2688,11 @@
           "height": 0,
           "layer": "",
           "name": "scroll",
-          "persistentUuid": "c858ff57-5bbe-408b-8a66-6582b762495d",
+          "persistentUuid": "7010fd65-4059-4567-a9c1-5cc9e0a1b767",
           "width": 0,
-          "x": 576,
-          "y": 640,
-          "zOrder": 69,
+          "x": 2240,
+          "y": -896,
+          "zOrder": 79,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3315,6 +3485,8 @@
               "HealToBeApplied": 0
             },
             {
+              "name": "Pathfinding",
+              "type": "PathfindingBehavior::PathfindingBehavior",
               "acceleration": 400,
               "allowDiagonals": false,
               "angleOffset": 0,
@@ -3325,10 +3497,8 @@
               "gridOffsetX": 0,
               "gridOffsetY": 0,
               "maxSpeed": 200,
-              "name": "Pathfinding",
               "rotateObject": false,
-              "smoothingMaxCellGap": 1,
-              "type": "PathfindingBehavior::PathfindingBehavior"
+              "smoothingMaxCellGap": 1
             },
             {
               "name": "PlatformerCharacterAnimator",
@@ -3370,17 +3540,16 @@
               "directions": [
                 {
                   "looping": false,
-                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\2023.08.20像素风格-7",
+                      "image": "assets\\wild boar.jpg",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 64,
-                        "y": 64
+                        "x": 0,
+                        "y": 0
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -3395,16 +3564,16 @@
                             "y": 0
                           },
                           {
-                            "x": 128,
+                            "x": 1182,
                             "y": 0
                           },
                           {
-                            "x": 128,
-                            "y": 128
+                            "x": 1182,
+                            "y": 1182
                           },
                           {
                             "x": 0,
-                            "y": 128
+                            "y": 1182
                           }
                         ]
                       ]
@@ -3730,6 +3899,8 @@
               "PlatformerBehavior": "PlatformerObject"
             },
             {
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 1500,
               "canGoDownFromJumpthru": true,
               "canGrabPlatforms": false,
@@ -3742,9 +3913,7 @@
               "ladderClimbingSpeed": 150,
               "maxFallingSpeed": 700,
               "maxSpeed": 250,
-              "name": "PlatformerObject",
               "slopeMaxAngle": 60,
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "useLegacyTrajectory": false,
               "xGrabTolerance": 10,
               "yGrabOffset": 0
@@ -5077,6 +5246,250 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "inventory_sword",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\inventory_sowrd.jpg",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1182,
+                            "y": 0
+                          },
+                          {
+                            "x": 1182,
+                            "y": 1182
+                          },
+                          {
+                            "x": 0,
+                            "y": 1182
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "inventory_bow",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\inventory_bow.jpg",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1182,
+                            "y": 0
+                          },
+                          {
+                            "x": 1182,
+                            "y": 1182
+                          },
+                          {
+                            "x": 0,
+                            "y": 1182
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "inventory_key",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\key.jpg",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 1182,
+                            "y": 0
+                          },
+                          {
+                            "x": 1182,
+                            "y": 1182
+                          },
+                          {
+                            "x": 0,
+                            "y": 1182
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "inventory_double_jump",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\up_arrow.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 192,
+                            "y": 179
+                          },
+                          {
+                            "x": 447,
+                            "y": 179
+                          },
+                          {
+                            "x": 447,
+                            "y": 461
+                          },
+                          {
+                            "x": 192,
+                            "y": 461
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -5190,6 +5603,14 @@
                   },
                   "parameters": [
                     "Helper_Objects"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "inventories"
                   ]
                 }
               ]
@@ -5439,6 +5860,15 @@
                     "can_hit",
                     "True"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "inventory_sword",
+                    ""
+                  ]
                 }
               ]
             },
@@ -5482,6 +5912,15 @@
                     "can_shoot",
                     "True"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "inventory_bow",
+                    ""
+                  ]
                 }
               ]
             },
@@ -5524,6 +5963,15 @@
                     "Player",
                     "can_double_jump",
                     "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "inventory_double_jump",
+                    ""
                   ]
                 }
               ]
@@ -6427,6 +6875,186 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "wild boar"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Or"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "wild_boar",
+                            "sword",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "wild_boar",
+                            "fireball",
+                            "",
+                            "",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::Hit"
+                      },
+                      "parameters": [
+                        "wild_boar",
+                        "Health",
+                        "Player.Variable(atk)",
+                        "no",
+                        "no",
+                        ""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "fireball",
+                            "wild_boar",
+                            "",
+                            "",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "fireball",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::Health"
+                      },
+                      "parameters": [
+                        "wild_boar",
+                        "Health",
+                        "<=",
+                        "0",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "wild_boar_dead_point.x",
+                        "=",
+                        "wild_boar.X()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "wild_boar_dead_point.y",
+                        "=",
+                        "wild_boar.Y()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "wild_boar",
+                        "Health"
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "SceneInstancesCount"
+                          },
+                          "parameters": [
+                            "",
+                            "wild_boar",
+                            "<=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "scroll",
+                            "Variable(wild_boar_dead_point.x)",
+                            "Variable(wild_boar_dead_point.y)",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ],
               "parameters": []
@@ -7235,12 +7863,11 @@
                 },
                 {
                   "type": {
-                    "value": "TextObject::String"
+                    "value": "Montre"
                   },
                   "parameters": [
-                    "key_display",
-                    "=",
-                    "\"You have:\" + NewLine() + \"Key x1\""
+                    "inventory_key",
+                    ""
                   ]
                 }
               ]
