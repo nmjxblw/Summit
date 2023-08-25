@@ -1196,7 +1196,7 @@
         "alwaysLoaded": false,
         "file": "assets/assets_right_arrow.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/assets_right_arrow.png\"}",
         "name": "assets\\right_arrow",
         "smoothed": true,
         "userAdded": false
@@ -1205,7 +1205,7 @@
         "alwaysLoaded": false,
         "file": "assets/assets_up_arrow.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/assets_up_arrow.png\"}",
         "name": "assets\\up_arrow",
         "smoothed": true,
         "userAdded": false
@@ -1214,7 +1214,7 @@
         "alwaysLoaded": false,
         "file": "assets/assets_down_arrow.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/assets_down_arrow.png\"}",
         "name": "assets\\down_arrow",
         "smoothed": true,
         "userAdded": true
@@ -1223,7 +1223,7 @@
         "alwaysLoaded": false,
         "file": "assets/assets_left_arrow.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/assets_left_arrow.png\"}",
         "name": "assets\\left_arrow",
         "smoothed": true,
         "userAdded": false
@@ -1797,6 +1797,15 @@
         "name": "assets\\goblin_jump.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_assets_down_arrow.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\assets_down_arrow",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2155,7 +2164,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.6407094761773787,
+        "zoomFactor": 0.27050895711288464,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2453,8 +2462,8 @@
           "name": "Player",
           "persistentUuid": "cfa1a98a-93b1-4876-8048-d7b9c03f6f71",
           "width": 96,
-          "x": 288,
-          "y": -928,
+          "x": 96,
+          "y": 608,
           "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
@@ -3153,7 +3162,7 @@
           "persistentUuid": "dec17926-ff23-4b55-ab35-bab3274a5537",
           "width": 32,
           "x": 1344,
-          "y": -1024,
+          "y": -960,
           "zOrder": 58,
           "numberProperties": [],
           "stringProperties": [],
@@ -3169,7 +3178,7 @@
           "persistentUuid": "c01dd1c1-2382-42b9-b77e-8e5875130254",
           "width": 32,
           "x": 848,
-          "y": -1008,
+          "y": -944,
           "zOrder": 66,
           "numberProperties": [],
           "stringProperties": [],
@@ -3201,7 +3210,7 @@
           "persistentUuid": "6d15249a-5191-41e3-b35f-aea6e4c0c8ae",
           "width": 160,
           "x": 1216,
-          "y": -1056,
+          "y": -992,
           "zOrder": 81,
           "numberProperties": [],
           "stringProperties": [],
@@ -3217,7 +3226,7 @@
           "persistentUuid": "bae87afb-4a57-4a6c-9190-e75c8c19e2f2",
           "width": 160,
           "x": 832,
-          "y": -1376,
+          "y": -1408,
           "zOrder": 81,
           "numberProperties": [],
           "stringProperties": [],
@@ -3328,7 +3337,7 @@
           "persistentUuid": "d87664f2-e00a-48a6-9dde-d5f0d2d617dd",
           "width": 96,
           "x": 864,
-          "y": -1472,
+          "y": -1504,
           "zOrder": 84,
           "numberProperties": [],
           "stringProperties": [],
@@ -3344,7 +3353,7 @@
           "persistentUuid": "2e473d29-9ee2-404d-b9a4-5d41a69e110a",
           "width": 96,
           "x": 1248,
-          "y": -1152,
+          "y": -1088,
           "zOrder": 84,
           "numberProperties": [],
           "stringProperties": [],
@@ -3463,14 +3472,14 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 64,
+          "height": 32,
           "layer": "",
-          "name": "scroll",
-          "persistentUuid": "2ea6de1f-41aa-4964-8cfa-51b8964f55ce",
-          "width": 64,
-          "x": 608,
-          "y": -896,
-          "zOrder": 69,
+          "name": "Platform",
+          "persistentUuid": "7d4d1ab4-0f0c-4bc9-a96c-3adb84012990",
+          "width": 192,
+          "x": 2080,
+          "y": -1376,
+          "zOrder": 92,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3481,12 +3490,76 @@
           "depth": 0,
           "height": 64,
           "layer": "",
-          "name": "scroll",
-          "persistentUuid": "59bae0a3-0778-45c7-b674-9384c6f8abff",
+          "name": "Chest",
+          "persistentUuid": "58fc94f5-bd83-4c10-ba07-fc30623e1104",
           "width": 64,
-          "x": 704,
-          "y": -896,
-          "zOrder": 69,
+          "x": 2176,
+          "y": -1504,
+          "zOrder": 93,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
+          "layer": "",
+          "name": "right_arrow",
+          "persistentUuid": "8d1ea3c5-382d-4128-9473-479ef93ceafe",
+          "width": 32,
+          "x": 816,
+          "y": -976,
+          "zOrder": 66,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
+          "layer": "",
+          "name": "down_arrow",
+          "persistentUuid": "6b666b32-8b4b-4681-9d1e-84143d541e36",
+          "width": 32,
+          "x": 800,
+          "y": -1408,
+          "zOrder": 59,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
+          "layer": "",
+          "name": "up_arrow",
+          "persistentUuid": "e43f91f1-4bb8-45fd-a160-f47b0f3adc17",
+          "width": 32,
+          "x": 1376,
+          "y": -992,
+          "zOrder": 58,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
+          "layer": "",
+          "name": "left_arrow",
+          "persistentUuid": "d2620237-5999-43ee-b638-14c78052ed66",
+          "width": 32,
+          "x": 1376,
+          "y": -1408,
+          "zOrder": 65,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4554,6 +4627,8 @@
               "extraBorder": 0
             },
             {
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 1500,
               "canGoDownFromJumpthru": false,
               "canGrabPlatforms": false,
@@ -4566,9 +4641,7 @@
               "ladderClimbingSpeed": 0,
               "maxFallingSpeed": 9999999,
               "maxSpeed": 1000000000000000000,
-              "name": "PlatformerObject",
               "slopeMaxAngle": 0,
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "useLegacyTrajectory": false,
               "xGrabTolerance": 0,
               "yGrabOffset": 0
@@ -5521,20 +5594,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 9,
-                            "y": 11
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 23,
-                            "y": 11
+                            "x": 32,
+                            "y": 0
                           },
                           {
-                            "x": 23,
-                            "y": 21
+                            "x": 32,
+                            "y": 32
                           },
                           {
-                            "x": 9,
-                            "y": 21
+                            "x": 0,
+                            "y": 32
                           }
                         ]
                       ]
@@ -5583,20 +5656,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 8,
-                            "y": 8
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 25,
-                            "y": 8
+                            "x": 32,
+                            "y": 0
                           },
                           {
-                            "x": 25,
-                            "y": 23
+                            "x": 32,
+                            "y": 32
                           },
                           {
-                            "x": 8,
-                            "y": 23
+                            "x": 0,
+                            "y": 32
                           }
                         ]
                       ]
@@ -5645,20 +5718,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 10,
-                            "y": 9
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 22,
-                            "y": 9
+                            "x": 32,
+                            "y": 0
                           },
                           {
-                            "x": 22,
-                            "y": 23
+                            "x": 32,
+                            "y": 32
                           },
                           {
-                            "x": 10,
-                            "y": 23
+                            "x": 0,
+                            "y": 32
                           }
                         ]
                       ]
@@ -5707,20 +5780,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 8,
-                            "y": 8
+                            "x": 0,
+                            "y": 0
                           },
                           {
-                            "x": 24,
-                            "y": 8
+                            "x": 32,
+                            "y": 0
                           },
                           {
-                            "x": 24,
-                            "y": 24
+                            "x": 32,
+                            "y": 32
                           },
                           {
-                            "x": 8,
-                            "y": 24
+                            "x": 0,
+                            "y": 32
                           }
                         ]
                       ]
@@ -5815,7 +5888,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\assets_down_arrow.png",
+                      "image": "assets\\assets_down_arrow",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6143,14 +6216,6 @@
                   },
                   "parameters": [
                     "route"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Cache"
-                  },
-                  "parameters": [
-                    "Helper_Objects"
                   ]
                 },
                 {
