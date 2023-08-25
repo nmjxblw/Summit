@@ -1788,6 +1788,15 @@
         "name": "assets\\assets_Sword3.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/goblin_jump.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\goblin_jump.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2146,7 +2155,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5079719649991664,
+        "zoomFactor": 0.6407094761773787,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2444,8 +2453,8 @@
           "name": "Player",
           "persistentUuid": "cfa1a98a-93b1-4876-8048-d7b9c03f6f71",
           "width": 96,
-          "x": 96,
-          "y": 610,
+          "x": 288,
+          "y": -928,
           "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
@@ -2731,7 +2740,7 @@
           "name": "wild_boar",
           "persistentUuid": "78792d04-b849-4719-954c-d66b628a2966",
           "width": 96,
-          "x": 1440,
+          "x": 1376,
           "y": -160,
           "zOrder": 55,
           "numberProperties": [],
@@ -2912,13 +2921,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 64,
+          "height": 96,
           "layer": "",
           "name": "Platform",
           "persistentUuid": "501d94d2-9fcd-4725-974a-bdd1d0c43755",
-          "width": 96,
+          "width": 128,
           "x": 1728,
-          "y": -128,
+          "y": -160,
           "zOrder": 67,
           "numberProperties": [],
           "stringProperties": [],
@@ -3026,7 +3035,7 @@
           "name": "wild_boar",
           "persistentUuid": "7843fe02-27a5-435c-9816-524d095d5a7b",
           "width": 96,
-          "x": 736,
+          "x": 800,
           "y": -160,
           "zOrder": 55,
           "numberProperties": [],
@@ -3042,7 +3051,7 @@
           "name": "wild_boar",
           "persistentUuid": "df2e32af-f7d2-4e9d-a29e-162ccd282673",
           "width": 96,
-          "x": 1088,
+          "x": 1056,
           "y": -160,
           "zOrder": 55,
           "numberProperties": [],
@@ -3446,6 +3455,38 @@
           "x": 98,
           "y": 589,
           "zOrder": 91,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "layer": "",
+          "name": "scroll",
+          "persistentUuid": "2ea6de1f-41aa-4964-8cfa-51b8964f55ce",
+          "width": 64,
+          "x": 608,
+          "y": -896,
+          "zOrder": 69,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "layer": "",
+          "name": "scroll",
+          "persistentUuid": "59bae0a3-0778-45c7-b674-9384c6f8abff",
+          "width": 64,
+          "x": 704,
+          "y": -896,
+          "zOrder": 69,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4400,7 +4441,7 @@
           ],
           "animations": [
             {
-              "name": "",
+              "name": "idle",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -4439,6 +4480,141 @@
                           {
                             "x": 493,
                             "y": 1909
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "jump",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\goblin_jump.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 493,
+                            "y": 62
+                          },
+                          {
+                            "x": 1605,
+                            "y": 62
+                          },
+                          {
+                            "x": 1605,
+                            "y": 1909
+                          },
+                          {
+                            "x": 493,
+                            "y": 1909
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "f1bd213445ca88e13a5d5f461afc4e3a3df7aff460da637a02f52b836af27c7a",
+          "name": "Stone",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "DestroyOutside",
+              "type": "DestroyOutsideBehavior::DestroyOutside",
+              "extraBorder": 0
+            },
+            {
+              "acceleration": 1500,
+              "canGoDownFromJumpthru": false,
+              "canGrabPlatforms": false,
+              "canGrabWithoutMoving": false,
+              "deceleration": 1500,
+              "gravity": 1000,
+              "ignoreDefaultControls": true,
+              "jumpSpeed": 0,
+              "jumpSustainTime": 0,
+              "ladderClimbingSpeed": 0,
+              "maxFallingSpeed": 9999999,
+              "maxSpeed": 1000000000000000000,
+              "name": "PlatformerObject",
+              "slopeMaxAngle": 0,
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "useLegacyTrajectory": false,
+              "xGrabTolerance": 0,
+              "yGrabOffset": 0
+            }
+          ],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.025,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "Stone.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 16,
+                            "y": 0
+                          },
+                          {
+                            "x": 16,
+                            "y": 16
+                          },
+                          {
+                            "x": 0,
+                            "y": 16
                           }
                         ]
                       ]
@@ -5878,99 +6054,6 @@
               ]
             }
           ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "f1bd213445ca88e13a5d5f461afc4e3a3df7aff460da637a02f52b836af27c7a",
-          "name": "Stone",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "DestroyOutside",
-              "type": "DestroyOutsideBehavior::DestroyOutside",
-              "extraBorder": 0
-            },
-            {
-              "name": "SpeedPathMovement",
-              "type": "CurvedMovement::SpeedPathMovement",
-              "Rotation": true,
-              "RotationOffset": 0,
-              "Speed": 0,
-              "PathOriginX": 0,
-              "PathOriginY": 0,
-              "PathName": "",
-              "TargetedSpeed": 0,
-              "Acceleration": 0,
-              "DrawingElementIndex": 0,
-              "X": 0,
-              "Y": 0,
-              "PathAngle": 0,
-              "PathScale": 0,
-              "RepetitionCount": 0,
-              "ShouldLoop": false,
-              "DrawingPathOriginX": 0,
-              "DrawingPathOriginY": 0,
-              "DebugLineStrokeWidth": 0,
-              "PreviousSpeed": 0,
-              "CurrentLength": 0,
-              "IsLookingBack": false,
-              "Viewpoint": "Top-Down"
-            }
-          ],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": true,
-                  "timeBetweenFrames": 0.025,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "Stone.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 0,
-                            "y": 0
-                          },
-                          {
-                            "x": 16,
-                            "y": 0
-                          },
-                          {
-                            "x": 16,
-                            "y": 16
-                          },
-                          {
-                            "x": 0,
-                            "y": 16
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
         }
       ],
       "events": [
@@ -6047,10 +6130,11 @@
                 },
                 {
                   "type": {
-                    "value": "Cache"
+                    "value": "ResetObjectTimer"
                   },
                   "parameters": [
-                    "route"
+                    "goblin",
+                    "\"fire\""
                   ]
                 },
                 {
@@ -6058,7 +6142,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "debug_text_box"
+                    "route"
                   ]
                 },
                 {
@@ -6225,16 +6309,6 @@
                     "player_hp_text",
                     "=",
                     "\"Hp:\"+ToString(round(Player.Health::Health()))"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "TextObject::String"
-                  },
-                  "parameters": [
-                    "debug_text_box",
-                    "=",
-                    "\"arrows:\" + ToString(Player.Variable(arrows))"
                   ]
                 }
               ]
@@ -9264,6 +9338,147 @@
               ]
             },
             {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "goblin's behaviors",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "goblin fire"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::And"
+                      },
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "CompareObjectTimer"
+                          },
+                          "parameters": [
+                            "goblin",
+                            "\"fire\"",
+                            ">=",
+                            "2"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Distance"
+                          },
+                          "parameters": [
+                            "Player",
+                            "goblin",
+                            "1200",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Stone",
+                        "goblin.X()",
+                        "goblin.Y()",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "Stone",
+                        "500*(Player.X()-goblin.X())/abs(Player.X()-goblin.X())",
+                        "0",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ResetObjectTimer"
+                      },
+                      "parameters": [
+                        "goblin",
+                        "\"fire\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "stone hits Obstacles"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Stone",
+                        "Obstacles",
+                        "",
+                        "",
+                        "no"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Arreter"
+                      },
+                      "parameters": [
+                        "Stone"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Stone",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "parameters": []
+            },
+            {
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -9297,6 +9512,18 @@
                           "parameters": [
                             "Player",
                             "enemies",
+                            "",
+                            "",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Stone",
+                            "Player",
                             "",
                             "",
                             ""
@@ -9425,6 +9652,47 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Stone",
+                        "Player",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Health::Health::Hit"
+                      },
+                      "parameters": [
+                        "Player",
+                        "Health",
+                        "15",
+                        "no",
+                        "no",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "Stone",
+                        ""
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -9505,10 +9773,6 @@
         {
           "name": "SmoothCamera",
           "type": "SmoothCamera::SmoothCamera"
-        },
-        {
-          "name": "SpeedPathMovement",
-          "type": "CurvedMovement::SpeedPathMovement"
         }
       ]
     },
