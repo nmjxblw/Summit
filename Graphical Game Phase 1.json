@@ -2212,7 +2212,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.27050895711288603,
+        "zoomFactor": 0.40273404221304454,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2268,6 +2268,12 @@
             },
             {
               "name": "left_boundary"
+            },
+            {
+              "name": "boss_room_left_boundary"
+            },
+            {
+              "name": "boss_room_right_boundary"
             }
           ]
         },
@@ -2398,6 +2404,82 @@
               "value": -896
             }
           ]
+        },
+        {
+          "name": "Goblin_king",
+          "type": "structure",
+          "children": [
+            {
+              "name": "at_boss_room",
+              "type": "structure",
+              "children": [
+                {
+                  "folded": true,
+                  "name": "x",
+                  "type": "number",
+                  "value": 4672
+                },
+                {
+                  "folded": true,
+                  "name": "y",
+                  "type": "number",
+                  "value": 609
+                }
+              ]
+            },
+            {
+              "name": "on_the_third_floor",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "x",
+                  "type": "number",
+                  "value": 2016
+                },
+                {
+                  "folded": true,
+                  "name": "y",
+                  "type": "number",
+                  "value": -1375
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "player_at_boss_room",
+          "type": "structure",
+          "children": [
+            {
+              "folded": true,
+              "name": "x",
+              "type": "number",
+              "value": 5024
+            },
+            {
+              "folded": true,
+              "name": "y",
+              "type": "number",
+              "value": 610
+            }
+          ]
+        },
+        {
+          "name": "special_platfrom",
+          "type": "structure",
+          "children": [
+            {
+              "name": "x",
+              "type": "number",
+              "value": 1888
+            },
+            {
+              "folded": true,
+              "name": "y",
+              "type": "number",
+              "value": -1280
+            }
+          ]
         }
       ],
       "instances": [
@@ -2405,12 +2487,12 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 832,
+          "height": 928,
           "layer": "Background",
           "name": "FarBackground",
           "persistentUuid": "7f9724aa-f5e0-4c2c-8c06-878495690671",
-          "width": 1568,
-          "x": -32,
+          "width": 1856,
+          "x": -320,
           "y": -64,
           "zOrder": 6,
           "numberProperties": [],
@@ -2521,8 +2603,8 @@
           "name": "Player",
           "persistentUuid": "cfa1a98a-93b1-4876-8048-d7b9c03f6f71",
           "width": 96,
-          "x": 96,
-          "y": 608,
+          "x": 1600,
+          "y": -928,
           "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
@@ -2615,7 +2697,7 @@
           "layer": "",
           "name": "bottom_boundary",
           "persistentUuid": "80d36479-5690-46d8-893d-803cdd27a017",
-          "width": 2496,
+          "width": 6656,
           "x": -96,
           "y": 768,
           "zOrder": 48,
@@ -2680,8 +2762,8 @@
           "name": "Platform",
           "persistentUuid": "8dd19e9c-980f-408b-b2ef-8c87c379b423",
           "width": 2816,
-          "x": 3360,
-          "y": -928,
+          "x": 3648,
+          "y": -608,
           "zOrder": 51,
           "numberProperties": [],
           "stringProperties": [],
@@ -2696,8 +2778,8 @@
           "name": "Platform",
           "persistentUuid": "5bb9c4af-3e58-41e4-b89a-4025a435fdbd",
           "width": 70,
-          "x": 3360,
-          "y": -864,
+          "x": 3648,
+          "y": -544,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -2712,8 +2794,8 @@
           "name": "Platform",
           "persistentUuid": "47ab0aab-8b93-448d-a847-cf6a54ebc435",
           "width": 64,
-          "x": 6176,
-          "y": -928,
+          "x": 6464,
+          "y": -608,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -2728,8 +2810,8 @@
           "name": "Platform",
           "persistentUuid": "16408c7d-d538-4e9d-871e-d8b8ca230f8f",
           "width": 2880,
-          "x": 3360,
-          "y": 384,
+          "x": 3648,
+          "y": 704,
           "zOrder": 51,
           "numberProperties": [],
           "stringProperties": [],
@@ -2871,54 +2953,6 @@
           "x": 224,
           "y": -864,
           "zOrder": 59,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 1376,
-          "layer": "",
-          "name": "right_boundary",
-          "persistentUuid": "fe81d64a-8c37-4c53-b597-33f3110b42dc",
-          "width": 32,
-          "x": 6240,
-          "y": -928,
-          "zOrder": 60,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 32,
-          "layer": "",
-          "name": "bottom_boundary",
-          "persistentUuid": "7af64c66-8232-4b24-9a4d-8c13bbc3b8ed",
-          "width": 2912,
-          "x": 3360,
-          "y": 448,
-          "zOrder": 61,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 1408,
-          "layer": "",
-          "name": "left_boundary",
-          "persistentUuid": "984ca29b-3186-4338-8dc8-fa7d59acbdc7",
-          "width": 32,
-          "x": 3328,
-          "y": -928,
-          "zOrder": 62,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3393,41 +3427,9 @@
           "height": 96,
           "layer": "",
           "name": "goblin",
-          "persistentUuid": "d87664f2-e00a-48a6-9dde-d5f0d2d617dd",
-          "width": 96,
-          "x": 864,
-          "y": -1504,
-          "zOrder": 84,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 96,
-          "layer": "",
-          "name": "goblin",
           "persistentUuid": "2e473d29-9ee2-404d-b9a4-5d41a69e110a",
           "width": 96,
-          "x": 1248,
-          "y": -1088,
-          "zOrder": 84,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 96,
-          "layer": "",
-          "name": "goblin",
-          "persistentUuid": "ebd4e9e4-5b6a-4854-a964-e7994417c18e",
-          "width": 96,
-          "x": 1504,
+          "x": 1536,
           "y": -1280,
           "zOrder": 84,
           "numberProperties": [],
@@ -3648,8 +3650,8 @@
           "name": "special_platfrom_to_boss_room",
           "persistentUuid": "bfa4c144-4809-4fbc-aeea-7b94416595c0",
           "width": 192,
-          "x": 1888,
-          "y": -1280,
+          "x": 2688,
+          "y": -1600,
           "zOrder": 98,
           "numberProperties": [],
           "stringProperties": [],
@@ -3667,6 +3669,118 @@
           "x": 480,
           "y": -96,
           "zOrder": 99,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 1376,
+          "layer": "",
+          "name": "boss_room_left_boundary",
+          "persistentUuid": "f206256b-8c79-4019-b7f1-e0114b4fbb65",
+          "width": 32,
+          "x": 3616,
+          "y": -608,
+          "zOrder": 100,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 1376,
+          "layer": "",
+          "name": "boss_room_right_boundary",
+          "persistentUuid": "c4e50555-d5fe-4725-9838-9f3a51b01a81",
+          "width": 32,
+          "x": 6528,
+          "y": -608,
+          "zOrder": 101,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "layer": "",
+          "name": "scroll",
+          "persistentUuid": "9a77323f-a4c6-473b-ae66-fded7dd8352c",
+          "width": 64,
+          "x": 1952,
+          "y": -928,
+          "zOrder": 69,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "layer": "",
+          "name": "scroll",
+          "persistentUuid": "2dbeb960-a041-46f7-a5b2-247e2d10df6d",
+          "width": 64,
+          "x": 1824,
+          "y": -928,
+          "zOrder": 69,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "layer": "",
+          "name": "scroll",
+          "persistentUuid": "671adf1d-db0c-4ba3-991b-17cdaa5ff607",
+          "width": 64,
+          "x": 2048,
+          "y": -928,
+          "zOrder": 69,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
+          "layer": "",
+          "name": "Platform",
+          "persistentUuid": "e188c116-3b4b-449b-888a-21371bdb50e7",
+          "width": 416,
+          "x": 5664,
+          "y": 192,
+          "zOrder": 102,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
+          "layer": "",
+          "name": "Platform",
+          "persistentUuid": "9cc8077f-69b6-45c3-9729-e9d6666aecf5",
+          "width": 448,
+          "x": 4576,
+          "y": 192,
+          "zOrder": 104,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4747,7 +4861,20 @@
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "on_battle",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "folded": true,
+              "name": "attack",
+              "type": "number",
+              "value": 15
+            }
+          ],
           "effects": [],
           "behaviors": [
             {
@@ -4756,10 +4883,10 @@
               "Health": 100,
               "CurrentHealth": 0,
               "MaxHealth": 100,
-              "DamageCooldown": 0,
+              "DamageCooldown": 0.5,
               "IsHealthJustDamaged": false,
-              "HealthRegenRate": 0,
-              "HealthRegenDelay": 0,
+              "HealthRegenRate": 0.5,
+              "HealthRegenDelay": 3,
               "AllowOverHealing": false,
               "HitAtLeastOnce": false,
               "IsJustHealed": false,
@@ -4791,9 +4918,11 @@
               "PlatformerBehavior": "PlatformerObject"
             },
             {
-              "name": "PlatformerObject",
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 1500,
+              "maxSpeed": 100000000000,
+              "name": "PlatformerObject",
+              "slopeMaxAngle": 60,
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "canGoDownFromJumpthru": false,
               "canGrabPlatforms": false,
               "canGrabWithoutMoving": false,
@@ -4804,8 +4933,6 @@
               "jumpSustainTime": 0.2,
               "ladderClimbingSpeed": 0,
               "maxFallingSpeed": 900,
-              "maxSpeed": 250,
-              "slopeMaxAngle": 60,
               "useLegacyTrajectory": true,
               "xGrabTolerance": 10,
               "yGrabOffset": 0
@@ -6315,6 +6442,30 @@
           "behaviors": []
         },
         {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "boss_room_left_boundary",
+          "tags": "",
+          "texture": "",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "boss_room_right_boundary",
+          "tags": "",
+          "texture": "",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "health_bar",
@@ -6617,6 +6768,42 @@
                   "parameters": [
                     "Player",
                     "\"cooldown\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "goblin_king",
+                    "\"skill1\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "goblin_king",
+                    "\"skill2\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "goblin_king",
+                    "\"skill3\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "goblin_king",
+                    "\"moving\""
                   ]
                 },
                 {
@@ -7227,6 +7414,57 @@
                 "right_boundary.Y()",
                 "right_boundary.X()",
                 "f3_ground_boundary.Y() + f3_ground_boundary.Height()",
+                "",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosY"
+              },
+              "parameters": [
+                "Player",
+                "<",
+                "bottom_boundary.Y()"
+              ]
+            },
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Player",
+                "<",
+                "boss_room_right_boundary.X()"
+              ]
+            },
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Player",
+                ">",
+                "boss_room_left_boundary.X()"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ClampCamera"
+              },
+              "parameters": [
+                "",
+                "boss_room_left_boundary.X() + boss_room_left_boundary.Width()",
+                "boss_room_right_boundary.Y()",
+                "boss_room_right_boundary.X()",
+                "boss_room_right_boundary.Y() + boss_room_right_boundary.Height()",
                 "",
                 ""
               ]
@@ -8282,6 +8520,186 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Comment",
+                      "color": {
+                        "b": 109,
+                        "g": 230,
+                        "r": 255,
+                        "textB": 0,
+                        "textG": 0,
+                        "textR": 0
+                      },
+                      "comment": "goblin king"
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "goblin_king",
+                            "sword",
+                            "",
+                            "",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::Hit"
+                          },
+                          "parameters": [
+                            "goblin_king",
+                            "Health",
+                            "Player.Variable(atk) * 2",
+                            "no",
+                            "no",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "goblin_king",
+                            "Arrow",
+                            "",
+                            "",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::Hit"
+                          },
+                          "parameters": [
+                            "goblin_king",
+                            "Health",
+                            "Player.Variable(atk) * 2",
+                            "no",
+                            "no",
+                            ""
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "CollisionNP"
+                              },
+                              "parameters": [
+                                "Arrow",
+                                "goblin",
+                                "",
+                                "",
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Delete"
+                              },
+                              "parameters": [
+                                "Arrow",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "Health::Health::Health"
+                          },
+                          "parameters": [
+                            "goblin_king",
+                            "Health",
+                            "<=",
+                            "0",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "goblin_king",
+                            "on_battle",
+                            ""
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::IgnoreDefaultControls"
+                              },
+                              "parameters": [
+                                "Player",
+                                "PlatformerObject",
+                                "yes"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Wait"
+                              },
+                              "parameters": [
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "Delete"
+                              },
+                              "parameters": [
+                                "goblin_king",
+                                "Health"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlatformBehavior::IgnoreDefaultControls"
+                              },
+                              "parameters": [
+                                "Player",
+                                "PlatformerObject",
+                                "no"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ],
                   "parameters": []
@@ -8509,30 +8927,12 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "BuiltinCommonInstructions::Or"
+                        "value": "VarScene"
                       },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "VarScene"
-                          },
-                          "parameters": [
-                            "scrolls_found",
-                            "=",
-                            "0"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "VarScene"
-                          },
-                          "parameters": [
-                            "scrolls_found",
-                            "=",
-                            "1"
-                          ]
-                        }
+                      "parameters": [
+                        "scrolls_found",
+                        "<",
+                        "2"
                       ]
                     }
                   ],
@@ -8553,30 +8953,12 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "BuiltinCommonInstructions::Or"
+                        "value": "VarScene"
                       },
-                      "parameters": [],
-                      "subInstructions": [
-                        {
-                          "type": {
-                            "value": "VarScene"
-                          },
-                          "parameters": [
-                            "scrolls_found",
-                            "=",
-                            "2"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "VarScene"
-                          },
-                          "parameters": [
-                            "scrolls_found",
-                            "=",
-                            "3"
-                          ]
-                        }
+                      "parameters": [
+                        "scrolls_found",
+                        ">=",
+                        "2"
                       ]
                     }
                   ],
@@ -9314,6 +9696,76 @@
                 "textG": 0,
                 "textR": 0
               },
+              "comment": "special_platfrom"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Player",
+                    "special_platfrom_to_boss_room",
+                    "",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "Player",
+                    "=",
+                    "Variable(player_at_boss_room.x)",
+                    "=",
+                    "Variable(player_at_boss_room.y)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "goblin_king",
+                    "=",
+                    "Variable(Goblin_king.at_boss_room.x)",
+                    "=",
+                    "Variable(Goblin_king.at_boss_room.y)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "goblin_king_words",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
               "comment": "chest collision"
             },
             {
@@ -9487,6 +9939,42 @@
                 },
                 {
                   "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "special_platfrom_to_boss_room",
+                    "=",
+                    "Variable(special_platfrom.x)",
+                    "=",
+                    "Variable(special_platfrom.y)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "goblin_king",
+                    "Variable(Goblin_king.on_the_third_floor.x)",
+                    "Variable(Goblin_king.on_the_third_floor.y)",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "goblin_king_words",
+                    "Variable(Goblin_king.on_the_third_floor.x)-300",
+                    "Variable(Goblin_king.on_the_third_floor.y) - 120",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Montre"
                   },
                   "parameters": [
@@ -9495,6 +9983,17 @@
                   ]
                 }
               ]
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "goblin king's behavoirs",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [],
+              "parameters": []
             },
             {
               "type": "BuiltinCommonInstructions::Comment",
@@ -10059,18 +10558,7 @@
                         "Stone",
                         "flyingTime",
                         "=",
-                        "abs(Player.X()-Stone.X())/Stone.Variable(vx)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "AddForceXY"
-                      },
-                      "parameters": [
-                        "Stone",
-                        "0",
-                        "(Player.CenterY()-Stone.CenterY())/Stone.Variable(flyingTime)-abs(Player.X()-Stone.X())",
-                        "1"
+                        "abs(Player.CenterX()-Stone.CenterX())/Stone.Variable(vx)"
                       ]
                     },
                     {
@@ -10080,6 +10568,66 @@
                       "parameters": [
                         "goblin",
                         "\"fire\""
+                      ]
+                    }
+                  ],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Stone",
+                            "flyingTime",
+                            "<",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AddForceXY"
+                          },
+                          "parameters": [
+                            "Stone",
+                            "0",
+                            "-10",
+                            "1"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarObjet"
+                          },
+                          "parameters": [
+                            "Stone",
+                            "flyingTime",
+                            ">=",
+                            "1"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "AddForceXY"
+                          },
+                          "parameters": [
+                            "Stone",
+                            "0",
+                            "(Player.CenterY()-Stone.CenterY())/Stone.Variable(flyingTime)-(500/Stone.Variable(vx))*abs(Player.CenterX()-Stone.CenterX())",
+                            "1"
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -10128,6 +10676,18 @@
                             "",
                             ""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Stone",
+                            "moving_cycle_platform",
+                            "",
+                            "",
+                            ""
+                          ]
                         }
                       ]
                     }
@@ -10151,6 +10711,82 @@
                       ]
                     }
                   ]
+                }
+              ],
+              "parameters": []
+            },
+            {
+              "colorB": 228,
+              "colorG": 176,
+              "colorR": 74,
+              "creationTime": 0,
+              "name": "goblin king's behaviors",
+              "source": "",
+              "type": "BuiltinCommonInstructions::Group",
+              "events": [
+                {
+                  "colorB": 228,
+                  "colorG": 176,
+                  "colorR": 74,
+                  "creationTime": 0,
+                  "name": "facing player",
+                  "source": "",
+                  "type": "BuiltinCommonInstructions::Group",
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CenterX"
+                          },
+                          "parameters": [
+                            "goblin",
+                            "<=",
+                            "Player.CenterX()"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "FlipX"
+                          },
+                          "parameters": [
+                            "goblin_king",
+                            "yes"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "CenterX"
+                          },
+                          "parameters": [
+                            "goblin",
+                            ">",
+                            "Player.CenterX()"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "FlipX"
+                          },
+                          "parameters": [
+                            "goblin_king",
+                            "no"
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "parameters": []
                 }
               ],
               "parameters": []
@@ -10370,6 +11006,34 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "ObjectVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "goblin_king",
+                        "on_battle",
+                        "True"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "Player",
+                        "goblin_king",
+                        "",
+                        "",
+                        "no"
+                      ]
+                    }
+                  ],
+                  "actions": []
                 }
               ]
             }
