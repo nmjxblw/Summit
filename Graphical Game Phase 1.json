@@ -1806,6 +1806,15 @@
         "name": "assets\\assets_down_arrow",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2164,7 +2173,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.27050895711288464,
+        "zoomFactor": 0.3411953102832551,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2259,6 +2268,17 @@
             },
             {
               "name": "inventory_double_jump"
+            }
+          ]
+        },
+        {
+          "name": "debug_tools",
+          "objects": [
+            {
+              "name": "debug_text_box"
+            },
+            {
+              "name": "debug_point"
             }
           ]
         }
@@ -2462,8 +2482,8 @@
           "name": "Player",
           "persistentUuid": "cfa1a98a-93b1-4876-8048-d7b9c03f6f71",
           "width": 96,
-          "x": 96,
-          "y": 608,
+          "x": 320,
+          "y": -960,
           "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
@@ -3493,8 +3513,8 @@
           "name": "Chest",
           "persistentUuid": "58fc94f5-bd83-4c10-ba07-fc30623e1104",
           "width": 64,
-          "x": 2176,
-          "y": -1504,
+          "x": 2144,
+          "y": -1440,
           "zOrder": 93,
           "numberProperties": [],
           "stringProperties": [],
@@ -3560,6 +3580,22 @@
           "x": 1376,
           "y": -1408,
           "zOrder": 65,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
+          "layer": "",
+          "name": "debug_point",
+          "persistentUuid": "1c3f24ca-2678-41ab-bd49-aafd81584338",
+          "width": 32,
+          "x": 2560,
+          "y": -1600,
+          "zOrder": 94,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4618,14 +4654,16 @@
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
-          "variables": [],
+          "variables": [
+            {
+              "folded": true,
+              "name": "flyingTime",
+              "type": "number",
+              "value": 0
+            }
+          ],
           "effects": [],
           "behaviors": [
-            {
-              "name": "DestroyOutside",
-              "type": "DestroyOutsideBehavior::DestroyOutside",
-              "extraBorder": 0
-            },
             {
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
@@ -6127,6 +6165,68 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "debug_point",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "NewSprite",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 32,
+                        "y": 32
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 0
+                          },
+                          {
+                            "x": 64,
+                            "y": 64
+                          },
+                          {
+                            "x": 0,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -6243,6 +6343,14 @@
                     "Player",
                     "\"cooldown\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "debug_tools"
+                  ]
                 }
               ]
             },
@@ -6346,6 +6454,18 @@
                     "stamina_bar",
                     "=",
                     "Player.CenterY()-60"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MettreXY"
+                  },
+                  "parameters": [
+                    "debug_point",
+                    "=",
+                    "Player.CenterX()",
+                    "=",
+                    "Player.CenterY()"
                   ]
                 }
               ]
@@ -9421,7 +9541,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "goblin fire"
+                  "comment": "goblin throws stone"
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -9448,9 +9568,9 @@
                             "value": "Distance"
                           },
                           "parameters": [
-                            "Player",
                             "goblin",
-                            "1200",
+                            "Player",
+                            "1000",
                             ""
                           ]
                         }
@@ -9476,8 +9596,30 @@
                       },
                       "parameters": [
                         "Stone",
-                        "500*(Player.X()-goblin.X())/abs(Player.X()-goblin.X())",
+                        "500*(Player.CenterX()-Stone.CenterX())/abs(Player.CenterX()-Stone.CenterX())",
                         "0",
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Stone",
+                        "flyingTime",
+                        "=",
+                        "abs(Player.X()-Stone.X())/500"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "AddForceXY"
+                      },
+                      "parameters": [
+                        "Stone",
+                        "0",
+                        "(Player.CenterY()-Stone.CenterY())/Stone.Variable(flyingTime)-500*Stone.Variable(flyingTime)",
                         "1"
                       ]
                     },
@@ -9509,14 +9651,34 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "CollisionNP"
+                        "value": "BuiltinCommonInstructions::Or"
                       },
-                      "parameters": [
-                        "Stone",
-                        "Obstacles",
-                        "",
-                        "",
-                        "no"
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Stone",
+                            "Ground",
+                            "",
+                            "",
+                            "no"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "CollisionNP"
+                          },
+                          "parameters": [
+                            "Stone",
+                            "Platform",
+                            "",
+                            "",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ],
