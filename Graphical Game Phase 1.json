@@ -2212,7 +2212,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.2531486028971295,
+        "zoomFactor": 0.27050895711288603,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2409,7 +2409,7 @@
           "layer": "Background",
           "name": "FarBackground",
           "persistentUuid": "7f9724aa-f5e0-4c2c-8c06-878495690671",
-          "width": 1376,
+          "width": 1568,
           "x": -32,
           "y": -64,
           "zOrder": 6,
@@ -2808,7 +2808,7 @@
           "name": "wild_boar",
           "persistentUuid": "78792d04-b849-4719-954c-d66b628a2966",
           "width": 96,
-          "x": 1376,
+          "x": 1008,
           "y": -160,
           "zOrder": 55,
           "numberProperties": [],
@@ -2995,7 +2995,7 @@
           "persistentUuid": "501d94d2-9fcd-4725-974a-bdd1d0c43755",
           "width": 128,
           "x": 1728,
-          "y": -160,
+          "y": -159,
           "zOrder": 67,
           "numberProperties": [],
           "stringProperties": [],
@@ -3103,7 +3103,7 @@
           "name": "wild_boar",
           "persistentUuid": "7843fe02-27a5-435c-9816-524d095d5a7b",
           "width": 96,
-          "x": 800,
+          "x": 624,
           "y": -160,
           "zOrder": 55,
           "numberProperties": [],
@@ -3119,7 +3119,7 @@
           "name": "wild_boar",
           "persistentUuid": "df2e32af-f7d2-4e9d-a29e-162ccd282673",
           "width": 96,
-          "x": 1056,
+          "x": 1424,
           "y": -160,
           "zOrder": 55,
           "numberProperties": [],
@@ -3299,7 +3299,7 @@
           "layer": "",
           "name": "moving_up_down_platfrom",
           "persistentUuid": "4eddf530-512b-4c49-8700-e2260d02afb1",
-          "width": 160,
+          "width": 128,
           "x": 1504,
           "y": -1184,
           "zOrder": 83,
@@ -3427,7 +3427,7 @@
           "name": "goblin",
           "persistentUuid": "ebd4e9e4-5b6a-4854-a964-e7994417c18e",
           "width": 96,
-          "x": 1536,
+          "x": 1504,
           "y": -1280,
           "zOrder": 84,
           "numberProperties": [],
@@ -3554,7 +3554,7 @@
           "width": 64,
           "x": 2144,
           "y": -1440,
-          "zOrder": 93,
+          "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3647,10 +3647,26 @@
           "layer": "",
           "name": "special_platfrom_to_boss_room",
           "persistentUuid": "bfa4c144-4809-4fbc-aeea-7b94416595c0",
-          "width": 288,
-          "x": 1760,
+          "width": 192,
+          "x": 1888,
           "y": -1280,
           "zOrder": 98,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
+          "layer": "",
+          "name": "route",
+          "persistentUuid": "c69d5743-f76c-41a4-92fa-6b001f7adbfb",
+          "width": 1184,
+          "x": 480,
+          "y": -96,
+          "zOrder": 99,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4518,14 +4534,14 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
+                        "x": 986,
                         "y": 0
                       },
                       "centerPoint": {
                         "automatic": true,
                         "name": "centre",
-                        "x": 0,
-                        "y": 0
+                        "x": 1202.5,
+                        "y": 891.5
                       },
                       "customCollisionMask": [
                         [
@@ -4775,6 +4791,8 @@
               "PlatformerBehavior": "PlatformerObject"
             },
             {
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 1500,
               "canGoDownFromJumpthru": false,
               "canGrabPlatforms": false,
@@ -4787,9 +4805,7 @@
               "ladderClimbingSpeed": 0,
               "maxFallingSpeed": 900,
               "maxSpeed": 250,
-              "name": "PlatformerObject",
               "slopeMaxAngle": 60,
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "useLegacyTrajectory": true,
               "xGrabTolerance": 10,
               "yGrabOffset": 0
@@ -6495,10 +6511,10 @@
           "effects": [],
           "behaviors": [
             {
-              "canBeGrabbed": true,
               "name": "Platform",
-              "platformType": "NormalPlatform",
               "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
               "yGrabOffset": 0
             }
           ]
@@ -9599,6 +9615,82 @@
               ]
             },
             {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "wild_boar",
+                    "<=",
+                    "route.X()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::SetDestination"
+                  },
+                  "parameters": [
+                    "wild_boar",
+                    "Pathfinding",
+                    "",
+                    "wild_boar.X()+50",
+                    "wild_boar.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlipX"
+                  },
+                  "parameters": [
+                    "wild_boar",
+                    "yes"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "wild_boar",
+                    ">=",
+                    "route.X()+route.Width()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PathfindingBehavior::SetDestination"
+                  },
+                  "parameters": [
+                    "wild_boar",
+                    "Pathfinding",
+                    "",
+                    "wild_boar.X()-50",
+                    "wild_boar.Y()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FlipX"
+                  },
+                  "parameters": [
+                    "wild_boar",
+                    "no"
+                  ]
+                }
+              ]
+            },
+            {
               "type": "BuiltinCommonInstructions::Comment",
               "color": {
                 "b": 109,
@@ -9674,9 +9766,9 @@
                         "value": "PosX"
                       },
                       "parameters": [
-                        "Player",
-                        "<=",
-                        "slime.X()+400"
+                        "slime",
+                        ">=",
+                        "Player.X()-400"
                       ]
                     },
                     {
@@ -9729,9 +9821,9 @@
                         "value": "PosX"
                       },
                       "parameters": [
-                        "Player",
-                        ">=",
-                        "slime.X()-400"
+                        "slime",
+                        "<=",
+                        "Player.X()+400"
                       ]
                     },
                     {
@@ -9917,7 +10009,7 @@
                           "parameters": [
                             "goblin",
                             "Player",
-                            "1000",
+                            "700",
                             ""
                           ]
                         }
