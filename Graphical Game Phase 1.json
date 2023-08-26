@@ -2173,7 +2173,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.3411953102832551,
+        "zoomFactor": 0.2448908041476553,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2482,8 +2482,8 @@
           "name": "Player",
           "persistentUuid": "cfa1a98a-93b1-4876-8048-d7b9c03f6f71",
           "width": 96,
-          "x": 320,
-          "y": -960,
+          "x": 96,
+          "y": 608,
           "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
@@ -4658,6 +4658,12 @@
             {
               "folded": true,
               "name": "flyingTime",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "folded": true,
+              "name": "vx",
               "type": "number",
               "value": 0
             }
@@ -9541,6 +9547,70 @@
                     "textG": 0,
                     "textR": 0
                   },
+                  "comment": "goblin facing player"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CenterX"
+                      },
+                      "parameters": [
+                        "goblin",
+                        "<=",
+                        "Player.CenterX()"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlipX"
+                      },
+                      "parameters": [
+                        "goblin",
+                        "yes"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CenterX"
+                      },
+                      "parameters": [
+                        "goblin",
+                        ">",
+                        "Player.CenterX()"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "FlipX"
+                      },
+                      "parameters": [
+                        "goblin",
+                        "no"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
                   "comment": "goblin throws stone"
                 },
                 {
@@ -9560,7 +9630,7 @@
                             "goblin",
                             "\"fire\"",
                             ">=",
-                            "2"
+                            "3"
                           ]
                         },
                         {
@@ -9585,9 +9655,20 @@
                       "parameters": [
                         "",
                         "Stone",
-                        "goblin.X()",
-                        "goblin.Y()",
+                        "goblin.CenterX()",
+                        "goblin.CenterY() - 50",
                         ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarObjet"
+                      },
+                      "parameters": [
+                        "Stone",
+                        "vx",
+                        "=",
+                        "300"
                       ]
                     },
                     {
@@ -9596,7 +9677,7 @@
                       },
                       "parameters": [
                         "Stone",
-                        "500*(Player.CenterX()-Stone.CenterX())/abs(Player.CenterX()-Stone.CenterX())",
+                        "Stone.Variable(vx)*(Player.CenterX()-Stone.CenterX())/abs(Player.CenterX()-Stone.CenterX())",
                         "0",
                         "1"
                       ]
@@ -9609,7 +9690,7 @@
                         "Stone",
                         "flyingTime",
                         "=",
-                        "abs(Player.X()-Stone.X())/500"
+                        "abs(Player.X()-Stone.X())/Stone.Variable(vx)"
                       ]
                     },
                     {
@@ -9619,7 +9700,7 @@
                       "parameters": [
                         "Stone",
                         "0",
-                        "(Player.CenterY()-Stone.CenterY())/Stone.Variable(flyingTime)-500*Stone.Variable(flyingTime)",
+                        "(Player.CenterY()-Stone.CenterY())/Stone.Variable(flyingTime)-abs(Player.X()-Stone.X())",
                         "1"
                       ]
                     },
