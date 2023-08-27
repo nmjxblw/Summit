@@ -1717,7 +1717,7 @@
         "alwaysLoaded": false,
         "file": "assets/ec41092214e9b23d9992e2885835085c8e5457268b3e054599e799cc8074fc52_Health Bar3.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"assets/ec41092214e9b23d9992e2885835085c8e5457268b3e054599e799cc8074fc52_Health Bar3.png\",\"extension\":\".png\"}",
         "name": "assets\\ec41092214e9b23d9992e2885835085c8e5457268b3e054599e799cc8074fc52_Health Bar3.png",
         "smoothed": true,
         "userAdded": true
@@ -1908,6 +1908,24 @@
         "name": "assets\\coin_pile",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_ec41092214e9b23d9992e2885835085c8e5457268b3e054599e799cc8074fc52_Health Bar5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\ec41092214e9b23d9992e2885835085c8e5457268b3e054599e799cc8074fc52_Health Bar5",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/hp_bar_hp.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\hp_bar_hp.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2269,7 +2287,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.9538889949490289,
+        "zoomFactor": 0.22169878068421967,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2459,12 +2477,12 @@
             {
               "name": "x",
               "type": "number",
-              "value": 672
+              "value": 1950
             },
             {
               "name": "y",
               "type": "number",
-              "value": -896
+              "value": -860
             }
           ]
         },
@@ -2480,7 +2498,7 @@
                   "folded": true,
                   "name": "x",
                   "type": "number",
-                  "value": 4672
+                  "value": 3650
                 },
                 {
                   "folded": true,
@@ -2517,13 +2535,13 @@
               "folded": true,
               "name": "x",
               "type": "number",
-              "value": 5024
+              "value": 4160
             },
             {
               "folded": true,
               "name": "y",
               "type": "number",
-              "value": 610
+              "value": 612
             }
           ]
         },
@@ -2588,7 +2606,7 @@
           "persistentUuid": "1a22e3aa-d627-45d9-9b47-0551e264aafe",
           "width": 2304,
           "x": 0,
-          "y": 704,
+          "y": 699,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -2667,7 +2685,7 @@
           "persistentUuid": "cfa1a98a-93b1-4876-8048-d7b9c03f6f71",
           "width": 96,
           "x": 96,
-          "y": 610,
+          "y": 608,
           "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
@@ -2760,7 +2778,7 @@
           "layer": "",
           "name": "bottom_boundary",
           "persistentUuid": "80d36479-5690-46d8-893d-803cdd27a017",
-          "width": 6656,
+          "width": 5792,
           "x": -96,
           "y": 768,
           "zOrder": 48,
@@ -2825,8 +2843,8 @@
           "name": "Platform",
           "persistentUuid": "8dd19e9c-980f-408b-b2ef-8c87c379b423",
           "width": 2816,
-          "x": 3648,
-          "y": -608,
+          "x": 2784,
+          "y": -64,
           "zOrder": 51,
           "numberProperties": [],
           "stringProperties": [],
@@ -2836,13 +2854,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 1248,
+          "height": 704,
           "layer": "",
           "name": "Platform",
           "persistentUuid": "5bb9c4af-3e58-41e4-b89a-4025a435fdbd",
           "width": 70,
-          "x": 3648,
-          "y": -544,
+          "x": 2784,
+          "y": 0,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -2852,13 +2870,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 1312,
+          "height": 768,
           "layer": "",
           "name": "Platform",
           "persistentUuid": "47ab0aab-8b93-448d-a847-cf6a54ebc435",
           "width": 64,
-          "x": 6464,
-          "y": -608,
+          "x": 5600,
+          "y": -64,
           "zOrder": 14,
           "numberProperties": [],
           "stringProperties": [],
@@ -2873,7 +2891,7 @@
           "name": "Platform",
           "persistentUuid": "16408c7d-d538-4e9d-871e-d8b8ca230f8f",
           "width": 2880,
-          "x": 3648,
+          "x": 2784,
           "y": 704,
           "zOrder": 51,
           "numberProperties": [],
@@ -3537,8 +3555,8 @@
           "name": "debug_text_box",
           "persistentUuid": "1aef4818-2ad5-4c28-9265-fbade42ee586",
           "width": 0,
-          "x": 480,
-          "y": 128,
+          "x": 483,
+          "y": 256,
           "zOrder": 87,
           "numberProperties": [],
           "stringProperties": [],
@@ -3697,7 +3715,7 @@
           "name": "special_platfrom_to_boss_room",
           "persistentUuid": "bfa4c144-4809-4fbc-aeea-7b94416595c0",
           "width": 192,
-          "x": 2688,
+          "x": 2848,
           "y": -1600,
           "zOrder": 98,
           "numberProperties": [],
@@ -3724,13 +3742,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 1376,
+          "height": 832,
           "layer": "",
           "name": "boss_room_left_boundary",
           "persistentUuid": "f206256b-8c79-4019-b7f1-e0114b4fbb65",
           "width": 32,
-          "x": 3616,
-          "y": -608,
+          "x": 2752,
+          "y": -64,
           "zOrder": 100,
           "numberProperties": [],
           "stringProperties": [],
@@ -3740,13 +3758,13 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 1376,
+          "height": 832,
           "layer": "",
           "name": "boss_room_right_boundary",
           "persistentUuid": "c4e50555-d5fe-4725-9838-9f3a51b01a81",
           "width": 32,
-          "x": 6528,
-          "y": -608,
+          "x": 5664,
+          "y": -64,
           "zOrder": 101,
           "numberProperties": [],
           "stringProperties": [],
@@ -3812,6 +3830,37 @@
           "x": 320,
           "y": -864,
           "zOrder": 106,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
+          "layer": "Background",
+          "name": "boss_hp",
+          "persistentUuid": "651da82a-7178-465c-b9fe-425e46e3517c",
+          "width": 672,
+          "x": 288,
+          "y": 96,
+          "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "Background",
+          "name": "boss_name",
+          "persistentUuid": "a06d2ea3-7660-469c-982d-1207dbc684d3",
+          "width": 0,
+          "x": 497,
+          "y": 148,
+          "zOrder": 107,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4039,6 +4088,28 @@
             "b": 226,
             "g": 144,
             "r": 74
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "boss_name",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Goblin King",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 40,
+          "color": {
+            "b": 26,
+            "g": 155,
+            "r": 29
           }
         },
         {
@@ -5000,10 +5071,10 @@
               "PlatformerBehavior": "PlatformerObject"
             },
             {
-              "jumpSpeed": 1000,
-              "maxFallingSpeed": 1000,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "jumpSpeed": 1000,
+              "maxFallingSpeed": 1000,
               "jumpSustainTime": 0.2,
               "acceleration": 1500,
               "maxSpeed": 100000000000,
@@ -5252,9 +5323,9 @@
           "effects": [],
           "behaviors": [
             {
-              "maxFallingSpeed": 3000,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "maxFallingSpeed": 3000,
               "maxSpeed": 5000,
               "acceleration": 1500,
               "canGoDownFromJumpthru": false,
@@ -6667,11 +6738,12 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "assets\\ec41092214e9b23d9992e2885835085c8e5457268b3e054599e799cc8074fc52_Health Bar3",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
+                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
@@ -7059,6 +7131,68 @@
               ]
             }
           ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "boss_hp",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "assets\\ec41092214e9b23d9992e2885835085c8e5457268b3e054599e799cc8074fc52_Health Bar3",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\ec41092214e9b23d9992e2885835085c8e5457268b3e054599e799cc8074fc52_Health Bar5",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 0
+                          },
+                          {
+                            "x": 77,
+                            "y": 0
+                          },
+                          {
+                            "x": 77,
+                            "y": 9
+                          },
+                          {
+                            "x": 1,
+                            "y": 9
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -7211,6 +7345,22 @@
                     "yes",
                     "10",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "boss_hp"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "boss_name"
                   ]
                 }
               ]
@@ -7391,6 +7541,16 @@
                     "stamina_bar",
                     "=",
                     "(Player.Variable(arrows)/10)*96"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeWidth"
+                  },
+                  "parameters": [
+                    "boss_hp",
+                    "=",
+                    "(goblin_king.Health::Health()/150)*672"
                   ]
                 }
               ]
@@ -9098,6 +9258,22 @@
                             "on_battle",
                             ""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "Cache"
+                          },
+                          "parameters": [
+                            "boss_hp"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Cache"
+                          },
+                          "parameters": [
+                            "boss_name"
+                          ]
                         }
                       ],
                       "events": [
@@ -10202,6 +10378,48 @@
                     "yes",
                     "10",
                     "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "boss_hp",
+                    "boss_hp"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "boss_name",
+                    "boss_hp"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "task_text"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "task_find_scrolls"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "inventories"
                   ]
                 },
                 {
