@@ -1860,6 +1860,54 @@
         "name": "Stone",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/coin_pile.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\coin_pile.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/battleThemeA.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\battleThemeA.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/Philter - The Legend Of Iya.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Philter - The Legend Of Iya.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/chestCreak.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\chestCreak.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_coin_pile.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\coin_pile",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2221,7 +2269,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.3088829101943852,
+        "zoomFactor": 0.9538889949490289,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2618,8 +2666,8 @@
           "name": "Player",
           "persistentUuid": "cfa1a98a-93b1-4876-8048-d7b9c03f6f71",
           "width": 96,
-          "x": 1504,
-          "y": -958,
+          "x": 96,
+          "y": 610,
           "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
@@ -2889,8 +2937,8 @@
           "name": "key",
           "persistentUuid": "1b1d8f19-d4b2-42b5-a91d-2656a6d50e8d",
           "width": 64,
-          "x": 1920,
-          "y": -928,
+          "x": 1056,
+          "y": -608,
           "zOrder": 54,
           "numberProperties": [],
           "stringProperties": [],
@@ -3553,8 +3601,8 @@
           "name": "Chest",
           "persistentUuid": "58fc94f5-bd83-4c10-ba07-fc30623e1104",
           "width": 64,
-          "x": 2144,
-          "y": -1440,
+          "x": 2176,
+          "y": -1408,
           "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
@@ -3708,14 +3756,46 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 32,
+          "height": 96,
           "layer": "",
-          "name": "Platform",
-          "persistentUuid": "e188c116-3b4b-449b-888a-21371bdb50e7",
-          "width": 416,
-          "x": 5664,
-          "y": 480,
-          "zOrder": 102,
+          "name": "goblin",
+          "persistentUuid": "fb68aa26-48c3-4679-ba3f-3a81e9236234",
+          "width": 96,
+          "x": 1584,
+          "y": -1280,
+          "zOrder": 105,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 96,
+          "layer": "",
+          "name": "goblin",
+          "persistentUuid": "39c98e23-b1ad-4892-a1e8-2fe3c82b1930",
+          "width": 96,
+          "x": 1296,
+          "y": -1088,
+          "zOrder": 105,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 96,
+          "layer": "",
+          "name": "goblin",
+          "persistentUuid": "4fefa9b7-b25f-4ee4-90ca-683c251dac7d",
+          "width": 96,
+          "x": 912,
+          "y": -1504,
+          "zOrder": 105,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3727,59 +3807,11 @@
           "height": 32,
           "layer": "",
           "name": "Platform",
-          "persistentUuid": "9cc8077f-69b6-45c3-9729-e9d6666aecf5",
-          "width": 448,
-          "x": 4576,
-          "y": 480,
-          "zOrder": 104,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 64,
-          "layer": "",
-          "name": "scroll",
-          "persistentUuid": "340fce7e-d98f-4407-bf58-b640e54753ee",
-          "width": 64,
-          "x": 1632,
-          "y": -928,
-          "zOrder": 69,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 64,
-          "layer": "",
-          "name": "scroll",
-          "persistentUuid": "f7c25d6a-2642-4e57-8c7a-bc17a58d9dae",
-          "width": 64,
-          "x": 1728,
-          "y": -928,
-          "zOrder": 69,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 64,
-          "layer": "",
-          "name": "scroll",
-          "persistentUuid": "e7069827-ba09-4670-b65e-6480d1de4f7c",
-          "width": 64,
-          "x": 1824,
-          "y": -928,
-          "zOrder": 69,
+          "persistentUuid": "0c04db44-88fe-4f2c-8e71-72373892cfa3",
+          "width": 96,
+          "x": 320,
+          "y": -864,
+          "zOrder": 106,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4922,7 +4954,7 @@
               "folded": true,
               "name": "can_choose_an_action",
               "type": "boolean",
-              "value": false
+              "value": true
             }
           ],
           "effects": [],
@@ -4930,9 +4962,9 @@
             {
               "name": "Health",
               "type": "Health::Health",
-              "Health": 100,
+              "Health": 150,
               "CurrentHealth": 0,
-              "MaxHealth": 100,
+              "MaxHealth": 150,
               "DamageCooldown": 0.5,
               "IsHealthJustDamaged": false,
               "HealthRegenRate": 0.5,
@@ -4968,9 +5000,11 @@
               "PlatformerBehavior": "PlatformerObject"
             },
             {
-              "jumpSustainTime": 0.2,
+              "jumpSpeed": 1000,
+              "maxFallingSpeed": 1000,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "jumpSustainTime": 0.2,
               "acceleration": 1500,
               "maxSpeed": 100000000000,
               "slopeMaxAngle": 60,
@@ -4980,9 +5014,7 @@
               "deceleration": 1500,
               "gravity": 1000,
               "ignoreDefaultControls": true,
-              "jumpSpeed": 900,
               "ladderClimbingSpeed": 0,
-              "maxFallingSpeed": 900,
               "useLegacyTrajectory": true,
               "xGrabTolerance": 10,
               "yGrabOffset": 0
@@ -5221,9 +5253,9 @@
           "behaviors": [
             {
               "maxFallingSpeed": 3000,
-              "maxSpeed": 5000,
               "name": "PlatformerObject",
               "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "maxSpeed": 5000,
               "acceleration": 1500,
               "canGoDownFromJumpthru": false,
               "canGrabPlatforms": false,
@@ -5685,8 +5717,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 987,
+                        "y": 987
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -6839,7 +6871,7 @@
           "flow": 45,
           "jumpForwardInTimeOnCreation": 0,
           "maxParticleNb": 300,
-          "name": "ChargeParticles",
+          "name": "dash_charge_particles",
           "particleAlpha1": 255,
           "particleAlpha2": 1,
           "particleAlphaRandomness1": 0,
@@ -6919,6 +6951,114 @@
           "variables": [],
           "effects": [],
           "behaviors": []
+        },
+        {
+          "additive": false,
+          "assetStoreId": "",
+          "destroyWhenNoParticles": true,
+          "emitterAngleA": 0,
+          "emitterAngleB": 360,
+          "emitterForceMax": 85,
+          "emitterForceMin": 45,
+          "flow": 45,
+          "jumpForwardInTimeOnCreation": 0,
+          "maxParticleNb": 45,
+          "name": "throw_rock_charge_particle",
+          "particleAlpha1": 125,
+          "particleAlpha2": 255,
+          "particleAlphaRandomness1": 0,
+          "particleAlphaRandomness2": 0,
+          "particleAngle1": 0,
+          "particleAngle2": 0,
+          "particleAngleRandomness1": 0,
+          "particleAngleRandomness2": 0,
+          "particleBlue1": 51,
+          "particleBlue2": 0,
+          "particleGravityX": 0,
+          "particleGravityY": 0,
+          "particleGreen1": 51,
+          "particleGreen2": 255,
+          "particleLifeTimeMax": 1.5,
+          "particleLifeTimeMin": 0.5,
+          "particleRed1": 255,
+          "particleRed2": 255,
+          "particleSize1": 100,
+          "particleSize2": 1,
+          "particleSizeRandomness1": 0,
+          "particleSizeRandomness2": 0,
+          "rendererParam1": 6,
+          "rendererParam2": 1,
+          "rendererType": "Point",
+          "tags": "",
+          "tank": 45,
+          "textureParticleName": "",
+          "type": "ParticleSystem::ParticleEmitter",
+          "zoneRadius": 3,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "coin_pile",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "assets\\coin_pile",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\coin_pile",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 640,
+                        "y": 320
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 20,
+                            "y": 16
+                          },
+                          {
+                            "x": 112,
+                            "y": 16
+                          },
+                          {
+                            "x": 112,
+                            "y": 64
+                          },
+                          {
+                            "x": 20,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -7042,6 +7182,35 @@
                   },
                   "parameters": [
                     "Helper_Objects"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "debug_tools"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "coin_pile"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlayMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\Philter - The Legend Of Iya.mp3",
+                    "0",
+                    "yes",
+                    "10",
+                    "1"
                   ]
                 }
               ]
@@ -7167,7 +7336,7 @@
                   "parameters": [
                     "debug_text_box",
                     "=",
-                    "ToString(goblin_king.Variable(random_factor))"
+                    "ToString(goblin_king_stone.Variable(vy))"
                   ]
                 }
               ]
@@ -8880,7 +9049,7 @@
                                   },
                                   "parameters": [
                                     "Arrow",
-                                    "goblin",
+                                    "goblin_king",
                                     "",
                                     "",
                                     ""
@@ -8971,6 +9140,27 @@
                                 "Player",
                                 "PlatformerObject",
                                 "no"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "StopMusicCanal"
+                              },
+                              "parameters": [
+                                "",
+                                "1"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "MettreXY"
+                              },
+                              "parameters": [
+                                "Player",
+                                "=",
+                                "Variable(Goblin_king.on_the_third_floor.x)",
+                                "=",
+                                "Variable(Goblin_king.on_the_third_floor.y)"
                               ]
                             }
                           ]
@@ -9994,6 +10184,28 @@
                 },
                 {
                   "type": {
+                    "value": "StopMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PlayMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\battleThemeA.mp3",
+                    "1",
+                    "yes",
+                    "10",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Wait"
                   },
                   "parameters": [
@@ -10060,11 +10272,13 @@
               "actions": [
                 {
                   "type": {
-                    "value": "ChangeAnimation"
+                    "value": "PlaySound"
                   },
                   "parameters": [
-                    "Chest",
-                    "=",
+                    "",
+                    "assets\\chestCreak.wav",
+                    "",
+                    "10",
                     "1"
                   ]
                 },
@@ -10073,7 +10287,19 @@
                     "value": "Wait"
                   },
                   "parameters": [
-                    "1"
+                    "0.5"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "coin_pile",
+                    "Chest.CenterX()",
+                    "Chest.CenterY()",
+                    ""
                   ]
                 },
                 {
@@ -10083,6 +10309,14 @@
                   "parameters": [
                     "Chest",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
                   ]
                 },
                 {
@@ -10718,53 +10952,23 @@
                                     "goblin_king",
                                     "\"dash_cooldown\""
                                   ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "Create"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "ChargeParticles",
-                                    "goblin_king.CenterX()",
-                                    "goblin_king.CenterY()",
-                                    ""
-                                  ]
                                 }
                               ],
                               "events": [
                                 {
                                   "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [
-                                    {
-                                      "type": {
-                                        "value": "CenterX"
-                                      },
-                                      "parameters": [
-                                        "goblin_king",
-                                        ">=",
-                                        "Player.CenterX()"
-                                      ]
-                                    }
-                                  ],
+                                  "conditions": [],
                                   "actions": [
                                     {
                                       "type": {
-                                        "value": "Wait"
+                                        "value": "Create"
                                       },
                                       "parameters": [
-                                        "1"
-                                      ]
-                                    },
-                                    {
-                                      "type": {
-                                        "value": "AddForceXY"
-                                      },
-                                      "parameters": [
-                                        "goblin_king",
-                                        "-2000",
-                                        "0",
-                                        "1"
+                                        "",
+                                        "dash_charge_particles",
+                                        "goblin_king.CenterX()",
+                                        "goblin_king.CenterY()",
+                                        ""
                                       ]
                                     },
                                     {
@@ -10773,66 +10977,96 @@
                                       },
                                       "parameters": [
                                         "1"
-                                      ]
-                                    },
-                                    {
-                                      "type": {
-                                        "value": "Arreter"
-                                      },
-                                      "parameters": [
-                                        "goblin_king"
-                                      ]
-                                    }
-                                  ]
-                                },
-                                {
-                                  "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [
-                                    {
-                                      "type": {
-                                        "value": "CenterX"
-                                      },
-                                      "parameters": [
-                                        "goblin_king",
-                                        "<",
-                                        "Player.CenterX()"
                                       ]
                                     }
                                   ],
-                                  "actions": [
+                                  "events": [
                                     {
-                                      "type": {
-                                        "value": "Wait"
-                                      },
-                                      "parameters": [
-                                        "1"
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "CenterX"
+                                          },
+                                          "parameters": [
+                                            "goblin_king",
+                                            ">=",
+                                            "Player.CenterX()"
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "AddForceXY"
+                                          },
+                                          "parameters": [
+                                            "goblin_king",
+                                            "-2000",
+                                            "0",
+                                            "1"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "Wait"
+                                          },
+                                          "parameters": [
+                                            "0.25"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "Arreter"
+                                          },
+                                          "parameters": [
+                                            "goblin_king"
+                                          ]
+                                        }
                                       ]
                                     },
                                     {
-                                      "type": {
-                                        "value": "AddForceXY"
-                                      },
-                                      "parameters": [
-                                        "goblin_king",
-                                        "2000",
-                                        "0",
-                                        "1"
-                                      ]
-                                    },
-                                    {
-                                      "type": {
-                                        "value": "Wait"
-                                      },
-                                      "parameters": [
-                                        "1"
-                                      ]
-                                    },
-                                    {
-                                      "type": {
-                                        "value": "Arreter"
-                                      },
-                                      "parameters": [
-                                        "goblin_king"
+                                      "type": "BuiltinCommonInstructions::Standard",
+                                      "conditions": [
+                                        {
+                                          "type": {
+                                            "value": "CenterX"
+                                          },
+                                          "parameters": [
+                                            "goblin_king",
+                                            "<",
+                                            "Player.CenterX()"
+                                          ]
+                                        }
+                                      ],
+                                      "actions": [
+                                        {
+                                          "type": {
+                                            "value": "AddForceXY"
+                                          },
+                                          "parameters": [
+                                            "goblin_king",
+                                            "2000",
+                                            "0",
+                                            "1"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "Wait"
+                                          },
+                                          "parameters": [
+                                            "0.25"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "Arreter"
+                                          },
+                                          "parameters": [
+                                            "goblin_king"
+                                          ]
+                                        }
                                       ]
                                     }
                                   ]
@@ -10916,23 +11150,110 @@
                                     "goblin_king",
                                     "\"throw_rock_cooldown\""
                                   ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "throw_rock_charge_particle",
+                                    "goblin_king.CenterX()",
+                                    "goblin_king.CenterY()",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Wait"
+                                  },
+                                  "parameters": [
+                                    "1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Create"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "goblin_king_stone",
+                                    "goblin_king.CenterX()",
+                                    "goblin_king.CenterY() - 50",
+                                    ""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "ModVarObjet"
+                                  },
+                                  "parameters": [
+                                    "goblin_king_stone",
+                                    "vx",
+                                    "=",
+                                    "500*(Player.CenterX()-goblin_king_stone.CenterX())/abs(Player.CenterX()-goblin_king_stone.CenterX())"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "AddForceXY"
+                                  },
+                                  "parameters": [
+                                    "goblin_king_stone",
+                                    "goblin_king_stone.Variable(vx)",
+                                    "0",
+                                    "1"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "ModVarObjet"
+                                  },
+                                  "parameters": [
+                                    "goblin_king_stone",
+                                    "flyingTime",
+                                    "=",
+                                    "abs((Player.CenterX()-goblin_king_stone.CenterX())/goblin_king_stone.Variable(vx))"
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "ModVarObjet"
+                                  },
+                                  "parameters": [
+                                    "goblin_king_stone",
+                                    "vy",
+                                    "=",
+                                    "(Player.CenterY()-goblin_king_stone.CenterY())/goblin_king_stone.Variable(flyingTime)-(500/goblin_king_stone.Variable(vx))*(Player.CenterX()-goblin_king_stone.CenterX())"
+                                  ]
                                 }
                               ],
                               "events": [
                                 {
                                   "type": "BuiltinCommonInstructions::Standard",
-                                  "conditions": [],
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "VarObjet"
+                                      },
+                                      "parameters": [
+                                        "goblin_king_stone",
+                                        "vy",
+                                        ">=",
+                                        "1000"
+                                      ]
+                                    }
+                                  ],
                                   "actions": [
                                     {
                                       "type": {
-                                        "value": "Create"
+                                        "value": "AddForceXY"
                                       },
                                       "parameters": [
-                                        "",
-                                        "ChargeParticles",
-                                        "goblin_king.CenterX()",
-                                        "goblin_king.CenterY()",
-                                        ""
+                                        "goblin_king_stone",
+                                        "0",
+                                        "1000",
+                                        "1"
                                       ]
                                     },
                                     {
@@ -10940,171 +11261,127 @@
                                         "value": "Wait"
                                       },
                                       "parameters": [
-                                        "1"
+                                        "5"
                                       ]
                                     },
                                     {
                                       "type": {
-                                        "value": "Create"
+                                        "value": "Delete"
                                       },
                                       "parameters": [
-                                        "",
                                         "goblin_king_stone",
-                                        "goblin.CenterX()",
-                                        "goblin_king.CenterY() - 50",
                                         ""
                                       ]
-                                    },
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
                                     {
                                       "type": {
-                                        "value": "ModVarObjet"
+                                        "value": "BuiltinCommonInstructions::And"
                                       },
-                                      "parameters": [
-                                        "goblin_king_stone",
-                                        "vx",
-                                        "=",
-                                        "500*(Player.CenterX()-goblin_king_stone.CenterX())/abs(Player.CenterX()-goblin_king_stone.CenterX())"
+                                      "parameters": [],
+                                      "subInstructions": [
+                                        {
+                                          "type": {
+                                            "value": "VarObjet"
+                                          },
+                                          "parameters": [
+                                            "goblin_king_stone",
+                                            "vy",
+                                            ">",
+                                            "-1000"
+                                          ]
+                                        },
+                                        {
+                                          "type": {
+                                            "value": "VarObjet"
+                                          },
+                                          "parameters": [
+                                            "goblin_king_stone",
+                                            "vy",
+                                            "<",
+                                            "1000"
+                                          ]
+                                        }
                                       ]
-                                    },
+                                    }
+                                  ],
+                                  "actions": [
                                     {
                                       "type": {
                                         "value": "AddForceXY"
                                       },
                                       "parameters": [
                                         "goblin_king_stone",
-                                        "goblin_king_stone.Variable(vx)",
                                         "0",
+                                        "goblin_king_stone.Variable(vy)",
                                         "1"
                                       ]
                                     },
                                     {
                                       "type": {
-                                        "value": "ModVarObjet"
+                                        "value": "Wait"
                                       },
                                       "parameters": [
-                                        "goblin_king_stone",
-                                        "flyingTime",
-                                        "=",
-                                        "abs((Player.CenterX()-goblin_king_stone.CenterX())/goblin_king_stone.Variable(vx))"
+                                        "5"
                                       ]
                                     },
                                     {
                                       "type": {
-                                        "value": "ModVarObjet"
+                                        "value": "Delete"
+                                      },
+                                      "parameters": [
+                                        "goblin_king_stone",
+                                        ""
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "VarObjet"
                                       },
                                       "parameters": [
                                         "goblin_king_stone",
                                         "vy",
-                                        "=",
-                                        "(Player.CenterY()-Stone.CenterY())/goblin_king_stone.Variable(flyingTime)-(500/goblin_king_stone.Variable(vx))*(Player.CenterX()-goblin_king_stone.CenterX())"
+                                        "<=",
+                                        "-1000"
                                       ]
                                     }
                                   ],
-                                  "events": [
+                                  "actions": [
                                     {
-                                      "type": "BuiltinCommonInstructions::Standard",
-                                      "conditions": [
-                                        {
-                                          "type": {
-                                            "value": "VarObjet"
-                                          },
-                                          "parameters": [
-                                            "Stone",
-                                            "vy",
-                                            "<=",
-                                            "-1000"
-                                          ]
-                                        }
-                                      ],
-                                      "actions": [
-                                        {
-                                          "type": {
-                                            "value": "AddForceXY"
-                                          },
-                                          "parameters": [
-                                            "Stone",
-                                            "0",
-                                            "-1000",
-                                            "1"
-                                          ]
-                                        }
+                                      "type": {
+                                        "value": "AddForceXY"
+                                      },
+                                      "parameters": [
+                                        "goblin_king_stone",
+                                        "0",
+                                        "-1000",
+                                        "1"
                                       ]
                                     },
                                     {
-                                      "type": "BuiltinCommonInstructions::Standard",
-                                      "conditions": [
-                                        {
-                                          "type": {
-                                            "value": "BuiltinCommonInstructions::And"
-                                          },
-                                          "parameters": [],
-                                          "subInstructions": [
-                                            {
-                                              "type": {
-                                                "value": "VarObjet"
-                                              },
-                                              "parameters": [
-                                                "Stone",
-                                                "vy",
-                                                ">",
-                                                "-1000"
-                                              ]
-                                            },
-                                            {
-                                              "type": {
-                                                "value": "VarObjet"
-                                              },
-                                              "parameters": [
-                                                "Stone",
-                                                "vy",
-                                                "<",
-                                                "1000"
-                                              ]
-                                            }
-                                          ]
-                                        }
-                                      ],
-                                      "actions": [
-                                        {
-                                          "type": {
-                                            "value": "AddForceXY"
-                                          },
-                                          "parameters": [
-                                            "Stone",
-                                            "0",
-                                            "goblin_king_stone.Variable(vy)",
-                                            "1"
-                                          ]
-                                        }
+                                      "type": {
+                                        "value": "Wait"
+                                      },
+                                      "parameters": [
+                                        "5"
                                       ]
                                     },
                                     {
-                                      "type": "BuiltinCommonInstructions::Standard",
-                                      "conditions": [
-                                        {
-                                          "type": {
-                                            "value": "VarObjet"
-                                          },
-                                          "parameters": [
-                                            "Stone",
-                                            "vy",
-                                            ">=",
-                                            "1000"
-                                          ]
-                                        }
-                                      ],
-                                      "actions": [
-                                        {
-                                          "type": {
-                                            "value": "AddForceXY"
-                                          },
-                                          "parameters": [
-                                            "Stone",
-                                            "0",
-                                            "1000",
-                                            "1"
-                                          ]
-                                        }
+                                      "type": {
+                                        "value": "Delete"
+                                      },
+                                      "parameters": [
+                                        "goblin_king_stone",
+                                        ""
                                       ]
                                     }
                                   ]
@@ -11354,7 +11631,7 @@
                                       },
                                       "parameters": [
                                         "goblin_king",
-                                        "-400",
+                                        "-400 + RandomInRange(-200,200)",
                                         "0",
                                         "1"
                                       ]
@@ -11364,7 +11641,7 @@
                                         "value": "Wait"
                                       },
                                       "parameters": [
-                                        "1.5"
+                                        "1"
                                       ]
                                     },
                                     {
@@ -11398,7 +11675,7 @@
                                       },
                                       "parameters": [
                                         "goblin_king",
-                                        "400",
+                                        "400 + RandomInRange(-200,200)",
                                         "0",
                                         "1"
                                       ]
@@ -11408,7 +11685,7 @@
                                         "value": "Wait"
                                       },
                                       "parameters": [
-                                        "1.5"
+                                        "1"
                                       ]
                                     },
                                     {
