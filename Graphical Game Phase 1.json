@@ -1904,7 +1904,7 @@
         "alwaysLoaded": false,
         "file": "assets/assets_coin_pile.png",
         "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/assets_coin_pile.png\"}",
         "name": "assets\\coin_pile",
         "smoothed": true,
         "userAdded": false
@@ -2162,7 +2162,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "1"
+                "0.1"
               ]
             },
             {
@@ -2171,7 +2171,7 @@
               },
               "parameters": [
                 "",
-                "\"RPG scene\""
+                "\"story scene 1\""
               ]
             }
           ]
@@ -2211,8 +2211,8 @@
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
-      "mangledName": "story_32scene",
-      "name": "story scene",
+      "mangledName": "story_32scene_321",
+      "name": "story scene 1",
       "r": 209,
       "standardSortMethod": true,
       "stopSoundsOnStartup": true,
@@ -2233,9 +2233,186 @@
       },
       "objectsGroups": [],
       "variables": [],
-      "instances": [],
-      "objects": [],
-      "events": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "story",
+          "persistentUuid": "7990eb09-eb53-4864-af44-9dafc060a709",
+          "width": 0,
+          "x": 218,
+          "y": 224,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "story",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "The Goblin King has stolen \nthe treasure from the village. \nAs a brave warrior, you decide to stop them \nand reclaim the treasure. \nAnd so, your journey begins...",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SceneBackground"
+              },
+              "parameters": [
+                "",
+                "\"0;0;0\""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"goto game scene timer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"goto game scene timer\"",
+                    ">=",
+                    "10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnyKeyPressed"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Right"
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SceneBackground"
+              },
+              "parameters": [
+                "",
+                "\"255;255;255\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "PushScene"
+              },
+              "parameters": [
+                "",
+                "\"RPG scene\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "DoesSceneExist"
+              },
+              "parameters": [
+                "",
+                "CurrentSceneName()"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "RemoveTimer"
+              },
+              "parameters": [
+                "",
+                "\"goto game scene timer\""
+              ]
+            }
+          ]
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 200,
@@ -2287,7 +2464,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.22169878068421967,
+        "zoomFactor": 0.45986522709191346,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3861,6 +4038,21 @@
           "x": 497,
           "y": 148,
           "zOrder": 107,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "coin_pile",
+          "persistentUuid": "bed912fd-9fb4-4554-8184-83305aedb7fb",
+          "width": 0,
+          "x": 2752,
+          "y": -1120,
+          "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5827,6 +6019,68 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
+          "name": "coin_pile",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "assets\\coin_pile",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\coin_pile",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 640,
+                        "y": 320
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 20,
+                            "y": 16
+                          },
+                          {
+                            "x": 112,
+                            "y": 16
+                          },
+                          {
+                            "x": 112,
+                            "y": 64
+                          },
+                          {
+                            "x": 20,
+                            "y": 64
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
           "name": "inventory_sword",
           "tags": "",
           "type": "Sprite",
@@ -7073,68 +7327,6 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "coin_pile",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "assets\\coin_pile",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\coin_pile",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 640,
-                        "y": 320
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 20,
-                            "y": 16
-                          },
-                          {
-                            "x": 112,
-                            "y": 16
-                          },
-                          {
-                            "x": 112,
-                            "y": 64
-                          },
-                          {
-                            "x": 20,
-                            "y": 64
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
           "name": "boss_hp",
           "tags": "",
           "type": "Sprite",
@@ -7193,6 +7385,28 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "goblin_king_dead",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "NO!!!!",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 194,
+            "g": 227,
+            "r": 80
+          }
         }
       ],
       "events": [
@@ -9261,18 +9475,32 @@
                         },
                         {
                           "type": {
-                            "value": "Cache"
+                            "value": "Delete"
                           },
                           "parameters": [
-                            "boss_hp"
+                            "boss_hp",
+                            ""
                           ]
                         },
                         {
                           "type": {
-                            "value": "Cache"
+                            "value": "Delete"
                           },
                           "parameters": [
-                            "boss_name"
+                            "boss_name",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "goblin_king_dead",
+                            "goblin_king.CenterX()-50",
+                            "goblin_king.CenterY()-150",
+                            ""
                           ]
                         }
                       ],
@@ -10490,14 +10718,12 @@
               "actions": [
                 {
                   "type": {
-                    "value": "PlaySound"
+                    "value": "PlatformBehavior::IgnoreDefaultControls"
                   },
                   "parameters": [
-                    "",
-                    "assets\\chestCreak.wav",
-                    "",
-                    "10",
-                    "1"
+                    "Player",
+                    "PlatformerObject",
+                    "yes"
                   ]
                 },
                 {
@@ -10506,18 +10732,6 @@
                   },
                   "parameters": [
                     "0.5"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "Create"
-                  },
-                  "parameters": [
-                    "",
-                    "coin_pile",
-                    "Chest.CenterX()",
-                    "Chest.CenterY()",
-                    ""
                   ]
                 },
                 {
@@ -10531,10 +10745,19 @@
                 },
                 {
                   "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "coin_pile",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Wait"
                   },
                   "parameters": [
-                    "1"
+                    "2"
                   ]
                 },
                 {
@@ -10543,7 +10766,7 @@
                   },
                   "parameters": [
                     "",
-                    "\"game over scene\""
+                    "\"story scene 2\""
                   ]
                 }
               ]
@@ -13179,6 +13402,242 @@
     {
       "b": 209,
       "disableInputWhenNotFocused": true,
+      "mangledName": "story_32scene_322",
+      "name": "story scene 2",
+      "r": 209,
+      "standardSortMethod": true,
+      "stopSoundsOnStartup": true,
+      "title": "",
+      "v": 209,
+      "uiSettings": {
+        "grid": false,
+        "gridType": "rectangular",
+        "gridWidth": 32,
+        "gridHeight": 32,
+        "gridOffsetX": 0,
+        "gridOffsetY": 0,
+        "gridColor": 10401023,
+        "gridAlpha": 0.8,
+        "snap": false,
+        "zoomFactor": 0.546875,
+        "windowMask": false
+      },
+      "objectsGroups": [],
+      "variables": [],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "story",
+          "persistentUuid": "39a7c382-eba1-411b-a31f-d1a600fe6175",
+          "width": 0,
+          "x": 101,
+          "y": 220,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        }
+      ],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "story",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "With your assistance, the people defeated the Goblin King \nand reclaimed the treasure that belonged to them. \nThe villagers are very grateful for your help \nand have dubbed you a hero. \nYour story is told by people and endures through time...",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"goto game over scene timer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneBackground"
+              },
+              "parameters": [
+                "",
+                "\"0;0;0\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"goto game over scene timer\"",
+                    ">=",
+                    "10"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnyKeyPressed"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Left"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "MouseButtonPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Right"
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SceneBackground"
+              },
+              "parameters": [
+                "",
+                "\"255;255;255\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Wait"
+              },
+              "parameters": [
+                "0.1"
+              ]
+            },
+            {
+              "type": {
+                "value": "PushScene"
+              },
+              "parameters": [
+                "",
+                "\"game over scene\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "DoesSceneExist"
+              },
+              "parameters": [
+                "",
+                "CurrentSceneName()"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "RemoveTimer"
+              },
+              "parameters": [
+                "",
+                "\"goto game over scene timer\""
+              ]
+            }
+          ]
+        }
+      ],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "behaviorsSharedData": []
+    },
+    {
+      "b": 209,
+      "disableInputWhenNotFocused": true,
       "mangledName": "game_32over_32scene",
       "name": "game over scene",
       "r": 209,
@@ -13210,9 +13669,24 @@
           "name": "thanks_text",
           "persistentUuid": "455ff736-36e9-4099-ac44-957b1765620a",
           "width": 0,
-          "x": 200,
-          "y": 284,
+          "x": 181,
+          "y": 12,
           "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Team",
+          "persistentUuid": "ac8b4ceb-bf69-48aa-a5db-02c51a840dec",
+          "width": 0,
+          "x": 381,
+          "y": 188,
+          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -13235,6 +13709,28 @@
           "font": "",
           "textAlignment": "left",
           "characterSize": 100,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "Team",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Team\nGame Design - Zhuo Chen \nArt - Shuhao Lu\nCode Lead - Kevin Tan\n\nMusic\nThe Legend Of Iya - Philter\nbattleThemeA - cynicmusic\n",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 40,
           "color": {
             "b": 255,
             "g": 255,
@@ -13279,7 +13775,7 @@
                     "",
                     "\"goto warning scene\"",
                     ">=",
-                    "5"
+                    "10"
                   ]
                 },
                 {
@@ -13324,7 +13820,7 @@
                 "value": "Wait"
               },
               "parameters": [
-                "1"
+                "0.1"
               ]
             },
             {
