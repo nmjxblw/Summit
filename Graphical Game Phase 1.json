@@ -2464,7 +2464,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.45986522709191346,
+        "zoomFactor": 0.5079719649991822,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2506,6 +2506,9 @@
             },
             {
               "name": "special_down_arrow"
+            },
+            {
+              "name": "delete_goblin_king_stone"
             }
           ]
         },
@@ -3035,7 +3038,7 @@
           "layer": "",
           "name": "Platform",
           "persistentUuid": "5bb9c4af-3e58-41e4-b89a-4025a435fdbd",
-          "width": 70,
+          "width": 64,
           "x": 2784,
           "y": 0,
           "zOrder": 14,
@@ -3127,22 +3130,6 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 64,
-          "layer": "",
-          "name": "key",
-          "persistentUuid": "1b1d8f19-d4b2-42b5-a91d-2656a6d50e8d",
-          "width": 64,
-          "x": 1056,
-          "y": -608,
-          "zOrder": 54,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
           "height": 96,
           "layer": "",
           "name": "wild_boar",
@@ -3163,8 +3150,8 @@
           "name": "down_arrow",
           "persistentUuid": "089a39bc-52ff-4478-aea7-b5a86ea5f2dd",
           "width": 0,
-          "x": 2048,
-          "y": -96,
+          "x": 2064,
+          "y": -80,
           "zOrder": 56,
           "numberProperties": [],
           "stringProperties": [],
@@ -3178,8 +3165,8 @@
           "name": "up_arrow",
           "persistentUuid": "e7484976-3c4d-4ebf-b113-203c1b65b3d5",
           "width": 0,
-          "x": 2048,
-          "y": 672,
+          "x": 2064,
+          "y": 688,
           "zOrder": 57,
           "numberProperties": [],
           "stringProperties": [],
@@ -3193,8 +3180,8 @@
           "name": "up_arrow",
           "persistentUuid": "05f5e2f2-4384-472e-8cb4-4ab10f2aa803",
           "width": 0,
-          "x": 224,
-          "y": -160,
+          "x": 240,
+          "y": -144,
           "zOrder": 58,
           "numberProperties": [],
           "stringProperties": [],
@@ -3208,8 +3195,8 @@
           "name": "down_arrow",
           "persistentUuid": "cbdbef98-f1c6-4320-b521-6a3f26e27f81",
           "width": 0,
-          "x": 224,
-          "y": -864,
+          "x": 240,
+          "y": -848,
           "zOrder": 59,
           "numberProperties": [],
           "stringProperties": [],
@@ -3496,8 +3483,8 @@
           "name": "down_arrow",
           "persistentUuid": "59fc7de2-267b-49c8-be9a-eb709a131079",
           "width": 32,
-          "x": 832,
-          "y": -1440,
+          "x": 848,
+          "y": -1424,
           "zOrder": 59,
           "numberProperties": [],
           "stringProperties": [],
@@ -3512,8 +3499,8 @@
           "name": "up_arrow",
           "persistentUuid": "dec17926-ff23-4b55-ab35-bab3274a5537",
           "width": 32,
-          "x": 1344,
-          "y": -960,
+          "x": 1360,
+          "y": -944,
           "zOrder": 58,
           "numberProperties": [],
           "stringProperties": [],
@@ -3828,8 +3815,8 @@
           "name": "down_arrow",
           "persistentUuid": "6b666b32-8b4b-4681-9d1e-84143d541e36",
           "width": 32,
-          "x": 800,
-          "y": -1408,
+          "x": 816,
+          "y": -1392,
           "zOrder": 59,
           "numberProperties": [],
           "stringProperties": [],
@@ -3844,8 +3831,8 @@
           "name": "up_arrow",
           "persistentUuid": "e43f91f1-4bb8-45fd-a160-f47b0f3adc17",
           "width": 32,
-          "x": 1376,
-          "y": -992,
+          "x": 1392,
+          "y": -976,
           "zOrder": 58,
           "numberProperties": [],
           "stringProperties": [],
@@ -4053,6 +4040,342 @@
           "x": 2752,
           "y": -1120,
           "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "right_arrow",
+          "persistentUuid": "aec7e3e6-8f23-4821-83ef-084145996b28",
+          "width": 0,
+          "x": 2960,
+          "y": 496,
+          "zOrder": 109,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 704,
+          "layer": "",
+          "name": "delete_goblin_king_stone",
+          "persistentUuid": "edb2de12-0606-4077-884a-825dc834fea8",
+          "width": 64,
+          "x": 5568,
+          "y": 0,
+          "zOrder": 111,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 704,
+          "layer": "",
+          "name": "delete_goblin_king_stone",
+          "persistentUuid": "47cf9bda-9aad-4f95-8d0f-e0088c97a8e4",
+          "width": 64,
+          "x": 2816,
+          "y": 0,
+          "zOrder": 112,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "left_arrow",
+          "persistentUuid": "3228a1e5-6b8a-4547-9a0f-ae6dc9c38cdd",
+          "width": 0,
+          "x": 5472,
+          "y": 480,
+          "zOrder": 113,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "up_arrow",
+          "persistentUuid": "0ac1db31-21e1-4ebe-8ac3-8c6d74a101ab",
+          "width": 0,
+          "x": 4272,
+          "y": 496,
+          "zOrder": 115,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "right_arrow",
+          "persistentUuid": "895ca502-2059-4d71-a4bc-5a1dcf2d0672",
+          "width": 0,
+          "x": 2992,
+          "y": 528,
+          "zOrder": 116,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "up_arrow",
+          "persistentUuid": "6dfbb23c-59a3-429f-97db-97d6420bb4cf",
+          "width": 0,
+          "x": 4144,
+          "y": 496,
+          "zOrder": 117,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "up_arrow",
+          "persistentUuid": "6fbef769-4e6d-4b6c-a021-cd400ed361db",
+          "width": 0,
+          "x": 4304,
+          "y": 528,
+          "zOrder": 118,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "up_arrow",
+          "persistentUuid": "f4ec3347-54aa-4b22-b670-94f5a052e2a9",
+          "width": 0,
+          "x": 4112,
+          "y": 528,
+          "zOrder": 119,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "down_arrow",
+          "persistentUuid": "b3430149-115e-476b-8afa-06b472df808e",
+          "width": 0,
+          "x": 2960,
+          "y": 208,
+          "zOrder": 120,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "down_arrow",
+          "persistentUuid": "13e06056-9599-4524-acc7-7d92c1f752a1",
+          "width": 0,
+          "x": 2992,
+          "y": 176,
+          "zOrder": 121,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "left_arrow",
+          "persistentUuid": "3c411125-3b7a-4417-91fc-53313443bad9",
+          "width": 0,
+          "x": 4128,
+          "y": 192,
+          "zOrder": 123,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "left_arrow",
+          "persistentUuid": "e964ebb3-6711-4949-8ffb-ea8be5f9afb0",
+          "width": 0,
+          "x": 4096,
+          "y": 160,
+          "zOrder": 124,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
+          "layer": "",
+          "name": "moving_cycle_platform",
+          "persistentUuid": "d54cff08-2815-4189-bba1-44bc4437a681",
+          "width": 96,
+          "x": 2976,
+          "y": 224,
+          "zOrder": 126,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
+          "layer": "",
+          "name": "Platform",
+          "persistentUuid": "c2270b90-de93-4bde-8990-947d5e7630a6",
+          "width": 160,
+          "x": 4128,
+          "y": 480,
+          "zOrder": 127,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "right_arrow",
+          "persistentUuid": "2c7712a0-bdf3-4d04-8e64-e94c003c3802",
+          "width": 0,
+          "x": 4272,
+          "y": 208,
+          "zOrder": 128,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "right_arrow",
+          "persistentUuid": "8f5abc41-237d-49fa-8088-a5e005ce1b9b",
+          "width": 0,
+          "x": 4304,
+          "y": 176,
+          "zOrder": 129,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "left_arrow",
+          "persistentUuid": "1fc9c958-ed74-4eea-9c1c-80cfa6063911",
+          "width": 0,
+          "x": 5440,
+          "y": 512,
+          "zOrder": 130,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "down_arrow",
+          "persistentUuid": "a8d1660c-30eb-4f60-ae19-3853319682b5",
+          "width": 0,
+          "x": 5488,
+          "y": 208,
+          "zOrder": 132,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "down_arrow",
+          "persistentUuid": "741457c2-2ba4-43e4-999c-641058763e1f",
+          "width": 0,
+          "x": 5456,
+          "y": 176,
+          "zOrder": 133,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 32,
+          "layer": "",
+          "name": "moving_cycle_platform",
+          "persistentUuid": "f0ca5ed7-e130-403f-a0a2-ae8c11cfe1db",
+          "width": 96,
+          "x": 5376,
+          "y": 224,
+          "zOrder": 135,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "layer": "",
+          "name": "key",
+          "persistentUuid": "5087f0bc-a684-4e4f-8b72-031b0fbcf100",
+          "width": 64,
+          "x": 1088,
+          "y": -576,
+          "zOrder": 136,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -5919,8 +6242,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 982,
+                        "y": 1005
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -6405,6 +6728,26 @@
         {
           "assetStoreId": "",
           "height": 32,
+          "name": "special_platfrom_to_boss_room",
+          "tags": "",
+          "texture": "assets\\Icon Background_Wood.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Platform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
+              "yGrabOffset": 0
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
           "name": "Ground",
           "tags": "",
           "texture": "f0fcdea023107dc7c4263d38d52d5f6f74a5b779887760a1580a613f7f4b2af0_tiled_Grass.png",
@@ -6657,8 +7000,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 16,
+                        "y": 16
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -6719,8 +7062,8 @@
                       "points": [],
                       "originPoint": {
                         "name": "origine",
-                        "x": 0,
-                        "y": 0
+                        "x": 16,
+                        "y": 16
                       },
                       "centerPoint": {
                         "automatic": true,
@@ -6981,6 +7324,18 @@
           "behaviors": []
         },
         {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "delete_goblin_king_stone",
+          "tags": "",
+          "texture": "",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
           "name": "health_bar",
@@ -7163,26 +7518,6 @@
                   ]
                 }
               ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "height": 32,
-          "name": "special_platfrom_to_boss_room",
-          "tags": "",
-          "texture": "assets\\Icon Background_Wood.png",
-          "type": "TiledSpriteObject::TiledSprite",
-          "width": 32,
-          "variables": [],
-          "effects": [],
-          "behaviors": [
-            {
-              "name": "Platform",
-              "type": "PlatformBehavior::PlatformBehavior",
-              "canBeGrabbed": true,
-              "platformType": "NormalPlatform",
-              "yGrabOffset": 0
             }
           ]
         },
@@ -11825,6 +12160,46 @@
                                         ""
                                       ]
                                     }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Comment",
+                              "color": {
+                                "b": 109,
+                                "g": 230,
+                                "r": 255,
+                                "textB": 0,
+                                "textG": 0,
+                                "textR": 0
+                              },
+                              "comment": "goblin king stone collision"
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "CollisionNP"
+                                  },
+                                  "parameters": [
+                                    "goblin_king_stone",
+                                    "delete_goblin_king_stone",
+                                    "",
+                                    "",
+                                    ""
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "Delete"
+                                  },
+                                  "parameters": [
+                                    "goblin_king_stone",
+                                    ""
                                   ]
                                 }
                               ]
