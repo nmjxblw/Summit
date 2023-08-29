@@ -1926,6 +1926,63 @@
         "name": "assets\\hp_bar_hp.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Long tree.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "9d58e34117b44c09b7cc915403c7a784385cd9fb125c4a23bd7190f1b07577fa_Long tree.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Generic Backgrounds/Plant/9d58e34117b44c09b7cc915403c7a784385cd9fb125c4a23bd7190f1b07577fa_Long tree.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Tree.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "2749017c821557802fbddcfa31a8bd1e386588fa0f8af7fe4eb6afb3f64a4655_Tree.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Generic Backgrounds/Plant/2749017c821557802fbddcfa31a8bd1e386588fa0f8af7fe4eb6afb3f64a4655_Tree.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/tiled_Tree trunk tiled sprite.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "f773a38bb4a8fb84a6d576c08a8929e360a9af1ba49a57842e7c91ed303ed9a4_tiled_Tree trunk tiled sprite.png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Platformer Pack/Tiles/f773a38bb4a8fb84a6d576c08a8929e360a9af1ba49a57842e7c91ed303ed9a4_tiled_Tree trunk tiled sprite.png",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/idle3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "idle2",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/jump2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "jump2",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2464,7 +2521,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.5079719649991822,
+        "zoomFactor": 0.22917453674727953,
         "windowMask": false
       },
       "objectsGroups": [
@@ -3034,7 +3091,7 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 704,
+          "height": 768,
           "layer": "",
           "name": "Platform",
           "persistentUuid": "5bb9c4af-3e58-41e4-b89a-4025a435fdbd",
@@ -3050,7 +3107,7 @@
           "angle": 0,
           "customSize": true,
           "depth": 0,
-          "height": 768,
+          "height": 832,
           "layer": "",
           "name": "Platform",
           "persistentUuid": "47ab0aab-8b93-448d-a847-cf6a54ebc435",
@@ -3058,22 +3115,6 @@
           "x": 5600,
           "y": -64,
           "zOrder": 14,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 64,
-          "layer": "",
-          "name": "Platform",
-          "persistentUuid": "16408c7d-d538-4e9d-871e-d8b8ca230f8f",
-          "width": 2880,
-          "x": 2784,
-          "y": 704,
-          "zOrder": 51,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3137,7 +3178,7 @@
           "width": 96,
           "x": 1008,
           "y": -160,
-          "zOrder": 55,
+          "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3227,7 +3268,7 @@
           "name": "moving_right_left_platfrom",
           "persistentUuid": "95081aba-89de-4daa-93c9-0fd1ab2349fd",
           "width": 128,
-          "x": 2176,
+          "x": 2016,
           "y": -448,
           "zOrder": 64,
           "numberProperties": [],
@@ -3242,7 +3283,7 @@
           "name": "left_arrow",
           "persistentUuid": "0d89de79-9fa0-44c3-b6bd-a6f3f68628ce",
           "width": 0,
-          "x": 2304,
+          "x": 2208,
           "y": -448,
           "zOrder": 65,
           "numberProperties": [],
@@ -3352,7 +3393,7 @@
           "width": 64,
           "x": 1184,
           "y": 640,
-          "zOrder": 72,
+          "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3368,7 +3409,7 @@
           "width": 64,
           "x": 1504,
           "y": 640,
-          "zOrder": 72,
+          "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3384,7 +3425,7 @@
           "width": 96,
           "x": 624,
           "y": -160,
-          "zOrder": 55,
+          "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3400,7 +3441,7 @@
           "width": 96,
           "x": 1424,
           "y": -160,
-          "zOrder": 55,
+          "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3660,7 +3701,7 @@
           "width": 64,
           "x": 1856,
           "y": 640,
-          "zOrder": 72,
+          "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3766,7 +3807,7 @@
           "layer": "",
           "name": "Platform",
           "persistentUuid": "7d4d1ab4-0f0c-4bc9-a96c-3adb84012990",
-          "width": 192,
+          "width": 224,
           "x": 2080,
           "y": -1376,
           "zOrder": 92,
@@ -3945,7 +3986,7 @@
           "width": 96,
           "x": 1584,
           "y": -1280,
-          "zOrder": 105,
+          "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3961,7 +4002,7 @@
           "width": 96,
           "x": 1296,
           "y": -1088,
-          "zOrder": 105,
+          "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -3977,7 +4018,7 @@
           "width": 96,
           "x": 912,
           "y": -1504,
-          "zOrder": 105,
+          "zOrder": 37,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4379,6 +4420,324 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 192,
+          "layer": "",
+          "name": "tree",
+          "persistentUuid": "e873f4f3-a250-4a88-8787-378ef462a21a",
+          "width": 131,
+          "x": 224,
+          "y": 512,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 224,
+          "layer": "",
+          "name": "tree",
+          "persistentUuid": "31884483-cde2-492c-bd13-995bb8d4ba03",
+          "width": 99,
+          "x": 1021,
+          "y": 480,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 256,
+          "layer": "",
+          "name": "tree",
+          "persistentUuid": "8b005dfb-f6b1-480e-98d5-a79159abf38e",
+          "width": 99,
+          "x": 1696,
+          "y": 448,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 288,
+          "layer": "",
+          "name": "tree",
+          "persistentUuid": "b4796d04-bb84-4ba4-ac64-377359ed489c",
+          "width": 99,
+          "x": 1632,
+          "y": 416,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 224,
+          "layer": "",
+          "name": "tree",
+          "persistentUuid": "1693c7a9-3537-419e-8217-8b97a8356532",
+          "width": 99,
+          "x": 1533,
+          "y": -288,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 256,
+          "layer": "",
+          "name": "tree",
+          "persistentUuid": "7d457425-e1da-47bf-a4b1-8c8e5a6832b0",
+          "width": 96,
+          "x": 1280,
+          "y": -320,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 192,
+          "layer": "",
+          "name": "tree",
+          "persistentUuid": "847f653e-6cd7-4a88-b357-1e64104fa776",
+          "width": 96,
+          "x": 800,
+          "y": -256,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 256,
+          "layer": "",
+          "name": "tree",
+          "persistentUuid": "41957dc0-427c-48f1-a0a3-e1c5d1ceb92d",
+          "width": 99,
+          "x": 736,
+          "y": -320,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 192,
+          "layer": "",
+          "name": "tree",
+          "persistentUuid": "1870fb23-fb07-4dc6-82cd-d9976aed194e",
+          "width": 131,
+          "x": 1856,
+          "y": -256,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 288,
+          "layer": "",
+          "name": "tree",
+          "persistentUuid": "ec6a01cd-740c-4781-92b9-625732fc46e5",
+          "width": 124,
+          "x": 992,
+          "y": -1120,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "tree",
+          "persistentUuid": "f579a0fe-cc6b-4b26-924c-24a446a02c0b",
+          "width": 0,
+          "x": 2112,
+          "y": -1240,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 288,
+          "layer": "",
+          "name": "tree",
+          "persistentUuid": "b7c557a2-f6c0-41a2-a2ab-5db2156363b9",
+          "width": 99,
+          "x": 413,
+          "y": -352,
+          "zOrder": 38,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 69,
+          "layer": "",
+          "name": "Ground",
+          "persistentUuid": "64e4cac0-f0d2-4395-8a0f-d6bfe3651a0c",
+          "width": 2752,
+          "x": 2848,
+          "y": 704,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 256,
+          "layer": "",
+          "name": "tree",
+          "persistentUuid": "f6624435-28e2-4da3-93c8-cd5389ae89fc",
+          "width": 195,
+          "x": 1344,
+          "y": 640,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 256,
+          "layer": "",
+          "name": "tree",
+          "persistentUuid": "ff176d2b-a678-43a7-8542-94fa15a10cb0",
+          "width": 195,
+          "x": 1853,
+          "y": 640,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 96,
+          "layer": "",
+          "name": "tree",
+          "persistentUuid": "1d5746af-99f8-456a-ae43-38509ef5d10d",
+          "width": 195,
+          "x": 1053,
+          "y": -128,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 128,
+          "layer": "",
+          "name": "tree",
+          "persistentUuid": "5d7760d7-129e-4c89-ac52-168ca0ac237c",
+          "width": 195,
+          "x": 573,
+          "y": -896,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 160,
+          "layer": "",
+          "name": "tree",
+          "persistentUuid": "9cf20e50-f103-42c8-9b2b-36cf09d68cd4",
+          "width": 160,
+          "x": 1344,
+          "y": -928,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 128,
+          "layer": "",
+          "name": "tree",
+          "persistentUuid": "d6f39048-efd3-4f57-8cd7-e64107c8006e",
+          "width": 256,
+          "x": 1760,
+          "y": -896,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "Stone",
+          "persistentUuid": "80aca313-99ff-435a-814f-b25ae3155bf3",
+          "width": 0,
+          "x": 192,
+          "y": 448,
+          "zOrder": 137,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -4625,6 +4984,28 @@
             "b": 26,
             "g": 155,
             "r": 29
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": false,
+          "name": "goblin_king_dead",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "NO!!!!",
+          "font": "",
+          "textAlignment": "center",
+          "characterSize": 40,
+          "color": {
+            "b": 194,
+            "g": 227,
+            "r": 80
           }
         },
         {
@@ -5618,7 +5999,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "idle",
+                      "image": "idle2",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -5667,7 +6048,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "jump",
+                      "image": "jump2",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -6853,6 +7234,67 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
+          "name": "tree",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "2749017c821557802fbddcfa31a8bd1e386588fa0f8af7fe4eb6afb3f64a4655_Tree.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 0,
+                            "y": 0
+                          },
+                          {
+                            "x": 188,
+                            "y": 0
+                          },
+                          {
+                            "x": 188,
+                            "y": 408
+                          },
+                          {
+                            "x": 0,
+                            "y": 408
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
           "name": "right_arrow",
           "tags": "",
           "type": "Sprite",
@@ -7462,6 +7904,68 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
+          "name": "boss_hp",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "assets\\ec41092214e9b23d9992e2885835085c8e5457268b3e054599e799cc8074fc52_Health Bar3",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "assets\\ec41092214e9b23d9992e2885835085c8e5457268b3e054599e799cc8074fc52_Health Bar5",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 1,
+                            "y": 0
+                          },
+                          {
+                            "x": 77,
+                            "y": 0
+                          },
+                          {
+                            "x": 77,
+                            "y": 9
+                          },
+                          {
+                            "x": 1,
+                            "y": 9
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
           "name": "debug_point",
           "tags": "",
           "type": "Sprite",
@@ -7662,86 +8166,14 @@
         {
           "adaptCollisionMaskAutomatically": true,
           "assetStoreId": "",
-          "name": "boss_hp",
+          "name": "NewSprite",
           "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "assets\\ec41092214e9b23d9992e2885835085c8e5457268b3e054599e799cc8074fc52_Health Bar3",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "assets\\ec41092214e9b23d9992e2885835085c8e5457268b3e054599e799cc8074fc52_Health Bar5",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 1,
-                            "y": 0
-                          },
-                          {
-                            "x": 77,
-                            "y": 0
-                          },
-                          {
-                            "x": 77,
-                            "y": 9
-                          },
-                          {
-                            "x": 1,
-                            "y": 9
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "bold": true,
-          "italic": false,
-          "name": "goblin_king_dead",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "NO!!!!",
-          "font": "",
-          "textAlignment": "center",
-          "characterSize": 40,
-          "color": {
-            "b": 194,
-            "g": 227,
-            "r": 80
-          }
+          "animations": []
         }
       ],
       "events": [
@@ -8705,6 +9137,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "attack action ",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -9925,6 +10358,7 @@
               "comment": "double jump"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -10075,6 +10509,7 @@
               "comment": "animations"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -10370,6 +10805,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "object interaction",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -14102,7 +14538,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Team\nGame Design - Zhuo Chen \nArt - Shuhao Lu\nCode Lead - Kevin Tan\n\nMusic\nThe Legend Of Iya - Philter\nbattleThemeA - cynicmusic\n",
+          "string": "Team\nLead Designer - Zhuo Chen \nCharacter Artist - Shuhao Lu\nLead Programmer - Kevin Tan\n\nMusic\nThe Legend Of Iya - Philter\nBattle Theme A - cynicmusic\n",
           "font": "",
           "textAlignment": "center",
           "characterSize": 40,
