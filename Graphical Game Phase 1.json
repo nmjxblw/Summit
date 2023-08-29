@@ -1983,6 +1983,15 @@
         "name": "jump2",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../../../Downloads/Summit Assets/Chest Animation/treasure box1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "..\\..\\..\\Downloads\\Summit Assets\\Chest Animation\\treasure box1.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2521,7 +2530,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.22917453674727953,
+        "zoomFactor": 0.3088829101943904,
         "windowMask": false
       },
       "objectsGroups": [
@@ -8174,6 +8183,67 @@
           "effects": [],
           "behaviors": [],
           "animations": []
+        },
+        {
+          "adaptCollisionMaskAutomatically": true,
+          "assetStoreId": "",
+          "name": "chest",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": true,
+                      "image": "..\\..\\..\\Downloads\\Summit Assets\\Chest Animation\\treasure box1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": [
+                        [
+                          {
+                            "x": 27,
+                            "y": 16
+                          },
+                          {
+                            "x": 98,
+                            "y": 16
+                          },
+                          {
+                            "x": 98,
+                            "y": 60
+                          },
+                          {
+                            "x": 27,
+                            "y": 60
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
       "events": [
@@ -14466,7 +14536,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.546875,
+        "zoomFactor": 0.39251611754882226,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -14495,8 +14565,8 @@
           "name": "Team",
           "persistentUuid": "ac8b4ceb-bf69-48aa-a5db-02c51a840dec",
           "width": 0,
-          "x": 381,
-          "y": 188,
+          "x": 134,
+          "y": 191,
           "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
@@ -14538,7 +14608,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "Team\nLead Designer - Zhuo Chen \nCharacter Artist - Shuhao Lu\nLead Programmer - Kevin Tan\n\nMusic\nThe Legend Of Iya - Philter\nBattle Theme A - cynicmusic\n",
+          "string": "Team\nLead Designer & Programmer - Zhuo Chen \nLead Character Artist - Shuhao Lu\nAssistant Programmer & Character Artist- Kevin Tan\n\nMusic\nThe Legend Of Iya - Philter\nBattle Theme A - cynicmusic\n",
           "font": "",
           "textAlignment": "center",
           "characterSize": 40,
