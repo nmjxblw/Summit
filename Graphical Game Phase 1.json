@@ -2530,7 +2530,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.3088829101943904,
+        "zoomFactor": 0.2796306084364013,
         "windowMask": false
       },
       "objectsGroups": [
@@ -4537,7 +4537,7 @@
           "width": 96,
           "x": 800,
           "y": -256,
-          "zOrder": 38,
+          "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4553,7 +4553,7 @@
           "width": 99,
           "x": 736,
           "y": -320,
-          "zOrder": 38,
+          "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4585,7 +4585,7 @@
           "width": 124,
           "x": 992,
           "y": -1120,
-          "zOrder": 38,
+          "zOrder": 30,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4729,21 +4729,6 @@
           "x": 1760,
           "y": -896,
           "zOrder": 10,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "Stone",
-          "persistentUuid": "80aca313-99ff-435a-814f-b25ae3155bf3",
-          "width": 0,
-          "x": 192,
-          "y": 448,
-          "zOrder": 137,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8171,79 +8156,6 @@
           "variables": [],
           "effects": [],
           "behaviors": []
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "NewSprite",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": []
-        },
-        {
-          "adaptCollisionMaskAutomatically": true,
-          "assetStoreId": "",
-          "name": "chest",
-          "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": true,
-                      "image": "..\\..\\..\\Downloads\\Summit Assets\\Chest Animation\\treasure box1.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": [
-                        [
-                          {
-                            "x": 27,
-                            "y": 16
-                          },
-                          {
-                            "x": 98,
-                            "y": 16
-                          },
-                          {
-                            "x": 98,
-                            "y": 60
-                          },
-                          {
-                            "x": 27,
-                            "y": 60
-                          }
-                        ]
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
         }
       ],
       "events": [
@@ -9207,7 +9119,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "attack action ",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -9994,6 +9905,16 @@
                                 "Variable(wild_boar_dead_point.x)",
                                 "Variable(wild_boar_dead_point.y)",
                                 ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ChangePlan"
+                              },
+                              "parameters": [
+                                "tutorial_attack",
+                                "=",
+                                "31"
                               ]
                             }
                           ]
@@ -10875,7 +10796,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "object interaction",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
