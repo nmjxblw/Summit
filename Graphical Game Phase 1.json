@@ -1992,6 +1992,15 @@
         "name": "..\\..\\..\\Downloads\\Summit Assets\\Chest Animation\\treasure box1.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stamina_bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\stamina_bar.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2717,18 +2726,18 @@
           ]
         },
         {
-          "name": "third_scroll",
+          "name": "goblin_dead_point",
           "type": "structure",
           "children": [
             {
               "name": "x",
               "type": "number",
-              "value": 1950
+              "value": 0
             },
             {
               "name": "y",
               "type": "number",
-              "value": -860
+              "value": 0
             }
           ]
         },
@@ -2807,6 +2816,12 @@
               "value": -1280
             }
           ]
+        },
+        {
+          "folded": true,
+          "name": "goblin_king_dead",
+          "type": "boolean",
+          "value": false
         }
       ],
       "instances": [
@@ -3366,7 +3381,7 @@
           "customSize": false,
           "height": 0,
           "layer": "Background",
-          "name": "task_find_scrolls",
+          "name": "task_guide_text",
           "persistentUuid": "fc61dc37-f0b4-4fb5-b9f3-eabbd0dc1ac6",
           "width": 0,
           "x": 96,
@@ -4805,28 +4820,6 @@
           "assetStoreId": "",
           "bold": false,
           "italic": false,
-          "name": "debug_text_box",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": "debug_text_box",
-          "font": "",
-          "textAlignment": "left",
-          "characterSize": 40,
-          "color": {
-            "b": 27,
-            "g": 2,
-            "r": 208
-          }
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
           "name": "tutorial_attack",
           "smoothed": true,
           "tags": "",
@@ -4893,7 +4886,7 @@
           "assetStoreId": "",
           "bold": false,
           "italic": false,
-          "name": "task_find_scrolls",
+          "name": "task_guide_text",
           "smoothed": true,
           "tags": "",
           "type": "TextObject::Text",
@@ -4934,6 +4927,28 @@
             "b": 151,
             "g": 173,
             "r": 72
+          }
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "debug_text_box",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "debug_text_box",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 40,
+          "color": {
+            "b": 27,
+            "g": 2,
+            "r": 208
           }
         },
         {
@@ -5916,6 +5931,12 @@
               "name": "can_choose_an_action",
               "type": "boolean",
               "value": true
+            },
+            {
+              "folded": true,
+              "name": "is_dead",
+              "type": "boolean",
+              "value": false
             }
           ],
           "effects": [],
@@ -6540,7 +6561,28 @@
           "updateIfNotVisible": false,
           "variables": [],
           "effects": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "acceleration": 1500,
+              "canGoDownFromJumpthru": false,
+              "canGrabPlatforms": false,
+              "canGrabWithoutMoving": false,
+              "deceleration": 1500,
+              "gravity": 1000,
+              "ignoreDefaultControls": true,
+              "jumpSpeed": 600,
+              "jumpSustainTime": 0.2,
+              "ladderClimbingSpeed": 150,
+              "maxFallingSpeed": 700,
+              "maxSpeed": 250,
+              "name": "PlatformerObject",
+              "slopeMaxAngle": 60,
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
+              "useLegacyTrajectory": false,
+              "xGrabTolerance": 10,
+              "yGrabOffset": 0
+            }
+          ],
           "animations": [
             {
               "name": "",
@@ -7845,17 +7887,16 @@
           "behaviors": [],
           "animations": [
             {
-              "name": "assets\\assets_ec41092214e9b23d9992e2885835085c8e5457268b3e054599e799cc8074fc52_Health Bar2",
+              "name": "",
               "useMultipleDirections": false,
               "directions": [
                 {
                   "looping": false,
-                  "metadata": "{\"pskl\":{}}",
                   "timeBetweenFrames": 0.08,
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "assets\\assets_ec41092214e9b23d9992e2885835085c8e5457268b3e054599e799cc8074fc52_Health Bar2",
+                      "image": "assets\\stamina_bar.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -8323,6 +8364,14 @@
                     "value": "Cache"
                   },
                   "parameters": [
+                    "stamina_bar"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
                     "boss_name"
                   ]
                 }
@@ -8556,9 +8605,9 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "task_find_scrolls",
+                    "task_guide_text",
                     "=",
-                    "\"Find the first scroll to learn <\"+ task_find_scrolls.VariableString(goal.lvl1) +\">     (0/3)\""
+                    "\"Find the first scroll to learn <\" + task_guide_text.VariableString(goal.lvl1) + \">     (0/3)\""
                   ]
                 }
               ]
@@ -8589,9 +8638,9 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "task_find_scrolls",
+                    "task_guide_text",
                     "=",
-                    "\"Find the second scroll to  learn <\"+ task_find_scrolls.VariableString(goal.lvl2) +\">     (1/3)\""
+                    "\"Find the second scroll to  learn <\" + task_guide_text.VariableString(goal.lvl2) + \">     (1/3)\""
                   ]
                 },
                 {
@@ -8641,9 +8690,9 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "task_find_scrolls",
+                    "task_guide_text",
                     "=",
-                    "\"Find the last scroll to learn <\"+ task_find_scrolls.VariableString(goal.lvl3) +\">     (2/3)\""
+                    "\"Find the last scroll to learn <\" + task_guide_text.VariableString(goal.lvl3) + \">     (2/3)\""
                   ]
                 },
                 {
@@ -8666,6 +8715,15 @@
                     "Player.X()",
                     "=",
                     "Player.Y() - 70"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "stamina_bar",
+                    ""
                   ]
                 },
                 {
@@ -8715,7 +8773,7 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "task_find_scrolls",
+                    "task_guide_text",
                     "=",
                     "\"Find the key to the treasure box.\""
                   ]
@@ -8776,9 +8834,41 @@
                     "value": "TextObject::String"
                   },
                   "parameters": [
-                    "task_find_scrolls",
+                    "task_guide_text",
                     "=",
                     "\"Defeat the Goblin King!(Touch the Goblin King to enter the battle!)\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "goblin_king_dead",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextObject::String"
+                  },
+                  "parameters": [
+                    "task_guide_text",
+                    "=",
+                    "\"Open the treasure box and  reclaim the treasure!\""
                   ]
                 }
               ]
@@ -9849,7 +9939,7 @@
                           "parameters": [
                             "wild_boar_dead_point.x",
                             "=",
-                            "wild_boar.X()"
+                            "wild_boar.CenterX()"
                           ]
                         },
                         {
@@ -9859,7 +9949,7 @@
                           "parameters": [
                             "wild_boar_dead_point.y",
                             "=",
-                            "wild_boar.Y()"
+                            "wild_boar.CenterY()"
                           ]
                         },
                         {
@@ -10034,6 +10124,26 @@
                       "actions": [
                         {
                           "type": {
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "goblin_dead_point.x",
+                            "=",
+                            "goblin.CenterX()"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "goblin_dead_point.y",
+                            "=",
+                            "goblin.CenterY()"
+                          ]
+                        },
+                        {
+                          "type": {
                             "value": "Delete"
                           },
                           "parameters": [
@@ -10072,8 +10182,8 @@
                               "parameters": [
                                 "",
                                 "scroll",
-                                "Variable(third_scroll.x)",
-                                "Variable(third_scroll.y)",
+                                "Variable(goblin_dead_point.x)",
+                                "Variable(goblin_dead_point.y)",
                                 ""
                               ]
                             }
@@ -10234,6 +10344,15 @@
                         },
                         {
                           "type": {
+                            "value": "SetSceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "goblin_king_dead",
+                            "True"
+                          ]
+                        },
+                        {
+                          "type": {
                             "value": "Delete"
                           },
                           "parameters": [
@@ -10247,6 +10366,33 @@
                           },
                           "parameters": [
                             "boss_name",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Montre"
+                          },
+                          "parameters": [
+                            "task_text",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Montre"
+                          },
+                          "parameters": [
+                            "task_guide_text",
+                            "="
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Montre"
+                          },
+                          "parameters": [
+                            "inventories",
                             ""
                           ]
                         },
@@ -11308,6 +11454,17 @@
                 },
                 {
                   "type": {
+                    "value": "SceneInstancesCount"
+                  },
+                  "parameters": [
+                    "",
+                    "goblin_king",
+                    ">=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "BuiltinCommonInstructions::Once"
                   },
                   "parameters": []
@@ -11400,7 +11557,7 @@
                     "value": "Cache"
                   },
                   "parameters": [
-                    "task_find_scrolls"
+                    "task_guide_text"
                   ]
                 },
                 {
