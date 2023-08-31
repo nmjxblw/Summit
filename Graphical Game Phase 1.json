@@ -2545,7 +2545,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.20070312369603877,
+        "zoomFactor": 0.14891094288066942,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2992,14 +2992,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 0,
-          "height": 2368,
+          "depth": 1,
+          "height": 2304,
           "layer": "",
           "name": "right_boundary",
           "persistentUuid": "c75d8c2f-b8a4-47b6-8834-9236332b9269",
           "width": 32,
           "x": 2336,
-          "y": -1600,
+          "y": -1536,
           "zOrder": 42,
           "numberProperties": [],
           "stringProperties": [],
@@ -3008,14 +3008,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 0,
-          "height": 2368,
+          "depth": 1,
+          "height": 2304,
           "layer": "",
           "name": "left_boundary",
           "persistentUuid": "b671d3f9-ea4e-4126-b6f9-2fa1b30797fe",
           "width": 32,
           "x": -64,
-          "y": -1600,
+          "y": -1536,
           "zOrder": 43,
           "numberProperties": [],
           "stringProperties": [],
@@ -3081,22 +3081,6 @@
           "x": 256,
           "y": -832,
           "zOrder": 12,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 64,
-          "layer": "",
-          "name": "Platform",
-          "persistentUuid": "385523a6-8feb-4720-a4b9-acb10c5cac15",
-          "width": 2304,
-          "x": 0,
-          "y": -1600,
-          "zOrder": 51,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4654,102 +4638,6 @@
           "x": 2848,
           "y": 704,
           "zOrder": 12,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 256,
-          "layer": "",
-          "name": "tree",
-          "persistentUuid": "f6624435-28e2-4da3-93c8-cd5389ae89fc",
-          "width": 195,
-          "x": 1344,
-          "y": 640,
-          "zOrder": 10,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 256,
-          "layer": "",
-          "name": "tree",
-          "persistentUuid": "ff176d2b-a678-43a7-8542-94fa15a10cb0",
-          "width": 195,
-          "x": 1853,
-          "y": 640,
-          "zOrder": 10,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 96,
-          "layer": "",
-          "name": "tree",
-          "persistentUuid": "1d5746af-99f8-456a-ae43-38509ef5d10d",
-          "width": 195,
-          "x": 1053,
-          "y": -128,
-          "zOrder": 10,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 128,
-          "layer": "",
-          "name": "tree",
-          "persistentUuid": "5d7760d7-129e-4c89-ac52-168ca0ac237c",
-          "width": 195,
-          "x": 573,
-          "y": -896,
-          "zOrder": 10,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 160,
-          "layer": "",
-          "name": "tree",
-          "persistentUuid": "9cf20e50-f103-42c8-9b2b-36cf09d68cd4",
-          "width": 160,
-          "x": 1344,
-          "y": -928,
-          "zOrder": 10,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "depth": 0,
-          "height": 128,
-          "layer": "",
-          "name": "tree",
-          "persistentUuid": "d6f39048-efd3-4f57-8cd7-e64107c8006e",
-          "width": 256,
-          "x": 1760,
-          "y": -896,
-          "zOrder": 10,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8894,6 +8782,18 @@
           "parameters": []
         },
         {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "lvl 1"
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -8945,7 +8845,7 @@
               "parameters": [
                 "",
                 "left_boundary.X() + left_boundary.Width()",
-                "right_boundary.Y()",
+                "f2_ground_boundary.Y() + f2_ground_boundary.Height()",
                 "right_boundary.X()",
                 "right_boundary.Y() + right_boundary.Height()",
                 "",
@@ -8953,6 +8853,18 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "lvl 2"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -8976,44 +8888,103 @@
                 ">",
                 "f3_ground_boundary.Y()"
               ]
-            },
-            {
-              "type": {
-                "value": "PosX"
-              },
-              "parameters": [
-                "Player",
-                "<",
-                "right_boundary.X()"
-              ]
-            },
-            {
-              "type": {
-                "value": "PosX"
-              },
-              "parameters": [
-                "Player",
-                ">",
-                "left_boundary.X()"
-              ]
             }
           ],
-          "actions": [
+          "actions": [],
+          "events": [
             {
-              "type": {
-                "value": "ClampCamera"
-              },
-              "parameters": [
-                "",
-                "left_boundary.X() + left_boundary.Width()",
-                "right_boundary.Y()",
-                "right_boundary.X()",
-                "f2_ground_boundary.Y() + f2_ground_boundary.Height()",
-                "",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::And"
+                  },
+                  "parameters": [],
+                  "subInstructions": [
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "Player",
+                        "<",
+                        "right_boundary.X()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "PosX"
+                      },
+                      "parameters": [
+                        "Player",
+                        ">",
+                        "f3_ground_boundary.X() + f3_ground_boundary.Width()"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ClampCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "left_boundary.X() + left_boundary.Width()",
+                    "f3_ground_boundary.Y() + f3_ground_boundary.Height()",
+                    "right_boundary.X()",
+                    "f2_ground_boundary.Y() + f2_ground_boundary.Height()",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PosX"
+                  },
+                  "parameters": [
+                    "Player",
+                    "<=",
+                    "f3_ground_boundary.X() + f3_ground_boundary.Width()"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ClampCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "left_boundary.X() + left_boundary.Width()",
+                    "right_boundary.Y()",
+                    "right_boundary.X()",
+                    "f2_ground_boundary.Y() + f2_ground_boundary.Height()",
+                    "",
+                    ""
+                  ]
+                }
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "lvl 3"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -9065,6 +9036,18 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "boss lvl"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
