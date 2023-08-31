@@ -11,7 +11,7 @@
     "antialiasingMode": "MSAA",
     "antialisingEnabledOnMobile": false,
     "folderProject": false,
-    "orientation": "default",
+    "orientation": "landscape",
     "packageName": "com.example.gamename",
     "pixelsRounding": false,
     "projectUuid": "318af335-7dd0-4034-b756-97b4879facae",
@@ -21,7 +21,7 @@
     "useExternalSourceFiles": false,
     "version": "1.0.0",
     "name": "Summit",
-    "description": "cmpm 80k graphical game",
+    "description": "Graphical game project made for CMPM 80K",
     "author": "",
     "windowWidth": 1280,
     "windowHeight": 720,
@@ -51,15 +51,21 @@
       "showWatermark": true
     },
     "authorIds": [
-      "wusfRV7OgsbsV8lCqxASQf9n0ym1"
+      "wusfRV7OgsbsV8lCqxASQf9n0ym1",
+      "zvObSIYoBHfUeElTAQoESQycIhk2"
     ],
     "authorUsernames": [
-      "ktan44"
+      "ktan44",
+      "Octette"
     ],
     "categories": [
-      "platformer"
+      "platformer",
+      "rpg",
+      "adventure"
     ],
-    "playableDevices": [],
+    "playableDevices": [
+      "keyboard"
+    ],
     "extensionProperties": [],
     "platforms": [
       {
@@ -2539,7 +2545,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.2796306084364013,
+        "zoomFactor": 0.20070312369603877,
         "windowMask": false
       },
       "objectsGroups": [
@@ -2828,12 +2834,12 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 0,
+          "depth": 1,
           "height": 928,
           "layer": "Background",
           "name": "FarBackground",
           "persistentUuid": "7f9724aa-f5e0-4c2c-8c06-878495690671",
-          "width": 1856,
+          "width": 2624,
           "x": -320,
           "y": -64,
           "zOrder": 6,
@@ -6563,6 +6569,8 @@
           "effects": [],
           "behaviors": [
             {
+              "name": "PlatformerObject",
+              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "acceleration": 1500,
               "canGoDownFromJumpthru": false,
               "canGrabPlatforms": false,
@@ -6575,9 +6583,7 @@
               "ladderClimbingSpeed": 150,
               "maxFallingSpeed": 700,
               "maxSpeed": 250,
-              "name": "PlatformerObject",
               "slopeMaxAngle": 60,
-              "type": "PlatformBehavior::PlatformerObjectBehavior",
               "useLegacyTrajectory": false,
               "xGrabTolerance": 10,
               "yGrabOffset": 0
@@ -14696,162 +14702,7 @@
           }
         }
       ],
-      "events": [
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "name": "game over events",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [],
-          "parameters": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "AnyKeyPressed"
-                  },
-                  "parameters": [
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "CompareTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"goto warning scene\"",
-                    ">=",
-                    "10"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "MouseButtonPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "Left"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "MouseButtonPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "Right"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SceneBackground"
-              },
-              "parameters": [
-                "",
-                "\"255;255;255\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Wait"
-              },
-              "parameters": [
-                "0.1"
-              ]
-            },
-            {
-              "type": {
-                "value": "PushScene"
-              },
-              "parameters": [
-                "",
-                "\"warning scene\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "DepartScene"
-              },
-              "parameters": [
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"goto warning scene\""
-              ]
-            },
-            {
-              "type": {
-                "value": "SceneBackground"
-              },
-              "parameters": [
-                "",
-                "\"0;0;0\""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "DoesSceneExist"
-              },
-              "parameters": [
-                "",
-                "\"game over scene\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "RemoveTimer"
-              },
-              "parameters": [
-                "",
-                "\"goto warning scene\""
-              ]
-            }
-          ]
-        }
-      ],
+      "events": [],
       "layers": [
         {
           "ambientLightColorB": 200,
