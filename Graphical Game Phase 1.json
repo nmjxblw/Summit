@@ -2545,7 +2545,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.14891094288066942,
+        "zoomFactor": 0.23690237777238518,
         "windowMask": false
       },
       "objectsGroups": [
@@ -4117,14 +4117,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 0,
-          "height": 704,
+          "depth": 1,
+          "height": 832,
           "layer": "",
           "name": "delete_goblin_king_stone",
           "persistentUuid": "edb2de12-0606-4077-884a-825dc834fea8",
-          "width": 64,
-          "x": 5568,
-          "y": 0,
+          "width": 32,
+          "x": 5600,
+          "y": -64,
           "zOrder": 111,
           "numberProperties": [],
           "stringProperties": [],
@@ -4133,14 +4133,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "depth": 0,
-          "height": 704,
+          "depth": 1,
+          "height": 832,
           "layer": "",
           "name": "delete_goblin_king_stone",
           "persistentUuid": "47cf9bda-9aad-4f95-8d0f-e0088c97a8e4",
-          "width": 64,
+          "width": 32,
           "x": 2816,
-          "y": 0,
+          "y": -64,
           "zOrder": 112,
           "numberProperties": [],
           "stringProperties": [],
@@ -4429,7 +4429,7 @@
           "persistentUuid": "5087f0bc-a684-4e4f-8b72-031b0fbcf100",
           "width": 64,
           "x": 1088,
-          "y": -576,
+          "y": -575,
           "zOrder": 136,
           "numberProperties": [],
           "stringProperties": [],
@@ -4638,6 +4638,38 @@
           "x": 2848,
           "y": 704,
           "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "layer": "",
+          "name": "delete_goblin_king_stone",
+          "persistentUuid": "8ef1f4c1-69cc-4392-b4bb-9c48799ccd15",
+          "width": 64,
+          "x": 5536,
+          "y": 704,
+          "zOrder": 137,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 1,
+          "height": 64,
+          "layer": "",
+          "name": "delete_goblin_king_stone",
+          "persistentUuid": "35b10e5c-7d8d-4629-9a5c-8f3d4f2b71fc",
+          "width": 64,
+          "x": 2848,
+          "y": 704,
+          "zOrder": 138,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -10318,9 +10350,23 @@
                             "0",
                             ""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
                         }
                       ],
                       "actions": [
+                        {
+                          "type": {
+                            "value": "Arreter"
+                          },
+                          "parameters": [
+                            "goblin_king"
+                          ]
+                        },
                         {
                           "type": {
                             "value": "SetObjectVariableAsBoolean"
@@ -12746,46 +12792,6 @@
                                 "textG": 0,
                                 "textR": 0
                               },
-                              "comment": "goblin king stone collision"
-                            },
-                            {
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "value": "CollisionNP"
-                                  },
-                                  "parameters": [
-                                    "goblin_king_stone",
-                                    "delete_goblin_king_stone",
-                                    "",
-                                    "",
-                                    ""
-                                  ]
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "value": "Delete"
-                                  },
-                                  "parameters": [
-                                    "goblin_king_stone",
-                                    ""
-                                  ]
-                                }
-                              ]
-                            },
-                            {
-                              "type": "BuiltinCommonInstructions::Comment",
-                              "color": {
-                                "b": 109,
-                                "g": 230,
-                                "r": 255,
-                                "textB": 0,
-                                "textG": 0,
-                                "textR": 0
-                              },
                               "comment": "earthquake"
                             },
                             {
@@ -13193,6 +13199,46 @@
                     }
                   ],
                   "parameters": []
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Comment",
+                  "color": {
+                    "b": 109,
+                    "g": 230,
+                    "r": 255,
+                    "textB": 0,
+                    "textG": 0,
+                    "textR": 0
+                  },
+                  "comment": "goblin king stone collision"
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "CollisionNP"
+                      },
+                      "parameters": [
+                        "goblin_king_stone",
+                        "delete_goblin_king_stone",
+                        "",
+                        "",
+                        ""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "goblin_king_stone",
+                        ""
+                      ]
+                    }
+                  ]
                 }
               ],
               "parameters": []
@@ -14685,7 +14731,32 @@
           }
         }
       ],
-      "events": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SceneBackground"
+              },
+              "parameters": [
+                "",
+                "\"0;0;0\""
+              ]
+            }
+          ]
+        }
+      ],
       "layers": [
         {
           "ambientLightColorB": 200,
