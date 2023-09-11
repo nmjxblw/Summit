@@ -1,4 +1,4 @@
-A side scrolling platformer made for a class project.
+A side scrolling platformer made on GDevelop for a class project.
 
 Designed by Zhuo Chen
 Art by Shuhao Lu
